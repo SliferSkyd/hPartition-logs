@@ -1,0 +1,238 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out/PsiPartition/simulated-2/len_6000_loci_6/5/5.parts
+Input file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out/PsiPartition/simulated-2/len_6000_loci_6/5/5.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 49 taxa with 10 partitions and 6000 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	49	2838	2838	2838	0	0	part1
+   2	DNA	49	864	864	864	0	0	part2
+   3	DNA	49	665	665	665	0	0	part3
+   4	DNA	49	375	375	375	0	0	part4
+   5	DNA	49	113	113	113	0	0	part5
+   6	DNA	49	102	102	102	0	0	part6
+   7	DNA	49	361	361	361	0	0	part7
+   8	DNA	49	391	391	391	0	0	part8
+   9	DNA	49	290	290	290	0	0	part9
+  10	DNA	49	1	1	1	0	0	part10
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+ASC+R4:part1,TVM+F+ASC+R3:part2,GTR+F+ASC+G4:part3,GTR+F+R2:part4,K3Pu+F+ASC+R2:part5,TIM+F+ASC+R2:part6,GTR+F+ASC+R2:part7,TVM+F+ASC+R3:part8,TVM+F+ASC+G4:part9,GTR+F+ASC:part10
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F+ASC+R4    -164985.168  330000.336 + 1.48e-316  330000.506 - 5.4e-317  330089.599 - 7.38e-317
+   2  TVM+F+ASC+R3     -47848.712   95721.423 + 1.48e-316   95721.790 - 5.4e-317   95778.562 - 7.38e-317
+   3  GTR+F+ASC+G4     -35706.096   71432.191 + 1.48e-316   71432.528 - 5.4e-317   71477.189 - 7.38e-317
+   4  GTR+F+R2         -19438.098   38898.197 + 1.48e-316   38898.924 - 5.4e-317   38941.393 - 7.38e-317
+   5  K3Pu+F+ASC+R2     -5088.029   10192.058 + 1.48e-316   10193.443 - 5.4e-317   10213.877 - 7.38e-317
+   6  TIM+F+ASC+R2      -3881.416    7780.833 + 1.48e-316    7782.789 - 5.4e-317    7804.458 - 7.38e-317
+   7  GTR+F+ASC+R2     -16938.952   33899.904 + 1.48e-316   33900.660 - 5.4e-317   33942.682 - 7.38e-317
+   8  TVM+F+ASC+R3     -19655.312   39334.624 + 1.48e-316   39335.449 - 5.4e-317   39382.248 - 7.38e-317
+   9  TVM+F+ASC+G4     -13655.420   27328.840 + 1.48e-316   27329.483 - 5.4e-317   27361.869 - 7.38e-317
+  10  GTR+F+ASC           -37.817      93.634 + 1.48e-316     273.634 - 5.4e-317      75.634 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F+ASC+R4   1.1817  GTR{1.39165,0.213734,1.81612,2.20188,0.387882}+F{0.350434,0.266931,0.153485,0.22915}+ASC+R4{0.174581,0.220855,0.389785,0.648749,0.307045,0.955514,0.128589,3.22878}
+   2  TVM+F+ASC+R3   0.8957  TVM{1.11299,0.138475,1.2264,1.7061}+F{0.354049,0.261621,0.142574,0.241756}+ASC+R3{0.237046,0.287489,0.650004,0.897293,0.112951,3.08638}
+   3  GTR+F+ASC+G4   0.8146  GTR{1.03885,0.348266,0.924772,1.46033,0.170267}+F{0.37548,0.308363,0.121897,0.194261}+ASC+G4{2.23775}
+   4  GTR+F+R2       0.6675  GTR{0.916903,0.288007,1.38144,1.70763,0.0900662}+F{0.378884,0.18302,0.128381,0.309714}+R2{0.285966,0.378325,0.714034,1.24898}
+   5  K3Pu+F+ASC+R2  0.4450  K3Pu{0.12446,1.30257}+F{0.369153,0.244898,0.130757,0.255192}+ASC+R2{0.527231,0.500629,0.472769,1.5569}
+   6  TIM+F+ASC+R2   0.2917  TIM{0.755888,1.372,0.157269}+F{0.427371,0.326531,0.123249,0.122849}+ASC+R2{0.736117,0.764077,0.263883,1.65812}
+   7  GTR+F+ASC+R2   0.6653  GTR{3.58391,2.63579,3.23888,4.59474,0.821558}+F{0.462152,0.351235,0.0970094,0.0896037}+ASC+R2{0.449277,0.454046,0.550723,1.44539}
+   8  TVM+F+ASC+R3   1.3387  TVM{1.06969,0.169986,1.2611,1.83314}+F{0.420272,0.233363,0.0469231,0.299442}+ASC+R3{0.280351,0.194013,0.560441,0.708145,0.159209,3.44664}
+   9  TVM+F+ASC+G4   0.8117  TVM{0.230352,0.215057,1.20882,5.71651}+F{0.380859,0.0749472,0.134553,0.409641}+ASC+G4{2.02573}
+  10  GTR+F+ASC      1.3705  GTR{0.0001,1,1.02592,1,4.54239}+F{0.530612,0.0204082,0,0.44898}+ASC
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -327232.2807 (s.e. 882.9723)
+Unconstrained log-likelihood (without tree): -42061.3377
+Number of free parameters (#branches + #model parameters): 200
+Akaike information criterion (AIC) score: 654864.5613
+Corrected Akaike information criterion (AICc) score: 654878.4258
+Bayesian information criterion (BIC) score: 656204.4643
+
+Total tree length (sum of branch lengths): 44.6628
+Sum of internal branch lengths: 13.1966 (29.5471% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'node9' is drawn at root
+
++-------------node9
+|
+|       +------node43
++-------|
+|       +------node22
+|
+|         +----------------node34
+|      +--|
+|      |  |  +--------------node13
+|      |  +--|
+|      |     +-------node37
+|  +---|
+|  |   +---------------------------node14
++--|
+   |                    +---node28
+   |                 +--|
+   |                 |  +-------node11
+   |          +------|
+   |          |      +-------node19
+   |       +--|
+   |       |  +----------------node33
+   |    +--|
+   |    |  |                +----------node8
+   |    |  |           +----|
+   |    |  |           |    +---------------node29
+   |    |  |        +--|
+   |    |  |        |  |                  +----------node44
+   |    |  |        |  |            +-----|
+   |    |  |        |  |            |     +-----node48
+   |    |  |        |  |  +---------|
+   |    |  |        |  |  |         +-------node40
+   |    |  |        |  +--|
+   |    |  |        |     +---------node20
+   |    |  |     +--|
+   |    |  |     |  |           +-------node35
+   |    |  |     |  |        +--|
+   |    |  |     |  |        |  +-----node0
+   |    |  |     |  |     +--|
+   |    |  |     |  |     |  +-----------------node46
+   |    |  |     |  |  +--|
+   |    |  |     |  |  |  +----------node21
+   |    |  |     |  +--|
+   |    |  |     |     |                   +---------node26
+   |    |  |     |     |      +------------|
+   |    |  |     |     |      |            +------------------node7
+   |    |  |     |     |   +--|
+   |    |  |     |     |   |  |   +---------node31
+   |    |  |     |     |   |  +---|
+   |    |  |     |     |   |      +----------node45
+   |    |  |     |     +---|
+   |    |  |     |         |       +------node38
+   |    |  |     |         +-------|
+   |    |  |     |                 +-----node36
+   |    |  |  +--|
+   |    |  |  |  |     +----------------node16
+   |    |  |  |  |  +--|
+   |    |  |  |  |  |  |        +-----node39
+   |    |  |  |  |  |  +--------|
+   |    |  |  |  |  |           +---------node6
+   |    |  |  |  +--|
+   |    |  |  |     |  +--------node17
+   |    |  |  |     +--|
+   |    |  |  |        +-------------node24
+   |    |  +--|
+   |    |     |               +------node25
+   |    |     |            +--|
+   |    |     |            |  |      +----------node42
+   |    |     |            |  +------|
+   |    |     |            |         +------node47
+   |    |     |  +---------|
+   |    |     |  |         +-----node23
+   |    |     +--|
+   |    |        |             +-----node1
+   |    |        |          +--|
+   |    |        |          |  +------node18
+   |    |        |  +-------|
+   |    |        |  |       +-----------node4
+   |    |        +--|
+   |    |           +--------node5
+   +----|
+        |                  +----node41
+        |               +--|
+        |               |  |   +--node12
+        |               |  +---|
+        |               |      +--------node30
+        |       +-------|
+        |       |       +----node3
+        +-------|
+                |     +--node32
+                |  +--|
+                |  |  +-----------node15
+                +--|
+                   |         +----node10
+                   |  +------|
+                   |  |      +---------node2
+                   +--|
+                      +--node27
+
+Tree in newick format:
+
+(node9:0.9364787374,(node43:0.4557108710,node22:0.4444686361):0.5060049060,(((node34:1.1101656954,(node13:0.9724593796,node37:0.5160185796):0.1313144177):0.1195391391,node14:1.8200933247):0.2688898764,(((((node28:0.2704966655,node11:0.5655506138):0.2397941483,node19:0.5401482208):0.4745314312,node33:1.0836076336):0.1261466418,(((((node8:0.6986885275,node29:1.0371519899):0.3225467202,(((node44:0.7441329683,node48:0.4296591287):0.3920318005,node40:0.5281151963):0.6797001628,node20:0.6322689733):0.0553262138):0.1528027168,((((node35:0.5399904517,node0:0.4173835937):0.1695573456,node46:1.1957385666):0.1374133003,node21:0.7229796238):0.0937815799,(((node26:0.6453469308,node7:1.2224209419):0.8442787266,(node31:0.6558378604,node45:0.7036101915):0.2745161386):0.1700546706,(node38:0.4511964966,node36:0.3907821906):0.5470754382):0.2847790308):0.1635711007):0.2029677862,((node16:1.1312388196,(node39:0.3978231610,node6:0.6490272752):0.6002404035):0.1529008994,(node17:0.6143019088,node24:0.8994235625):0.1915966608):0.2133426751):0.1843255003,(((node25:0.4651179126,(node42:0.7219343741,node47:0.4705855547):0.4727626143):0.1017522045,node23:0.4137248898):0.6676462237,(((node1:0.4128334707,node18:0.4872719884):0.0909454153,node4:0.7787196919):0.5579236819,node5:0.5985157994):0.1037802279):0.2231426322):0.0851830306):0.1053019084,(((node41:0.3357195305,(node12:0.2120475781,node30:0.5750545709):0.2877702688):0.1616188386,node3:0.3474098113):0.5237402082,((node32:0.2425458401,node15:0.7779349375):0.2390874042,((node10:0.3210835594,node2:0.6434727887):0.4766561646,node27:0.2399427533):0.1918508138):0.1571355229):0.5369964538):0.3665187853):0.1477123899);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out/PsiPartition/simulated-2/len_6000_loci_6/5/5.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out/PsiPartition/simulated-2/len_6000_loci_6/5/5.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out/PsiPartition/simulated-2/len_6000_loci_6/5/5.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out/PsiPartition/simulated-2/len_6000_loci_6/5/5.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 17 00:19:50 2026
+Total CPU time used: 658.262 seconds (0h:10m:58s)
+Total wall-clock time used: 252.881 seconds (0h:4m:12s)
+
