@@ -1,0 +1,315 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    fit09.local (AVX2, FMA3, 125 GB RAM)
+Command: /home/diepht/sliferskyd/hPartition/iqtree-2.4.0-Linux-intel/bin/iqtree2 -seed 0 -s /home/diepht/sliferskyd/hPartition-datasets/DNA/simulated-1/loci_4/3.phy -p /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/hPartition/aln.partitions -pre /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln -redo -T 1
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Oct 15 16:45:48 2026
+Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/hPartition/aln.partitions ...
+Reading alignment file /home/diepht/sliferskyd/hPartition-datasets/DNA/simulated-1/loci_4/3.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 49 sequences with 5000 columns, 5000 distinct patterns
+4999 parsimony-informative, 1 singleton sites, 0 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00119519 secs using 98.98% CPU
+   1  node11    0.00%    passed     62.98%
+   2  node47    0.00%    passed     33.19%
+   3  node4     0.00%    passed     15.77%
+   4  node32    0.00%    passed     29.32%
+   5  node25    0.00%    passed     86.87%
+   6  node42    0.00%    passed     32.23%
+   7  node31    0.00%    passed     78.66%
+   8  node38    0.00%    passed     58.14%
+   9  node7     0.00%    passed     68.35%
+  10  node23    0.00%    passed     74.84%
+  11  node44    0.00%    passed     91.14%
+  12  node43    0.00%    passed     80.35%
+  13  node37    0.00%    passed     78.08%
+  14  node28    0.00%    passed     32.09%
+  15  node41    0.00%    passed     21.19%
+  16  node46    0.00%    passed     31.88%
+  17  node17    0.00%    passed     50.20%
+  18  node13    0.00%    passed      5.78%
+  19  node45    0.00%    passed     76.14%
+  20  node34    0.00%    passed     99.47%
+  21  node39    0.00%    passed     20.18%
+  22  node14    0.00%    passed     18.65%
+  23  node8     0.00%    passed     82.88%
+  24  node40    0.00%    passed     89.89%
+  25  node21    0.00%    passed     67.78%
+  26  node30    0.00%    passed     42.21%
+  27  node3     0.00%    passed     48.67%
+  28  node16    0.00%    passed     78.08%
+  29  node20    0.00%    passed     89.98%
+  30  node18    0.00%    passed     84.84%
+  31  node1     0.00%    passed     57.55%
+  32  node0     0.00%    passed     62.62%
+  33  node5     0.00%    passed     63.77%
+  34  node35    0.00%    passed     77.14%
+  35  node6     0.00%    passed     91.95%
+  36  node12    0.00%    passed     98.07%
+  37  node48    0.00%    passed     66.84%
+  38  node27    0.00%    failed      3.02%
+  39  node29    0.00%    passed     79.65%
+  40  node36    0.00%    passed     63.23%
+  41  node9     0.00%    passed     89.43%
+  42  node33    0.00%    passed     75.76%
+  43  node2     0.00%    passed     57.54%
+  44  node15    0.00%    passed     51.05%
+  45  node22    0.00%    passed     25.35%
+  46  node26    0.00%    passed     62.44%
+  47  node24    0.00%    passed     79.19%
+  48  node19    0.00%    passed     77.76%
+  49  node10    0.00%    passed     39.31%
+****  TOTAL     0.00%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 24 partitions...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		49	499	499	0		P0
+2		49	496	496	0		P1
+3		49	488	488	0		P2
+4		49	310	310	0		P3
+5		49	307	307	0		P4
+6		49	285	285	0		P5
+7		49	264	264	0		P6
+8		49	217	217	0		P7
+9		49	211	211	0		P8
+10		49	211	211	0		P9
+11		49	208	207	0		P10
+12		49	207	207	0		P11
+13		49	195	195	0		P12
+14		49	188	188	0		P13
+15		49	142	142	0		P14
+16		49	128	128	0		P15
+17		49	102	102	0		P16
+18		49	99	99	0		P17
+19		49	90	90	0		P18
+20		49	84	84	0		P19
+21		49	74	74	0		P20
+22		49	70	70	0		P21
+23		49	63	63	0		P22
+24		49	62	62	0		P23
+Degree of missing data: 0.000
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.048 seconds
+Perform fast likelihood tree search using GTR+ASC+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -282719.469
+Current log-likelihood at step 1: -274190.916
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -273404.672
+Current log-likelihood at step 3: -273135.078
+Current log-likelihood at step 4: -273061.388
+Current log-likelihood at step 5: -273041.368
+Current log-likelihood at step 6: -273029.361
+Current log-likelihood at step 7: -273021.311
+Current log-likelihood at step 8: -273014.875
+Current log-likelihood at step 9: -273009.589
+Current log-likelihood at step 10: -273005.129
+Parameters optimization took 9 rounds (9.030 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -272676.625
+Current log-likelihood at step 1: -272663.559
+Current log-likelihood at step 2: -272653.624
+Current log-likelihood at step 3: -272649.796
+Current log-likelihood at step 4: -272647.694
+Current log-likelihood at step 5: -272645.937
+Current log-likelihood at step 6: -272644.312
+Current log-likelihood at step 7: -272642.829
+Current log-likelihood at step 8: -272641.417
+Current log-likelihood at step 9: -272640.095
+Current log-likelihood at step 10: -272638.825
+Current log-likelihood at step 11: -272637.621
+Current log-likelihood at step 12: -272636.470
+Current log-likelihood at step 13: -272635.347
+Current log-likelihood at step 14: -272634.270
+Current log-likelihood at step 15: -272633.221
+Current log-likelihood at step 16: -272632.221
+Partition-specific rates:  0.069 0.458 0.511 0.435 0.548 1.540 0.392 0.952 0.855 0.089 0.234 0.518 6.751 0.802 0.417 1.538 0.079 4.558 3.472 2.722 3.084 0.331 1.530 0.165
+Parameters optimization took 15 rounds (9.258 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 22.209 seconds
+
+NOTE: ModelFinder requires 8 MB RAM!
+Selecting individual models for 24 charsets using BIC...
++R3 reinitialized from +R2 with factor 0.500
++R4 reinitialized from +R3 with factor 0.500
+Full partition model BIC score: 545887.822 (LnL: -271572.643  df:322)
+Partition information was printed to /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln.best_scheme.nex
+Partition information in Raxml format was printed to /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln.best_scheme
+
+All model information printed to /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln.model.gz
+CPU time for ModelFinder: 80.511 seconds (0h:1m:20s)
+Wall-clock time for ModelFinder: 81.726 seconds (0h:1m:21s)
+
+NOTE: 16 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -274532.771
+Current log-likelihood at step 1: -271695.373
+Current log-likelihood at step 2: -271588.115
+Current log-likelihood at step 3: -271575.423
+Current log-likelihood at step 4: -271569.557
+Current log-likelihood at step 5: -271567.239
+Current log-likelihood at step 6: -271566.628
+Current log-likelihood at step 7: -271566.183
+Current log-likelihood at step 8: -271565.979
+Current log-likelihood at step 9: -271565.841
+Current log-likelihood at step 10: -271565.725
+Current log-likelihood at step 11: -271565.627
+Partition-specific rates:  0.211 0.853 0.958 1.006 1.133 1.567 0.735 1.465 1.071 0.164 0.386 0.967 1.842 1.546 0.843 1.326 0.189 2.369 1.992 2.806 1.406 0.615 1.160 0.264
+Parameters optimization took 10 rounds (3.802 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000231899 secs using 99.18% CPU
+Computing ML distances took 0.000265 sec (of wall-clock time) 0.000266 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 8.48705e-05 secs using 95.44% CPU
+Computing RapidNJ tree took 0.001445 sec (of wall-clock time) 0.000440 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -294704.314
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 6.927 second
+Computing log-likelihood of 98 initial trees ... 10.105 seconds
+Current best score: -271565.627
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -271565.627
+Current log-likelihood at step 1: -271565.544
+Parameters optimization took 0 rounds (0.246 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -271565.544
+Iteration 10 / LogL: -271566.978 / Time: 0h:2m:2s
+Iteration 20 / LogL: -271568.009 / Time: 0h:2m:23s
+Finish initializing candidate tree set (1)
+Current best tree score: -271565.544 / CPU time: 54.109
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -271889.139 / Time: 0h:2m:41s (0h:3m:14s left)
+Iteration 40 / LogL: -271565.809 / Time: 0h:3m:2s (0h:2m:37s left)
+Iteration 50 / LogL: -271878.820 / Time: 0h:3m:23s (0h:2m:6s left)
+Iteration 60 / LogL: -271568.060 / Time: 0h:3m:43s (0h:1m:38s left)
+Iteration 70 / LogL: -271566.416 / Time: 0h:4m:7s (0h:1m:14s left)
+Iteration 80 / LogL: -271565.673 / Time: 0h:4m:31s (0h:0m:50s left)
+Iteration 90 / LogL: -271566.689 / Time: 0h:5m:1s (0h:0m:27s left)
+Iteration 100 / LogL: -271591.791 / Time: 0h:5m:27s (0h:0m:2s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:5m:33s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -271565.544
+Current log-likelihood at step 1: -271565.469
+Current log-likelihood at step 2: -271565.400
+Current log-likelihood at step 3: -271565.323
+Current log-likelihood at step 4: -271565.252
+Current log-likelihood at step 5: -271565.197
+Current log-likelihood at step 6: -271565.147
+Current log-likelihood at step 7: -271565.101
+Current log-likelihood at step 8: -271565.056
+Current log-likelihood at step 9: -271565.014
+Current log-likelihood at step 10: -271564.973
+Current log-likelihood at step 11: -271564.933
+Current log-likelihood at step 12: -271564.894
+Current log-likelihood at step 13: -271564.858
+Current log-likelihood at step 14: -271564.821
+Current log-likelihood at step 15: -271564.785
+Current log-likelihood at step 16: -271564.752
+Current log-likelihood at step 17: -271564.720
+Current log-likelihood at step 18: -271564.690
+Current log-likelihood at step 19: -271564.660
+Current log-likelihood at step 20: -271564.631
+Current log-likelihood at step 21: -271564.603
+Current log-likelihood at step 22: -271564.576
+Current log-likelihood at step 23: -271564.550
+Current log-likelihood at step 24: -271564.524
+Current log-likelihood at step 25: -271564.499
+Current log-likelihood at step 26: -271564.474
+Current log-likelihood at step 27: -271564.451
+Current log-likelihood at step 28: -271564.427
+Current log-likelihood at step 29: -271564.405
+Current log-likelihood at step 30: -271564.384
+Current log-likelihood at step 31: -271564.364
+Current log-likelihood at step 32: -271564.344
+Current log-likelihood at step 33: -271564.325
+Current log-likelihood at step 34: -271564.306
+Current log-likelihood at step 35: -271564.287
+Current log-likelihood at step 36: -271564.268
+Current log-likelihood at step 37: -271564.250
+Current log-likelihood at step 38: -271564.233
+Current log-likelihood at step 39: -271564.217
+Current log-likelihood at step 40: -271564.201
+Current log-likelihood at step 41: -271564.185
+Current log-likelihood at step 42: -271564.170
+Current log-likelihood at step 43: -271564.155
+Current log-likelihood at step 44: -271564.141
+Current log-likelihood at step 45: -271564.126
+Current log-likelihood at step 46: -271564.112
+Current log-likelihood at step 47: -271564.099
+Current log-likelihood at step 48: -271564.085
+Current log-likelihood at step 49: -271564.073
+Current log-likelihood at step 50: -271564.059
+Current log-likelihood at step 51: -271564.046
+Current log-likelihood at step 52: -271564.034
+Current log-likelihood at step 53: -271564.022
+Current log-likelihood at step 54: -271564.010
+Current log-likelihood at step 55: -271563.999
+Current log-likelihood at step 56: -271563.988
+Current log-likelihood at step 57: -271563.977
+Current log-likelihood at step 58: -271563.967
+Current log-likelihood at step 59: -271563.956
+Current log-likelihood at step 60: -271563.946
+Current log-likelihood at step 61: -271563.936
+Current log-likelihood at step 62: -271563.926
+Partition-specific rates:  0.208 0.833 0.937 0.963 1.103 1.515 0.718 1.433 1.044 0.160 0.381 0.945 2.108 1.667 0.970 1.299 0.184 2.309 1.951 2.905 1.379 0.602 1.138 0.261
+Parameters optimization took 61 rounds (20.989 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Partition information was printed to /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln.best_model.nex
+BEST SCORE FOUND : -271563.926
+Total tree length: 96.201
+
+Total number of iterations: 102
+CPU time used for tree search: 230.269 sec (0h:3m:50s)
+Wall-clock time used for tree search: 244.043 sec (0h:4m:4s)
+Total CPU time used: 338.713 sec (0h:5m:38s)
+Total wall-clock time used: 354.368 sec (0h:5m:54s)
+
+Analysis results written to: 
+  IQ-TREE report:                /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln.iqtree
+  Maximum-likelihood tree:       /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln.treefile
+  Likelihood distances:          /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln.mldist
+  Screen log file:               /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_4/3/partition/aln.log
+
+Date and Time: Thu Oct 15 16:51:43 2026

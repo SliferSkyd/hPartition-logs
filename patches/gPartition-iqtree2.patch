@@ -1,0 +1,39 @@
+diff --git a/config.py b/config.py
+index e82213d..9bd2342 100644
+--- a/config.py
++++ b/config.py
+@@ -1 +1 @@
+-iqtree_path = "bin" 
++iqtree_path = "/home/diepht/sliferskyd/hPartition/iqtree-2.4.0-Linux-intel/bin"
+diff --git a/gPartition.py b/gPartition.py
+index 4f52949..a611216 100644
+--- a/gPartition.py
++++ b/gPartition.py
+@@ -617,7 +617,7 @@ print("Complete to create the partition by sRate")
+ 
+ #using iqtree to get the best models for each subsets
+ if not os.path.isfile(output+"/"+filename+".S1.iqtree"):
+-	command = iqtree_path+"iqtree -s "+filex+" -m MFP -fast -spp "+output+"/"+filename+".nex -safe -pre "+output+"/"+filename+".S1 -seed 0 -redo"
++	command = iqtree_path+"iqtree2 -s "+filex+" -m MFP -fast -spp "+output+"/"+filename+".nex -safe -pre "+output+"/"+filename+".S1 -seed 0 -redo"
+ 	os.system(command)
+ 
+ #best model list
+@@ -765,14 +765,14 @@ ssLh = open(output+"/"+filename+".sitelh","w+")
+ while subsetId < len(newBestModel):
+ 	if(removeGapsPhylip(filex, output) == 0):
+ 		if not os.path.isfile(output+"/"+filename+".treefile"):
+-			command = iqtree_path+"iqtree -s "+filex+" -m \""+newBestModel[subsetId].replace("+ASC","")+"\" -fast -te BIONJ -safe -pre "+output+"/"+filename+"."+str(subsetId)+" -wsl -blfix -seed 0 -redo"
++			command = iqtree_path+"iqtree2 -s "+filex+" -m \""+newBestModel[subsetId].replace("+ASC","")+"\" -fast -te BIONJ -safe -pre "+output+"/"+filename+"."+str(subsetId)+" -wsl -blfix -seed 0 -redo"
+ 		else:
+-			command = iqtree_path+"iqtree -s "+filex+" -m \""+newBestModel[subsetId].replace("+ASC","")+"\" -fast -te "+output+"/"+filename+".treefile -safe -pre "+output+"/"+filename+"."+str(subsetId)+" -wsl -blfix -seed 0 -redo"
++			command = iqtree_path+"iqtree2 -s "+filex+" -m \""+newBestModel[subsetId].replace("+ASC","")+"\" -fast -te "+output+"/"+filename+".treefile -safe -pre "+output+"/"+filename+"."+str(subsetId)+" -wsl -blfix -seed 0 -redo"
+ 	else:
+ 		if not os.path.isfile(output+"/"+filename+".treefile"):
+-			command = iqtree_path+"iqtree -s "+output+"/"+filename+".RG -m \""+newBestModel[subsetId].replace("+ASC","")+"\" -fast -te BIONJ -safe -pre "+output+"/"+filename+"."+str(subsetId)+" -wsl -blfix -seed 0 -redo"
++			command = iqtree_path+"iqtree2 -s "+output+"/"+filename+".RG -m \""+newBestModel[subsetId].replace("+ASC","")+"\" -fast -te BIONJ -safe -pre "+output+"/"+filename+"."+str(subsetId)+" -wsl -blfix -seed 0 -redo"
+ 		else:
+-			command = iqtree_path+"iqtree -s "+output+"/"+filename+".RG -m \""+newBestModel[subsetId].replace("+ASC","")+"\" -fast -te "+output+"/"+filename+".treefile -safe -pre "+output+"/"+filename+"."+str(subsetId)+" -wsl -blfix -seed 0 -redo"
++			command = iqtree_path+"iqtree2 -s "+output+"/"+filename+".RG -m \""+newBestModel[subsetId].replace("+ASC","")+"\" -fast -te "+output+"/"+filename+".treefile -safe -pre "+output+"/"+filename+"."+str(subsetId)+" -wsl -blfix -seed 0 -redo"
+ 	os.system(command)
+ 	if not os.path.isfile(output+"/"+filename+".treefile") and os.path.isfile(output+"/"+filename+"."+str(subsetId)+".treefile"):
+ 		if "WINDOW" in os_type.upper():

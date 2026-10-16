@@ -1,0 +1,551 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    fit15.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/sliferskyd/hPartition/iqtree-2.4.0-Linux-intel/bin/iqtree2 -seed 0 -s /home/diepht/sliferskyd/hPartition-datasets/DNA/simulated-1/loci_1/1.phy -p /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/hPartition/aln.partitions -pre /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln -redo -T 1
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Oct 15 16:47:28 2026
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/hPartition/aln.partitions ...
+Reading alignment file /home/diepht/sliferskyd/hPartition-datasets/DNA/simulated-1/loci_1/1.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 49 sequences with 5000 columns, 4992 distinct patterns
+4979 parsimony-informative, 17 singleton sites, 4 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00112798 secs using 99.03% CPU
+   1  node14    0.00%    passed     58.90%
+   2  node7     0.00%    passed     45.29%
+   3  node30    0.00%    passed     72.76%
+   4  node31    0.00%    passed     66.07%
+   5  node5     0.00%    passed     81.33%
+   6  node22    0.00%    passed     36.86%
+   7  node8     0.00%    passed     81.56%
+   8  node34    0.00%    passed     59.76%
+   9  node32    0.00%    passed     35.50%
+  10  node45    0.00%    passed     16.32%
+  11  node44    0.00%    passed     80.85%
+  12  node3     0.00%    passed     94.17%
+  13  node18    0.00%    passed     94.70%
+  14  node48    0.00%    passed     27.04%
+  15  node46    0.00%    failed      0.99%
+  16  node24    0.00%    passed      6.68%
+  17  node12    0.00%    passed     64.79%
+  18  node4     0.00%    passed     26.47%
+  19  node40    0.00%    passed     73.12%
+  20  node47    0.00%    passed     86.33%
+  21  node26    0.00%    passed     89.06%
+  22  node39    0.00%    passed     44.41%
+  23  node38    0.00%    passed     64.76%
+  24  node33    0.00%    passed     95.80%
+  25  node1     0.00%    passed     18.53%
+  26  node43    0.00%    passed     19.92%
+  27  node13    0.00%    passed     19.42%
+  28  node17    0.00%    passed     82.29%
+  29  node6     0.00%    passed     65.92%
+  30  node21    0.00%    passed     89.10%
+  31  node11    0.00%    passed     19.35%
+  32  node20    0.00%    passed     13.09%
+  33  node15    0.00%    passed     71.93%
+  34  node27    0.00%    passed     30.71%
+  35  node16    0.00%    passed     21.38%
+  36  node36    0.00%    passed     47.85%
+  37  node37    0.00%    passed     78.01%
+  38  node29    0.00%    passed     66.42%
+  39  node2     0.00%    passed     27.42%
+  40  node25    0.00%    passed     47.75%
+  41  node9     0.00%    passed     33.82%
+  42  node23    0.00%    passed     72.14%
+  43  node10    0.00%    passed     83.01%
+  44  node41    0.00%    passed     81.52%
+  45  node42    0.00%    passed     31.45%
+  46  node0     0.00%    passed     14.02%
+  47  node35    0.00%    passed     11.69%
+  48  node19    0.00%    passed     50.99%
+  49  node28    0.00%    passed     96.85%
+****  TOTAL     0.00%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 21 partitions...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		49	654	634	3		P0
+2		49	499	499	0		P1
+3		49	420	420	0		P2
+4		49	382	382	0		P3
+5		49	319	319	0		P4
+6		49	311	311	0		P5
+7		49	284	284	0		P6
+8		49	268	268	0		P7
+9		49	243	243	0		P8
+10		49	220	220	0		P9
+11		49	219	219	0		P10
+12		49	178	178	0		P11
+13		49	160	160	0		P12
+14		49	140	140	0		P13
+15		49	127	127	0		P14
+16		49	118	118	0		P15
+17		49	117	117	0		P16
+18		49	112	112	0		P17
+19		49	97	97	0		P18
+20		49	81	81	0		P19
+21		49	51	50	1		P20
+Degree of missing data: 0.000
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.036 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -241349.890
+Current log-likelihood at step 1: -229201.326
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -226716.878
+Current log-likelihood at step 3: -226275.294
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 4: -226219.427
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 5: -226188.908
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 6: -226164.322
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 7: -226121.469
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 8: -226097.285
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 9: -226087.564
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 10: -226080.692
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 11: -226075.889
+Parameters optimization took 10 rounds (11.190 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -225721.328
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 1: -225715.375
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -225711.577
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -225707.629
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 4: -225703.876
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 5: -225700.037
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 6: -225696.773
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 7: -225693.542
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 8: -225690.210
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 9: -225687.020
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 10: -225683.771
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 11: -225680.538
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 12: -225677.403
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 13: -225674.148
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 14: -225670.887
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 15: -225667.731
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 16: -225664.448
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 17: -225661.419
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 18: -225658.292
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 19: -225655.282
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 20: -225652.283
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 21: -225649.450
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 22: -225646.725
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 23: -225643.899
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 24: -225641.452
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 25: -225639.074
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 26: -225636.683
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 27: -225634.167
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 28: -225632.114
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 29: -225630.119
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 30: -225628.200
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 31: -225626.438
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 32: -225625.407
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 33: -225624.977
+Partition-specific rates:  0.764 0.592 2.784 0.596 1.326 1.701 0.533 0.628 0.820 1.855 0.743 1.012 0.448 0.910 0.402 0.480 0.763 0.738 0.661 0.468 0.095
+Parameters optimization took 32 rounds (23.037 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 38.010 seconds
+
+NOTE: ModelFinder requires 10 MB RAM!
+Selecting individual models for 21 charsets using BIC...
++R3 reinitialized from +R2 with factor 0.500
++R3 reinitialized from +R2 with factor 0.250
++R4 reinitialized from +R3 with factor 0.500
++R4 reinitialized from +R3 with factor 0.500
++R4 reinitialized from +R3 with factor 0.500
++R4 reinitialized from +R3 with factor 0.500
+Full partition model BIC score: 451378.241 (LnL: -224466.903  df:287)
+Partition information was printed to /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln.best_scheme.nex
+Partition information in Raxml format was printed to /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln.best_scheme
+
+All model information printed to /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln.model.gz
+CPU time for ModelFinder: 176.454 seconds (0h:2m:56s)
+Wall-clock time for ModelFinder: 178.079 seconds (0h:2m:58s)
+
+NOTE: 16 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -238052.903
+Current log-likelihood at step 1: -225876.367
+Current log-likelihood at step 2: -224893.436
+Current log-likelihood at step 3: -224730.176
+Current log-likelihood at step 4: -224663.495
+Current log-likelihood at step 5: -224633.264
+Current log-likelihood at step 6: -224612.883
+Current log-likelihood at step 7: -224599.238
+Current log-likelihood at step 8: -224595.367
+Current log-likelihood at step 9: -224582.475
+Current log-likelihood at step 10: -224578.303
+Current log-likelihood at step 11: -224575.355
+Current log-likelihood at step 12: -224571.700
+Current log-likelihood at step 13: -224569.752
+Current log-likelihood at step 14: -224568.437
+Current log-likelihood at step 15: -224567.732
+Current log-likelihood at step 16: -224567.117
+Current log-likelihood at step 17: -224565.940
+Current log-likelihood at step 18: -224564.753
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 19: -224564.455
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 20: -224564.014
+Current log-likelihood at step 21: -224563.418
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 22: -224562.642
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 23: -224562.458
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 24: -224562.147
+Current log-likelihood at step 25: -224561.750
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 26: -224561.462
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 27: -224561.343
+Current log-likelihood at step 28: -224560.921
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 29: -224560.646
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 30: -224560.535
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 31: -224559.959
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 32: -224559.855
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 33: -224559.765
+Partition-specific rates:  0.560 0.912 1.369 1.111 1.005 0.854 0.874 1.024 1.466 1.381 1.143 1.343 0.687 1.404 0.763 0.824 1.055 1.181 1.007 0.743 0.139
+Parameters optimization took 32 rounds (16.014 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000228324 secs using 98.98% CPU
+Computing ML distances took 0.000252 sec (of wall-clock time) 0.000254 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 8.08183e-05 secs using 91.56% CPU
+Computing RapidNJ tree took 0.000350 sec (of wall-clock time) 0.000340 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -247444.774
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 6.612 second
+Computing log-likelihood of 98 initial trees ... 10.483 seconds
+Current best score: -224559.765
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -224559.765
+Current log-likelihood at step 1: -224559.587
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -224559.397
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -224559.282
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 4: -224559.184
+Parameters optimization took 3 rounds (1.829 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -224559.184
+Iteration 10 / LogL: -224559.189 / Time: 0h:4m:8s
+Iteration 20 / LogL: -224559.188 / Time: 0h:4m:55s
+Finish initializing candidate tree set (5)
+Current best tree score: -224559.184 / CPU time: 98.843
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -224559.185 / Time: 0h:5m:28s (0h:6m:8s left)
+Iteration 40 / LogL: -224559.443 / Time: 0h:5m:56s (0h:4m:38s left)
+Iteration 50 / LogL: -224559.828 / Time: 0h:6m:24s (0h:3m:34s left)
+Iteration 60 / LogL: -224565.792 / Time: 0h:6m:56s (0h:2m:45s left)
+Iteration 70 / LogL: -224559.188 / Time: 0h:7m:26s (0h:2m:0s left)
+Iteration 80 / LogL: -224559.811 / Time: 0h:7m:56s (0h:1m:19s left)
+Iteration 90 / LogL: -224559.283 / Time: 0h:8m:24s (0h:0m:40s left)
+Iteration 100 / LogL: -224559.188 / Time: 0h:9m:5s (0h:0m:3s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:9m:15s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -224559.184
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 1: -224559.114
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -224559.005
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -224558.928
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 4: -224558.838
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 5: -224558.759
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 6: -224558.674
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 7: -224558.613
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 8: -224558.406
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 9: -224558.275
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 10: -224558.203
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 11: -224558.122
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 12: -224558.055
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 13: -224558.006
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 14: -224555.907
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 15: -224553.928
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 16: -224553.693
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 17: -224553.634
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 18: -224553.600
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 19: -224553.566
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 20: -224553.510
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 21: -224553.468
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 22: -224553.435
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 23: -224552.766
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 24: -224552.715
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 25: -224552.686
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 26: -224552.627
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 27: -224552.583
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 28: -224552.258
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 29: -224552.133
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 30: -224552.098
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 31: -224552.074
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 32: -224552.025
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 33: -224551.983
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 34: -224551.960
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 35: -224551.918
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 36: -224551.884
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 37: -224551.862
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 38: -224551.821
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 39: -224551.787
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 40: -224551.767
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 41: -224551.714
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 42: -224551.663
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 43: -224551.640
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 44: -224551.602
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 45: -224551.570
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 46: -224551.551
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 47: -224551.514
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 48: -224551.485
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 49: -224551.467
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 50: -224551.433
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 51: -224551.404
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 52: -224551.387
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 53: -224551.354
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 54: -224551.328
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 55: -224551.312
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 56: -224551.280
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 57: -224551.254
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 58: -224551.239
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 59: -224551.208
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 60: -224551.182
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 61: -224551.168
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 62: -224551.138
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 63: -224551.114
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 64: -224551.100
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 65: -224551.071
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 66: -224551.048
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 67: -224551.035
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 68: -224551.007
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 69: -224550.983
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 70: -224550.971
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 71: -224550.943
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 72: -224550.920
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 73: -224550.908
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 74: -224550.881
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 75: -224550.858
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 76: -224550.846
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 77: -224550.819
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 78: -224550.797
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 79: -224550.785
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 80: -224550.558
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 81: -224550.433
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 82: -224550.409
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 83: -224550.398
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 84: -224550.356
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 85: -224550.334
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 86: -224550.321
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 87: -224550.310
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 88: -224550.290
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 89: -224550.274
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 90: -224550.263
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 91: -224549.487
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 92: -224548.628
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 93: -224548.436
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 94: -224548.409
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 95: -224548.396
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 96: -224548.381
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 97: -224548.364
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 98: -224548.336
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 99: -224548.264
+Partition-specific rates:  0.552 0.901 1.359 1.181 1.009 0.843 0.863 1.014 1.446 1.357 1.129 1.327 0.680 1.522 0.779 0.821 1.041 1.167 0.995 0.734 0.137
+Parameters optimization took 99 rounds (38.311 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Partition information was printed to /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln.best_model.nex
+BEST SCORE FOUND : -224548.264
+Total tree length: 133.106
+
+Total number of iterations: 102
+CPU time used for tree search: 339.007 sec (0h:5m:39s)
+Wall-clock time used for tree search: 358.971 sec (0h:5m:58s)
+Total CPU time used: 571.093 sec (0h:9m:31s)
+Total wall-clock time used: 593.667 sec (0h:9m:53s)
+
+Analysis results written to: 
+  IQ-TREE report:                /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln.iqtree
+  Maximum-likelihood tree:       /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln.treefile
+  Likelihood distances:          /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln.mldist
+  Screen log file:               /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-1/loci_1/1/partition/aln.log
+
+Date and Time: Thu Oct 15 16:57:22 2026

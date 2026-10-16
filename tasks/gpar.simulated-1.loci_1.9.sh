@@ -1,0 +1,6 @@
+set -e
+rm -rf /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/partition; mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/partition
+cd /home/diepht/sliferskyd/hPartition/gPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/gPartition/time.txt /home/diepht/anaconda3/bin/python gPartition.py -f /home/diepht/sliferskyd/hPartition-datasets/DNA/simulated-1/loci_1/9.phy -o /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/gPartition/ > /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/gPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition-datasets/DNA/simulated-1/loci_1/9.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/gPartition/9.phy.FINAL.nex /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/partition
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out/gPartition/simulated-1/loci_1/9/partition/aln.treefile

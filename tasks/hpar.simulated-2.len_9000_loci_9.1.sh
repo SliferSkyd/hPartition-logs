@@ -1,0 +1,6 @@
+set -e
+mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/hPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/partition
+cd /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/hPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/hPartition/time.txt /home/diepht/sliferskyd/hPartition/iqtree2/build/iqtree2 -seed 0 -s /home/diepht/sliferskyd/hPartition-datasets/DNA/simulated-2/len_9000_loci_9/1.phy -pre /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/hPartition/aln -hPartition -redo -mset JC69,F81,HKY,GTR -T 1 > /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/hPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition-datasets/DNA/simulated-2/len_9000_loci_9/1.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/hPartition/aln.partitions /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/partition
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out/hPartition/simulated-2/len_9000_loci_9/1/partition/aln.treefile
