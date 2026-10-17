@@ -1,0 +1,162 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/measles/measles.parts
+Input file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/measles/measles.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 taxa with 4 partitions and 15891 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	20	5420	2	0	5420	5420	part1
+   2	DNA	20	6253	2	0	6253	6253	part2
+   3	DNA	20	4217	1474	1779	271	271	part3
+   4	DNA	20	1	1	0	0	0	part4
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F:part1,F81+F:part2,TVM+F:part3,TVM+F+ASC+R5:part4
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  F81+F             -3755.763    7519.525 + 1.22e-316    7519.533 - 5.4e-317    7545.917 - 7.38e-317
+   2  F81+F             -4280.444    8568.887 + 1.22e-316    8568.894 - 5.4e-317    8595.851 - 7.38e-317
+   3  TVM+F            -30631.371   61278.741 + 1.22e-316   61278.776 - 5.4e-317   61329.516 - 7.38e-317
+   4  TVM+F+ASC+R5        -11.229      54.458 + 1.22e-316     598.458 - 5.4e-317      22.458 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  F81+F          0.0002  F81+F{0,0.487823,0.512177,0}
+   2  F81+F          0.0002  F81+F{0.565808,0,0,0.434192}
+   3  TVM+F          3.7615  TVM{1.37157,11.2303,0.639421,0.423853}+F{0.261089,0.273791,0.226545,0.238574}
+   4  TVM+F+ASC+R5   26.2832  TVM{5.80427,26.8525,99.9969,52.3962}+F{0.05,0.85,0.05,0.05}+ASC+R5{0.200199,0.991293,0.20014,1.00154,0.199769,1.00239,0.199944,1.00239,0.199948,1.0024}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -38678.8023 (s.e. 415.0929)
+Unconstrained log-likelihood (without tree): -34922.1582
+Number of free parameters (#branches + #model parameters): 68
+Akaike information criterion (AIC) score: 77493.6045
+Corrected Akaike information criterion (AICc) score: 77494.1976
+Bayesian information criterion (BIC) score: 78015.4031
+
+Total tree length (sum of branch lengths): 0.4042
+Sum of internal branch lengths: 0.0943 (23.3262% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'PV948899.1' is drawn at root
+
++--PV948899.1
+|
+|                                   +----------PQ778443.1
+|      +----------------------------|
+|      |                            +----------PX600519.1
+|   +--|
+|   |  |                 +---------------------MN017369.1
+|   |  |              +--|
+|   |  |              |  |  +---------------JN635410.1
+|   |  |              |  +--|
+|   |  |              |     +------BD137592.1
+|   |  |           +--|
+|   |  |           |  +----------------------PX932162.1
+|   |  |        +--|
+|   |  |        |  +-----------------OK424771.1
+|   |  |     +--|
+|   |  |     |  |       +--------BD137593.1
+|   |  |     |  |    +--|
+|   |  |     |  |    |  +------------------KY969476.1
+|   |  |     |  +----|
+|   |  |     |       +--------------JN635406.1
+|   |  |  +--|
+|   |  |  |  +------------------DQ227318.1
+|   |  +--|
+|   |     |                    +------------MG912591.1
+|   |     |  +-----------------|
+|   |     |  |                 +--------------KC164758.1
+|   |     +--|
+|   |        +-------------------------------------------------ON035953.1
++---|
+|   |         +---------LC655229.1
+|   |  +------|
+|   |  |      +----------LC655226.1
+|   +--|
+|      |       +-------MG912589.1
+|      +-------|
+|              +--BD137591.1
+|
++--E04903.1
+
+Tree in newick format:
+
+(PV948899.1:0.0016723090,(((PQ778443.1:0.0117298426,PX600519.1:0.0120642250):0.0311551734,((((((MN017369.1:0.0241279415,(JN635410.1:0.0176995997,BD137592.1:0.0082121369):0.0005243119):0.0002685344,PX932162.1:0.0253272924):0.0006171360,OK424771.1:0.0197198156):0.0005861577,((BD137593.1:0.0096957243,KY969476.1:0.0203613566):0.0007679382,JN635406.1:0.0161210471):0.0056378024):0.0040036268,DQ227318.1:0.0201062627):0.0039011254,((MG912591.1:0.0141830052,KC164758.1:0.0159865126):0.0198249342,ON035953.1:0.0538967562):0.0035979199):0.0012064645):0.0001478985,((LC655229.1:0.0114813183,LC655226.1:0.0123208026):0.0076074512,(MG912589.1:0.0090652568,BD137591.1:0.0038821017):0.0088207008):0.0009917067):0.0046165857,E04903.1:0.0022323780);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/measles/measles.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/measles/measles.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/measles/measles.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/measles/measles.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 17 13:18:38 2026
+Total CPU time used: 32.7369 seconds (0h:0m:32s)
+Total wall-clock time used: 10.1384 seconds (0h:0m:10s)
+

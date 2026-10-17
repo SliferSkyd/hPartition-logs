@@ -1,0 +1,180 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/zika/hPartition/aln.partitions
+Input file name: /home/diepht/sliferskyd/hPartition/rna_datasets/aln/zika.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 taxa with 9 partitions and 10568 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	20	1285	56	402	787	787	P0
+   2	DNA	20	1059	114	194	843	843	P1
+   3	DNA	20	1054	36	263	722	722	P2
+   4	DNA	20	1048	88	139	856	856	P3
+   5	DNA	20	1011	37	212	754	754	P4
+   6	DNA	20	958	87	92	845	845	P5
+   7	DNA	20	2469	13	0	2469	2469	P6_P9_P10
+   8	DNA	20	846	23	12	817	817	P7
+   9	DNA	20	838	30	28	794	794	P8
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F:P0,TIM3+F+I:P1,TIM+F:P2,TPM2u+F+I:P3,GTR+F:P4,HKY+F+I:P5,F81+F:P6_P9_P10,GTR+F+I:P7,GTR+F+I:P8
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F             -3185.666    6389.331 + 1.22e-316    6389.472 - 5.4e-317    6435.758 - 7.38e-317
+   2  TIM3+F+I          -2979.110    5974.220 + 1.22e-316    5974.357 - 5.4e-317    6013.941 - 7.38e-317
+   3  TIM+F             -2523.806    5061.612 + 1.22e-316    5061.719 - 5.4e-317    5096.334 - 7.38e-317
+   4  TPM2u+F+I         -2448.240    4910.480 + 1.22e-316    4910.588 - 5.4e-317    4945.163 - 7.38e-317
+   5  GTR+F             -2270.135    4558.270 + 1.22e-316    4558.449 - 5.4e-317    4602.538 - 7.38e-317
+   6  HKY+F+I           -2284.627    4581.255 + 1.22e-316    4581.343 - 5.4e-317    4610.444 - 7.38e-317
+   7  F81+F             -3403.274    6814.548 + 1.22e-316    6814.564 - 5.4e-317    6837.794 - 7.38e-317
+   8  GTR+F+I           -1363.583    2747.166 + 1.22e-316    2747.429 - 5.4e-317    2794.571 - 7.38e-317
+   9  GTR+F+I           -1436.073    2892.146 + 1.22e-316    2892.412 - 5.4e-317    2939.457 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F          1.5326  GTR{0.0001,100,0.0001,0.0001,0.0001}+F{0.366888,0.121906,0.419328,0.0918782}
+   2  TIM3+F+I       3.0622  TIM3{0.0001,0.0001,100}+F{0.235899,0.278996,0.288847,0.196259}+I{0.512276}
+   3  TIM+F          1.2154  TIM{0.0001,0.0001,100}+F{0.148934,0.465645,0.158308,0.227113}
+   4  TPM2u+F+I      0.7461  TPM2u{1.78314,0.019053}+F{0.351416,0.153703,0.358113,0.136768}+I{0.36459}
+   5  GTR+F          0.9560  GTR{0.0001,0.0001,0.0001,0.0001,100}+F{0.151434,0.241342,0.189193,0.418031}
+   6  HKY+F+I        1.5543  HKY{12.9498}+F{0.291937,0.120314,0.344398,0.243351}+I{0.864177}
+   7  F81+F          0.0083  F81+F{0.269725,0.214126,0.321118,0.195031}
+   8  GTR+F+I        0.4115  GTR{0.0001,0.0001,0.0001,0.0001,37.6232}+F{0.289093,0.223118,0.166805,0.320984}+I{0.925823}
+   9  GTR+F+I        0.5593  GTR{0.0001,38.272,0.0001,0.0001,0.0001}+F{0.362602,0.179804,0.289051,0.168543}+I{0.900297}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -21875.5623 (s.e. 177.4016)
+Unconstrained log-likelihood (without tree): -21429.6081
+Number of free parameters (#branches + #model parameters): 106
+Akaike information criterion (AIC) score: 43963.1245
+Corrected Akaike information criterion (AICc) score: 43965.2930
+Bayesian information criterion (BIC) score: 44733.2766
+
+Total tree length (sum of branch lengths): 0.3173
+Sum of internal branch lengths: 0.2694 (84.8953% of tree length)
+
+WARNING: 4 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'MK105975' is drawn at root
+
++**MK105975
+|
+|                                                                +--PP626403
+|                                                             +--|
+|                                                             |  +--KY241759
+|                                                          +--|
+|                                                          |  |              +--KU853013
+|                                                          |  |           +--|
+|                                                          |  |           |  +--MF073359
+|                                                          |  |        +--|
+|                                                          |  |        |  |     +--MH157213
+|                                                          |  |        |  |  +**|
+|                                                          |  |        |  |  |  |     +--PP872156
+|                                                          |  |        |  |  |  |  +--|
+|                                                          |  |        |  |  |  |  |  +--MW122408
+|                                                          |  |        |  |  |  +--|
+|                                                          |  |        |  |  |     +--MK241416
+|                                                          |  |        |  +**|
+|                                                          |  |        |     |  +--PP431231
+|                                                          |  |        |     +**|
+|                                                          |  |        |        +--KY003154
+|                                                          |  |     +--|
+|                                                          |  |     |  +--PZ933724
+|                                                          |  |  +--|
+|                                                          |  |  |  +--KX447517
+|                                                          |  +--|
+|                                                          |     +--OR264647
+|                                                       +**|
+|                                                       |  |   +--KY553111
+|                                                       |  +---|
+|                                                       |      +--KY120353
+|                                                    +--|
+|                                                    |  +--PQ008648
+|                                             +------|
+|                                             |      +--MG770187
++---------------------------------------------|
+|                                             +**PQ869247
+|
++--MH061881
+
+Tree in newick format:
+
+(MK105975:0.0000024688,((((((PP626403:0.0050824470,KY241759:0.0010931628):0.0029248484,(((((KU853013:0.0019186389,MF073359:0.0011503606):0.0004552152,((MH157213:0.0021995527,((PP872156:0.0001883316,MW122408:0.0008668518):0.0012383488,MK241416:0.0014339958):0.0007728569):0.0000756940,(PP431231:0.0022837416,KY003154:0.0027697041):0.0000886880):0.0000017631):0.0007367665,PZ933724:0.0003728132):0.0001125627,KX447517:0.0012215666):0.0012266497,OR264647:0.0092757279):0.0007713233):0.0005172246,(KY553111:0.0001639615,KY120353:0.0001259463):0.0210524474):0.0000023505,PQ008648:0.0160116959):0.0050769177,MG770187:0.0001690973):0.0334893383,PQ869247:0.0000025122):0.2008280410,MH061881:0.0015942263);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/zika/partition/aln.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/zika/partition/aln.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/aln/zika.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/aln/zika.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 17 08:48:29 2026
+Total CPU time used: 14.0666 seconds (0h:0m:14s)
+Total wall-clock time used: 16.0475 seconds (0h:0m:16s)
+

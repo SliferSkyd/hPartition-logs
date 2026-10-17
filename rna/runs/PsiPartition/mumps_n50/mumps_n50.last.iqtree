@@ -1,0 +1,219 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/mumps_n50/mumps_n50.parts
+Input file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/mumps_n50/mumps_n50.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 50 taxa with 2 partitions and 15382 total sites (0.000260044% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	50	15380	2400	3313	11007	11007	part1
+   2	DNA	49	2	2	1	0	0	part2
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+G4:part1,HKY+F+ASC:part2
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F+I+G4       -65922.671  131867.342 + 2.18e-316  131867.359 - 5.4e-317  131951.391 - 7.38e-317
+   2  HKY+F+ASC           -14.390      38.779 + 2.18e-316      98.779 - 5.4e-317      32.245 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F+I+G4     0.9998  GTR{1.14019,5.92451,0.640877,0.134129,7.85346}+F{0.308157,0.220484,0.204138,0.267221}+I{0.360292}+G4{0.902487}
+   2  HKY+F+ASC      2.8390  HKY{1}+F{0.918367,0.0306122,0.0510204,6.4e-15}+ASC
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -65938.1849 (s.e. 590.8770)
+Unconstrained log-likelihood (without tree): -57044.9134
+Number of free parameters (#branches + #model parameters): 112
+Akaike information criterion (AIC) score: 132100.3697
+Corrected Akaike information criterion (AICc) score: 132102.0275
+Bayesian information criterion (BIC) score: 132956.1565
+
+Total tree length (sum of branch lengths): 0.5163
+Sum of internal branch lengths: 0.3077 (59.6031% of tree length)
+
+WARNING: 4 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'KX223397' is drawn at root
+
++--KX223397
+|
+|                                                     +**AB000387
+|                                                  +--|
+|                                                  |  +--FJ375178
+|                                               +--|
+|                                               |  +--AB000388
+|                                           +---|
+|                                           |   |  +--AB827968
+|                                           |   +**|
+|                                           |      +--AB744048
+|                                        +--|
+|                                        |  |           +--AY309060
+|                                        |  |        +--|
+|                                        |  |        |  +-----MN630058
+|                                        |  +--------|
+|                                        |           |  +--KF878078
+|                                        |           +--|
+|                                        |              +--LC420150
+|                                     +--|
+|                                     |  |               +--PV668534
+|                                     |  |            +--|
+|                                     |  |            |  +--KF042304
+|                                     |  +------------|
+|                                     |               |     +------PV668540
+|                                     |               |  +--|
+|                                     |               |  |  +----KF170919
+|                                     |               +--|
+|                                     |                  +-----KF170918
+|            +------------------------|
+|            |                        |                              +--ON783700
+|            |                        |                        +-----|
+|            |                        |                        |     +--KF843896
+|            |                        |           +------------|
+|            |                        |           |            |     +---PZ803311
+|            |                        |           |            |  +--|
+|            |                        |           |            |  |  +--MT238689
+|            |                        |           |            +--|
+|            |                        |           |               +--KF843895
+|            |                        |        +--|
+|            |                        |        |  |                     +**LC727145
+|            |                        |        |  |                  +**|
+|            |                        |        |  |                  |  +--LC727147
+|            |                        |        |  |               +--|
+|            |                        |        |  |               |  +--LC727146
+|            |                        |        |  +---------------|
+|            |                        |        |                  +--LC731324
+|            |                        |     +--|
+|            |                        |     |  |             +----AY681495
+|            |                        |     |  |          +--|
+|            |                        |     |  |          |  +------JX287388
+|            |                        |     |  +----------|
+|            |                        |     |             |      +--MN630057
+|            |                        |     |             +------|
+|            |                        |     |                    |  +--MN630055
+|            |                        |     |                    +--|
+|            |                        |     |                       +--MN630054
+|            |                        |  +--|
+|            |                        |  |  |       +----KF878076
+|            |                        |  |  |    +--|
+|            |                        |  |  |    |  +-----------MW819866
+|            |                        |  |  +----|
+|            |                        |  |       |  +-----------JX287386
+|            |                        |  |       +--|
+|            |                        |  |          |              +--MG986430
+|            |                        |  |          |  +-----------|
+|            |                        |  |          |  |           +--MT238690
+|            |                        |  |          +--|
+|            |                        |  |             +---KF878080
+|            |                        +**|
+|            |                           |                          +--OK440783
+|            |                           |                       +--|
+|            |                           |                       |  |  +--OK440555
+|            |                           |                       |  +--|
+|            |                           |                       |     +--MK585598
+|            |                           |                  +----|
+|            |                           |                  |    +--PQ156995
+|            |                           |     +------------|
+|            |                           |     |            |  +----LC325488
+|            |                           |     |            +--|
+|            |                           |     |               +--LC633310
+|            |                           |  +--|
+|            |                           |  |  |         +--AY508995
+|            |                           |  |  +---------|
+|            |                           |  |            +--AY685920
+|            |                           +--|
+|            |                              +----------------KF878079
+|  +---------|
+|  |         |          +**LP741469
+|  |         |       +--|
+|  |         |       |  +**LP741468
+|  |         +-------|
+|  |                 +--MT732484
++--|
+|  +**BD293023
+|
+|  +**BD293022
++**|
+   +--JQ946552
+
+Tree in newick format:
+
+(KX223397:0.0036250223,((((((((AB000387:0.0000648565,FJ375178:0.0005888654):0.0005903094,AB000388:0.0007175608):0.0052453884,(AB827968:0.0050358529,AB744048:0.0050364866):0.0000020098):0.0064637359,((AY309060:0.0043553624,MN630058:0.0093561643):0.0036379681,(KF878078:0.0002045854,LC420150:0.0006463967):0.0043556880):0.0131180072):0.0041166697,((PV668534:0.0024364933,KF042304:0.0024125707):0.0052389594,((PV668540:0.0111819564,KF170919:0.0084502331):0.0019850143,KF170918:0.0095007027):0.0002525843):0.0187322863):0.0007798270,((((((ON783700:0.0000650792,KF843896:0.0001309581):0.0091197556,((PZ803311:0.0063202704,MT238689:0.0033967650):0.0037958720,KF843895:0.0045216845):0.0035816020):0.0187486086,(((LC727145:0.0000010000,LC727147:0.0001973601):0.0000010000,LC727146:0.0000665026):0.0012538321,LC731324:0.0028510428):0.0234093223):0.0006211783,((AY681495:0.0077496785,JX287388:0.0110132673):0.0028413459,(MN630057:0.0041325378,(MN630055:0.0012367330,MN630054:0.0001334938):0.0006762364):0.0110305590):0.0165907993):0.0008901033,((KF878076:0.0085813678,MW819866:0.0183735839):0.0046889431,(JX287386:0.0176802873,((MG986430:0.0027958221,MT238690:0.0035801184):0.0185910200,KF878080:0.0061474095):0.0004992930):0.0039482524):0.0074359202):0.0001123961,(((((OK440783:0.0017401326,(OK440555:0.0000658927,MK585598:0.0003960944):0.0001167672):0.0034668949,PQ156995:0.0007068738):0.0076750119,(LC325488:0.0079417057,LC633310:0.0022616316):0.0045553126):0.0192105933,(AY508995:0.0000671007,AY685920:0.0002601657):0.0155884827):0.0003007618,KF878079:0.0258739912):0.0002837496):0.0000022910):0.0365273472,((LP741469:0.0000010000,LP741468:0.0000010000):0.0043098549,MT732484:0.0019685100):0.0120731118):0.0154512008,BD293023:0.0000646239):0.0001323546,(BD293022:0.0000010000,JQ946552:0.0003273255):0.0000010000);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/mumps_n50/mumps_n50.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/mumps_n50/mumps_n50.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/mumps_n50/mumps_n50.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/mumps_n50/mumps_n50.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 17 14:22:42 2026
+Total CPU time used: 3444.65 seconds (0h:57m:24s)
+Total wall-clock time used: 1560.18 seconds (0h:26m:0s)
+

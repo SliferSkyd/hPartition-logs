@@ -1,0 +1,319 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/denv1_n100/denv1_n100.parts
+Input file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/denv1_n100/denv1_n100.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 100 taxa with 2 partitions and 10568 total sites (9.46253e-05% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	100	10567	3782	3360	5349	5349	part1
+   2	DNA	99	1	1	0	0	0	part2
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+R3:part1,TVM+F+ASC+R3:part2
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F+I+R3       -93782.556  187593.111 + 9.25e-317  187593.151 - 5.4e-317  187694.828 - 7.38e-317
+   2  TVM+F+ASC+R3         -0.899      25.798 + 9.25e-317     337.798 - 5.4e-317       1.798 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F+I+R3     1.0001  GTR{1.39115,13.4792,2.23313,0.677344,40.273}+F{0.319716,0.205894,0.259107,0.215284}+I{0.397288}+R3{0.0840283,0.0287511,0.296212,0.674343,0.222472,3.58624}
+   2  TVM+F+ASC+R3   0.0006  TVM{1,1,1,1}+F{0.989899,0.010101,2.5e-17,2.5e-17}+ASC+R3{0.487394,0.955602,0.486837,0.955683,0.0257694,2.67697}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -93846.0885 (s.e. 1026.6121)
+Unconstrained log-likelihood (without tree): -54975.3441
+Number of free parameters (#branches + #model parameters): 222
+Akaike information criterion (AIC) score: 188136.1771
+Corrected Akaike information criterion (AICc) score: 188145.7481
+Bayesian information criterion (BIC) score: 189749.1371
+
+Total tree length (sum of branch lengths): 8.9907
+Sum of internal branch lengths: 0.7173 (7.9781% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'KC172835' is drawn at root
+
++--KC172835
+|
+|                                +--JQ922547
+|                             +--|
+|                             |  +--MT076932
+|                          +--|
+|                          |  |           +--OK469343
+|                          |  |        +--|
+|                          |  |        |  |           +--MW243053
+|                          |  |        |  |        +--|
+|                          |  |        |  |        |  |     +--OZ060041
+|                          |  |        |  |        |  |  +--|
+|                          |  |        |  |        |  |  |  +--OZ060020
+|                          |  |        |  |        |  +--|
+|                          |  |        |  |        |     +--OZ059996
+|                          |  |        |  |     +--|
+|                          |  |        |  |     |  |     +--OZ494874
+|                          |  |        |  |     |  |  +--|
+|                          |  |        |  |     |  |  |  +--MN923102
+|                          |  |        |  |     |  +**|
+|                          |  |        |  |     |     |     +--PX461628
+|                          |  |        |  |     |     |  +--|
+|                          |  |        |  |     |     |  |  +--PX461627
+|                          |  |        |  |     |     +--|
+|                          |  |        |  |     |        |  +--ON123661
+|                          |  |        |  |     |        +--|
+|                          |  |        |  |     |           +--PP234949
+|                          |  |        |  |  +--|
+|                          |  |        |  |  |  +--OQ061315
+|                          |  |        |  +--|
+|                          |  |        |     |  +--MG721063
+|                          |  |        |     +--|
+|                          |  |        |        +--KJ806950
+|                          |  |     +--|
+|                          |  |     |  |     +--OR389272
+|                          |  |     |  |  +--|
+|                          |  |     |  |  |  |           +--KF973463
+|                          |  |     |  |  |  |        +--|
+|                          |  |     |  |  |  |        |  +--FJ562104
+|                          |  |     |  |  |  |     +--|
+|                          |  |     |  |  |  |     |  |                 +--MZ773407
+|                          |  |     |  |  |  |     |  |              +--|
+|                          |  |     |  |  |  |     |  |              |  |     +--ON123603
+|                          |  |     |  |  |  |     |  |              |  |  +--|
+|                          |  |     |  |  |  |     |  |              |  |  |  +--OR518252
+|                          |  |     |  |  |  |     |  |              |  +--|
+|                          |  |     |  |  |  |     |  |              |     +--PP982961
+|                          |  |     |  |  |  |     |  |           +--|
+|                          |  |     |  |  |  |     |  |           |  +--MF797878
+|                          |  |     |  |  |  |     |  |        +--|
+|                          |  |     |  |  |  |     |  |        |  +--OQ603261
+|                          |  |     |  |  |  |     |  |     +--|
+|                          |  |     |  |  |  |     |  |     |  +--KJ189304
+|                          |  |     |  |  |  |     |  |  +--|
+|                          |  |     |  |  |  |     |  |  |  |  +--FJ639813
+|                          |  |     |  |  |  |     |  |  |  +--|
+|                          |  |     |  |  |  |     |  |  |     |  +--PV205237
+|                          |  |     |  |  |  |     |  |  |     +--|
+|                          |  |     |  |  |  |     |  |  |        +--OR518225
+|                          |  |     |  |  |  |     |  +--|
+|                          |  |     |  |  |  |     |     |     +--JX669462
+|                          |  |     |  |  |  |     |     |  +--|
+|                          |  |     |  |  |  |     |     |  |  +--PV205970
+|                          |  |     |  |  |  |     |     +--|
+|                          |  |     |  |  |  |     |        |  +--OQ821340
+|                          |  |     |  |  |  |     |        +--|
+|                          |  |     |  |  |  |     |           +--OM833059
+|                          |  |     |  |  |  |  +--|
+|                          |  |     |  |  |  |  |  +--JX669469
+|                          |  |     |  |  |  +--|
+|                          |  |     |  |  |     +--FJ410173
+|                          |  |     |  +--|
+|                          |  |     |     |     +--KP188539
+|                          |  |     |     |  +--|
+|                          |  |     |     |  |  +--KP188568
+|                          |  |     |     +--|
+|                          |  |     |        +--ON426299
+|                          |  |  +--|
+|                          |  |  |  |  +--OR389286
+|                          |  |  |  +--|
+|                          |  |  |     |  +--MZ130539
+|                          |  |  |     +--|
+|                          |  |  |        +--LC707382
+|                          |  +--|
+|                          |     |  +--KR919820
+|                          |     +--|
+|                          |        +--------------------------------------------------------OQ426675
+|                       +--|
+|                       |  |           +--OR389271
+|                       |  |        +--|
+|                       |  |        |  +--OK605753
+|                       |  |     +--|
+|                       |  |     |  |  +--KC762651
+|                       |  |     |  +--|
+|                       |  |     |     +--FJ196841
+|                       |  |  +--|
+|                       |  |  |  |     +--OR389013
+|                       |  |  |  |  +--|
+|                       |  |  |  |  |  |     +--PX480282
+|                       |  |  |  |  |  |  +--|
+|                       |  |  |  |  |  |  |  +--PX480260
+|                       |  |  |  |  |  +--|
+|                       |  |  |  |  |     |  +--OR476957
+|                       |  |  |  |  |     +--|
+|                       |  |  |  |  |        +--PX480271
+|                       |  |  |  +--|
+|                       |  |  |     +--PV344268
+|                       |  +--|
+|                       |     |  +--EU863650
+|                       |     +--|
+|                       |        +--DQ285561
+|                    +--|
+|                    |  +--MK506262
+|                 +--|
+|                 |  |  +--AY732483
+|                 |  +--|
+|                 |     |     +--JN638344
+|                 |     |  +--|
+|                 |     |  |  +--JN638337
+|                 |     +--|
+|                 |        |     +--PX461623
+|                 |        |  +--|
+|                 |        |  |  +--AF298808
+|                 |        +--|
+|                 |           +--OR389296
+|              +--|
+|              |  |  +--FJ196847
+|              |  +--|
+|              |     +--JN638340
+|           +--|
+|           |  |  +--GQ199846
+|           |  +--|
+|           |     +--FJ882565
+|        +--|
+|        |  |  +--FJ882520
+|        |  +--|
+|        |     +--FJ639673
+|     +**|
+|     |  |     +--HM181960
+|     |  |  +--|
+|     |  |  |  |     +--OR029753
+|     |  |  |  |  +--|
+|     |  |  |  |  |  +--OQ426677
+|     |  |  |  +--|
+|     |  |  |     |        +--MW265712
+|     |  |  |     |     +--|
+|     |  |  |     |     |  +--MW315185
+|     |  |  |     |  +--|
+|     |  |  |     |  |  |  +--OQ832610
+|     |  |  |     |  |  +--|
+|     |  |  |     |  |     +--OQ832613
+|     |  |  |     +--|
+|     |  |  |        |  +--PP269534
+|     |  |  |        +--|
+|     |  |  |           +--MW265664
+|     |  +--|
+|     |     +--GU131828
+|  +--|
+|  |  |        +--ON038484
+|  |  |     +--|
+|  |  |     |  +--KU509259
+|  |  |  +--|
+|  |  |  |  |  +--KY849724
+|  |  |  |  +--|
+|  |  |  |     |  +--MG679800
+|  |  |  |     +--|
+|  |  |  |        |  +--EU482811
+|  |  |  |        +--|
+|  |  |  |           +--KC172834
+|  |  +--|
+|  |     |  +--GU131751
+|  |     +--|
+|  |        +--FJ898426
++--|
+|  |  +--MN933656
+|  +--|
+|     |           +--HG316482
+|     |        +--|
+|     |        |  +--MN886911
+|     |     +--|
+|     |     |  +--KY849715
+|     |  +--|
+|     |  |  |                 +--PP563947
+|     |  |  |              +--|
+|     |  |  |              |  +--PP563840
+|     |  |  |           +--|
+|     |  |  |           |  +--MW261825
+|     |  |  |        +--|
+|     |  |  |        |  +--MF683117
+|     |  |  |     +--|
+|     |  |  |     |  +--OR235599
+|     |  |  |  +--|
+|     |  |  |  |  +--MF033207
+|     |  |  +--|
+|     |  |     +--KC762629
+|     +--|
+|        +--JF937597
+|
++--AF309641
+
+Tree in newick format:
+
+(KC172835:0.0077408103,(((((((((((JQ922547:0.0147046388,MT076932:0.0070123308):0.0205494953,((((OK469343:0.0061285309,((((MW243053:0.0062185243,((OZ060041:0.0004641959,OZ060020:0.0007614382):0.0048263484,OZ059996:0.0054427515):0.0032477247):0.0028296286,((OZ494874:0.0034774283,MN923102:0.0009954011):0.0070894340,((PX461628:0.0002741759,PX461627:0.0003836374):0.0121624918,(ON123661:0.0041926929,PP234949:0.0043869188):0.0034762154):0.0014933368):0.0000725557):0.0098051947,OQ061315:0.0083086383):0.0016096859,(MG721063:0.0055875744,KJ806950:0.0048475823):0.0171025281):0.0005352599):0.0212825365,((OR389272:0.0009198090,((((KF973463:0.0120395440,FJ562104:0.0093728160):0.0006304137,((((((MZ773407:0.0059872753,((ON123603:0.0071689388,OR518252:0.0074032863):0.0026772680,PP982961:0.0072752741):0.0005066991):0.0012162137,MF797878:0.0053307860):0.0033004971,OQ603261:0.0088437696):0.0020535699,KJ189304:0.0065782047):0.0001297789,(FJ639813:0.0021396594,(PV205237:0.0053386578,OR518225:0.0085125206):0.0056604184):0.0027543359):0.0009906608,((JX669462:0.0015107994,PV205970:0.0086345596):0.0030808436,(OQ821340:0.0102279107,OM833059:0.0058581035):0.0033924048):0.0049522726):0.0047191242):0.0025181836,JX669469:0.0083875482):0.0042772755,FJ410173:0.0183796196):0.0006011495):0.0049621871,((KP188539:0.0027089603,KP188568:0.0057887461):0.0011039141,ON426299:0.0063542835):0.0202009125):0.0115740548):0.0006067245,(OR389286:0.0167786406,(MZ130539:0.0159589100,LC707382:0.0178667514):0.0117355127):0.0131667120):0.0210116246,(KR919820:0.1834593218,OQ426675:7.4497008978):0.2073785389):0.0057772735):0.0027821656,((((OR389271:0.0010401024,OK605753:0.0001834945):0.0039981928,(KC762651:0.0130529111,FJ196841:0.0141702766):0.0057912099):0.0075972456,((OR389013:0.0044821722,((PX480282:0.0093808962,PX480260:0.0097167605):0.0073521670,(OR476957:0.0017450530,PX480271:0.0037504108):0.0122199763):0.0093389919):0.0065099749,PV344268:0.0028273602):0.0053550338):0.0004674579,(EU863650:0.0170879376,DQ285561:0.0147226176):0.0158319685):0.0251141075):0.0086030595,MK506262:0.0125753963):0.0190797698,(AY732483:0.0032868751,((JN638344:0.0046045834,JN638337:0.0004168435):0.0031323095,((PX461623:0.0222094572,AF298808:0.0068578720):0.0034424988,OR389296:0.0012020912):0.0004659966):0.0064936818):0.0074906217):0.0088722108,(FJ196847:0.0281959988,JN638340:0.0077884004):0.0048347019):0.0038803930,(GQ199846:0.0034425440,FJ882565:0.0005307205):0.0121386056):0.0019875558,(FJ882520:0.0051211369,FJ639673:0.0007721976):0.0095756186):0.0045873548,((HM181960:0.0029421925,((OR029753:0.0039329327,OQ426677:0.0024017417):0.0059406399,(((MW265712:0.0001823811,MW315185:0.0005691760):0.0033815763,(OQ832610:0.0011734825,OQ832613:0.0014700442):0.0046681331):0.0037778257,(PP269534:0.0016006405,MW265664:0.0042085953):0.0028332336):0.0001205081):0.0006786862):0.0006999896,GU131828:0.0029026934):0.0080918022):0.0000025614,(((ON038484:0.0044473952,KU509259:0.0039743904):0.0071290434,(KY849724:0.0074945810,(MG679800:0.0130498549,(EU482811:0.0057997348,KC172834:0.0081494415):0.0004112883):0.0001866416):0.0038344422):0.0001123615,(GU131751:0.0045490536,FJ898426:0.0020877259):0.0082317372):0.0001893201):0.0007641053,(MN933656:0.0174048147,((((HG316482:0.0080943230,MN886911:0.0095078991):0.0001651094,KY849715:0.0068955711):0.0002226422,((((((PP563947:0.0043750861,PP563840:0.0023981172):0.0030553398,MW261825:0.0036095901):0.0026382327,MF683117:0.0048729316):0.0041209122,OR235599:0.0116988025):0.0031002542,MF033207:0.0078220749):0.0006653484,KC762629:0.0068609353):0.0009813849):0.0016991992,JF937597:0.0084696070):0.0024289757):0.0004007695):0.0027501599,AF309641:0.0018930351);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/denv1_n100/denv1_n100.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/denv1_n100/denv1_n100.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/denv1_n100/denv1_n100.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/denv1_n100/denv1_n100.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 17 13:30:18 2026
+Total CPU time used: 1829.2 seconds (0h:30m:29s)
+Total wall-clock time used: 655.173 seconds (0h:10m:55s)
+
