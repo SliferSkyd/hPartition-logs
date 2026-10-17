@@ -62,10 +62,18 @@ def psi_partition(msa, fmt, alphabet, k, w, timing):
     t0 = time.time()
     with open(Path(msa).with_suffix('.log'), 'w') as log_file:
         remove_caches(Path(msa))
+        Path(msa).with_suffix('.iqtree').unlink(missing_ok=True)  # remove_caches() keeps it; avoid stale BIC
         default_iqtree(['-s', msa, '-pre', Path(msa).with_suffix(''),
                         '-spp', Path(msa).with_suffix('.parts'), '-nt', '4'], log_file)
     timing['iqtree'] = time.time() - t0
+    if not Path(msa).with_suffix('.iqtree').exists():
+        log = Path(msa).with_suffix('.log')
+        raise IterationFailed(log.read_text(errors='ignore') if log.exists() else '')
     return extract_stat(Path(msa).with_suffix('.iqtree'))
+
+
+class IterationFailed(Exception):
+    """IQ-TREE produced no report for this (k, w), e.g. 'Only one state is observed in partition'."""
 
 
 def main():
@@ -96,9 +104,10 @@ def main():
             f = line.split('\t')
             cfg = {'k': int(f[1]), 'A': float(f[2]), 'C': float(f[3]), 'G': float(f[4]),
                    'T': float(f[5]), 'UNK': float(f[6])}
-            runs.append(SweepRun(name=f'r{f[0]}', state=RunState.finished,
+            ok = f[7] != 'NA'
+            runs.append(SweepRun(name=f'r{f[0]}', state=RunState.finished if ok else RunState.failed,
                                  config={a: {'value': v} for a, v in cfg.items()},
-                                 summary_metrics={'BIC': float(f[7])}))
+                                 summary_metrics={'BIC': float(f[7])} if ok else {}))
     else:
         iters_file.write_text('iter\tk\tA\tC\tG\tT\tUNK\tBIC\tAICc\tlogL\tnum_params\tsort_s\tiqtree_s\n')
 
@@ -111,7 +120,20 @@ def main():
         s = sum(w.values())
         w = {c: v / s for c, v in w.items()}
         timing = {}
-        stat = psi_partition(msa, args.format, args.alphabet, k, w, timing)
+        try:
+            stat = psi_partition(msa, args.format, args.alphabet, k, w, timing)
+        except IterationFailed as e:
+            # In the original wandb sweep an exception marks the run failed and the agent continues; the run
+            # counts toward --n_iter and logs no BIC. Reproduce that; no csv row (as in the original).
+            err = next((l for l in str(e).splitlines() if l.startswith('ERROR')), 'ERROR: no .iqtree')
+            with open(iters_file, 'a') as f:
+                f.write(f'{it}\t{k}\t{cfg["A"]}\t{cfg["C"]}\t{cfg["G"]}\t{cfg["T"]}\t{cfg["UNK"]}\tNA\tNA\tNA\tNA\t'
+                        f'{timing["sort"]:.1f}\t{timing.get("iqtree", 0):.1f}\n')
+            runs.append(SweepRun(name=f'r{it}', state=RunState.failed, config=suggestion.config, summary_metrics={}))
+            print(f'iter {it} k={k} FAILED ({err.strip()})', flush=True)
+            continue
+        for ext in ['iqtree', 'parts']:  # last successful iteration (.treefile would be wiped by remove_caches)
+            shutil.copy(f'{Path(msa).with_suffix("")}.{ext}', f'{Path(msa).with_suffix("")}.lastok.{ext}')
         # same csv row as the original opt_func
         with open(Path(msa).with_suffix('.csv'), 'a') as f:
             f.write(f'{k},{stat["BIC"]},{stat["AICc"]},{stat["log-likelihood"]},{stat["num_params"]},')
@@ -131,8 +153,8 @@ def main():
     # NB: PsiPartition's remove_caches() deletes '<stem>.*.treefile' before every IQ-TREE call, so trees are
     # kept as last.nwk / final.nwk (names outside its glob), extracted from the .iqtree reports.
     if not Path(f'{stem}.last.iqtree').exists():
-        for ext in ['treefile', 'iqtree', 'parts']:
-            shutil.copy(f'{stem}.{ext}', f'{stem}.last.{ext}')
+        for ext in ['iqtree', 'parts']:
+            shutil.copy(f'{stem}.lastok.{ext}', f'{stem}.last.{ext}')
     write_nwk(f'{stem}.last.iqtree', Path(msa).parent / 'last.nwk')
     # Final step of the authors' pipeline (comparison/test_PsiPartition.py): take the best-BIC (k, w)
     # from the csv and run PsiPartition + IQ-TREE once more; its outputs are kept as <stem>.final.*
