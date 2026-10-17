@@ -27,6 +27,7 @@ for ok in $SRC/done/*.ok; do
             partition/NORATE_FALLBACK partition/crashed_with_R/aln.log) ;;
     psi)  m=PsiPartition; keep=($rep.csv $rep.iters.tsv last.nwk final.nwk $rep.last.iqtree $rep.final.iqtree
             $rep.last.parts $rep.final.parts time.txt NORATE_FALLBACK) ;;
+    *) continue ;;   # RNA-virus tasks (rna*) are archived separately
   esac
   s=$SRC/out/$m/$sim/$cat/$rep; d=$DST/runs/$m/$sim/$cat/$rep
   [ -e $d/.synced ] && [ $d/.synced -nt $ok ] && continue
