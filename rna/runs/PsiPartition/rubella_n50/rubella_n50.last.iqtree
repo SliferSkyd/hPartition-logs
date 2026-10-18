@@ -1,0 +1,216 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella_n50/rubella_n50.parts
+Input file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella_n50/rubella_n50.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 50 taxa with 2 partitions and 9758 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	50	9757	2120	2136	6787	6787	part1
+   2	DNA	50	1	1	1	0	0	part2
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+R3:part1,TVM+F+ASC+R2:part2
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F+R3         -52874.103  105774.207 + 1.99e-316  105774.244 - 5.4e-317  105867.621 - 7.38e-317
+   2  TVM+F+ASC+R2        -19.759      59.518 + 1.99e-316     279.518 - 5.4e-317      39.518 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F+R3       0.9995  GTR{1.1648,10.0495,2.28068,1.14528,26.9855}+F{0.149311,0.387709,0.308469,0.154512}+R3{0.65669,0.041055,0.228723,1.90867,0.114587,4.68186}
+   2  TVM+F+ASC+R2   6.1988  TVM{2.26795,0.442424,1,0.0001}+F{0.79625,0.02,0.18375,0}+ASC+R2{0.5,5.27598e-16,0.5,2}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -52890.4595 (s.e. 672.8834)
+Unconstrained log-likelihood (without tree): -36938.5419
+Number of free parameters (#branches + #model parameters): 119
+Akaike information criterion (AIC) score: 106018.9189
+Corrected Akaike information criterion (AICc) score: 106021.8822
+Bayesian information criterion (BIC) score: 106874.0342
+
+Total tree length (sum of branch lengths): 0.9358
+Sum of internal branch lengths: 0.4146 (44.3041% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'OM022830' is drawn at root
+
++----OM022830
+|
+|                       +---OM735620
+|                    +--|
+|                    |  +------OM735622
+|                 +--|
+|                 |  +----------JN635282
+|              +--|
+|              |  +--OM735623
+|           +--|
+|           |  |           +-----OM735648
+|           |  |        +--|
+|           |  |        |  |  +--DQ388280
+|           |  |        |  +--|
+|           |  |        |     +--OM735644
+|           |  |     +--|
+|           |  |     |  |  +----JN635290
+|           |  |     |  +--|
+|           |  |     |     +----------OM735645
+|           |  |  +--|
+|           |  |  |  |           +--OM735653
+|           |  |  |  |        +--|
+|           |  |  |  |        |  +--OM735652
+|           |  |  |  +--------|
+|           |  |  |           +--OM735651
+|           |  +--|
+|           |     |  +---OM735655
+|           |     +--|
+|           |        +--OM735654
+|        +--|
+|        |  |                     +--JN635285
+|        |  |                  +--|
+|        |  |                  |  +-----OM735630
+|        |  |               +--|
+|        |  |               |  +----DQ388281
+|        |  |            +--|
+|        |  |            |  |         +--OM735658
+|        |  |            |  |      +--|
+|        |  |            |  |      |  +--AB860305
+|        |  |            |  |   +--|
+|        |  |            |  |   |  +---OM735656
+|        |  |            |  +---|
+|        |  |            |      +----JN635291
+|        |  |         +--|
+|        |  |         |  |        +--OM735635
+|        |  |         |  |     +--|
+|        |  |         |  |     |  +--JN635287
+|        |  |         |  |  +--|
+|        |  |         |  |  |  +-------KT962869
+|        |  |         |  +--|
+|        |  |         |     +-----OM735637
+|        |  |     +---|
+|        |  |     |   +-----OM735631
+|        |  |  +--|
+|        |  |  |  |            +--OM735681
+|        |  |  |  |        +---|
+|        |  |  |  |        |   +--JQ624625
+|        |  |  |  +--------|
+|        |  |  |           |   +--OM735682
+|        |  |  |           +---|
+|        |  |  |               +--JQ624624
+|        |  +--|
+|        |     |                                              +--OM735684
+|        |     |                        +---------------------|
+|        |     |                        |                     +--AY258322
+|        |     |                 +------|
+|        |     |                 |      |                             +--MF496142
+|        |     |                 |      |                      +------|
+|        |     |                 |      |                      |      +--AB928205
+|        |     |                 |      |      +---------------|
+|        |     |                 |      |      |               |   +---MH745081
+|        |     |                 |      |      |               +---|
+|        |     |                 |      |      |                   +----OM735669
+|        |     |                 |      +------|
+|        |     |                 |             +---------DQ085338
+|        |     |  +--------------|
+|        |     |  |              +----------------DQ388279
+|        |     +--|
+|        |        +---AB588191
+|     +--|
+|     |  |          +-------OM735625
+|     |  |       +--|
+|     |  |       |  +--JN635283
+|     |  |  +----|
+|     |  |  |    |       +----OM735626
+|     |  |  |    |    +--|
+|     |  |  |    |    |  +--OM735624
+|     |  |  |    +----|
+|     |  |  |         +--JN635284
+|     |  +--|
+|     |     +--OM735619
+|  +--|
+|  |  +**FJ211587
++--|
+|  |  +--------OM022831
+|  +--|
+|     +-----------KU958641
+|
++---MK787188
+
+Tree in newick format:
+
+(OM022830:0.0124909280,((((((((OM735620:0.0107358367,OM735622:0.0178220200):0.0008661452,JN635282:0.0279328215):0.0016481683,OM735623:0.0068674818):0.0010320763,((((OM735648:0.0158041705,(DQ388280:0.0039382509,OM735644:0.0028344860):0.0004016434):0.0042459486,(JN635290:0.0139487445,OM735645:0.0274041060):0.0076134192):0.0046567514,((OM735653:0.0015768541,OM735652:0.0012618192):0.0044662684,OM735651:0.0031023816):0.0220414714):0.0052719993,(OM735655:0.0117794706,OM735654:0.0066298948):0.0061653034):0.0068653255):0.0040458209,(((((((JN635285:0.0060443322,OM735630:0.0164107344):0.0040693302,DQ388281:0.0128439691):0.0027166441,(((OM735658:0.0016744379,AB860305:0.0010581342):0.0029867166,OM735656:0.0107308360):0.0090925809,JN635291:0.0122051757):0.0097900022):0.0010210427,(((OM735635:0.0022293723,JN635287:0.0039784393):0.0019779896,KT962869:0.0195787469):0.0087965773,OM735637:0.0161521994):0.0091434511):0.0001735708,OM735631:0.0153303322):0.0101672366,((OM735681:0.0039502718,JQ624625:0.0026125305):0.0117578736,(OM735682:0.0039839118,JQ624624:0.0006020090):0.0101598784):0.0224251982):0.0004049761,((((OM735684:0.0004681313,AY258322:0.0004762820):0.0533562772,(((MF496142:0.0053897370,AB928205:0.0039028420):0.0173564179,(MH745081:0.0105663434,OM735669:0.0130577875):0.0113313500):0.0385911832,DQ085338:0.0258939540):0.0184695204):0.0178291001,DQ388279:0.0423621260):0.0377620265,AB588191:0.0098923880):0.0012867633):0.0012053098):0.0003449093,(((OM735625:0.0194022014,JN635283:0.0062567925):0.0061196373,((OM735626:0.0137481018,OM735624:0.0066352768):0.0006723122,JN635284:0.0053978851):0.0135395585):0.0137353146,OM735619:0.0027156866):0.0018454688):0.0031685636,FJ211587:0.0000303264):0.0004375832,(OM022831:0.0217644008,KU958641:0.0290855437):0.0029304468):0.0006177975,MK787188:0.0106478052);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella_n50/rubella_n50.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella_n50/rubella_n50.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella_n50/rubella_n50.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella_n50/rubella_n50.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 17 20:53:46 2026
+Total CPU time used: 329.794 seconds (0h:5m:29s)
+Total wall-clock time used: 155.093 seconds (0h:2m:35s)
+

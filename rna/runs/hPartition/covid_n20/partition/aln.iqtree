@@ -1,0 +1,162 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition/covid_n20/hPartition/aln.partitions
+Input file name: /home/diepht/sliferskyd/hPartition/rna_datasets/covid/aln/covid_n20.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 taxa with 3 partitions and 29903 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	20	10181	60	5	10169	10169	P0
+   2	DNA	20	9877	81	10	9837	9837	P1
+   3	DNA	20	9845	116	20	9669	9669	P2
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: K3Pu+F:P0,TIM3+F:P1,GTR+F:P2
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  K3Pu+F           -13355.017   26722.034 + 9.41e-317   26722.042 - 5.4e-317   26765.404 - 7.38e-317
+   2  TIM3+F           -13934.077   27882.153 + 9.41e-317   27882.165 - 5.4e-317   27932.539 - 7.38e-317
+   3  GTR+F            -14910.795   29839.590 + 9.41e-317   29839.608 - 5.4e-317   29904.342 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  K3Pu+F         0.1534  K3Pu{0.0001,9.25566}+F{0.341221,0.132275,0.164465,0.362038}
+   2  TIM3+F         0.5391  TIM3{14.7671,45.9443,0.0001}+F{0.296147,0.192065,0.224276,0.287511}
+   3  GTR+F          2.3379  GTR{0.0001,0.0001,0.0001,0.0001,2.48714}+F{0.257578,0.227882,0.200822,0.313718}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -42200.0579 (s.e. 124.2620)
+Unconstrained log-likelihood (without tree): -46924.6530
+Number of free parameters (#branches + #model parameters): 58
+Akaike information criterion (AIC) score: 84516.1158
+Corrected Akaike information criterion (AICc) score: 84516.3451
+Bayesian information criterion (BIC) score: 84997.8472
+
+Total tree length (sum of branch lengths): 0.0077
+Sum of internal branch lengths: 0.0012 (15.7176% of tree length)
+
+WARNING: 11 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'S0001' is drawn at root
+
++-----------S0001
+|
+|       +---------------------S0002
++-------|
+|       +-------------------------S0011
+|
+|                                                          +--S0003
+|                                                       +**|
+|                                                       |  |  +-----------S0013
+|                                                       |  +**|
+|                                                       |     +---------S0020
+|                   +-----------------------------------|
+|                   |                                   +--S0004
+|                +**|
+|                |  +--------------------S0006
+|             +**|
+|             |  +--------------S0014
+|          +**|
+|          |  |     +-----------S0010
+|          |  |  +**|
+|          |  |  |  +------------------S0017
+|          |  +--|
+|          |     |  +--------------------S0015
+|          |     +**|
+|          |        +------------------S0016
+|     +----|
+|     |    |  +----------------------------S0007
+|     |    +**|
+|     |       +---------------------------S0018
+|  +**|
+|  |  |  +-------------S0008
+|  |  +--|
+|  |     +----------------S0019
++**|
+   |     +-------S0005
+   |  +**|
+   |  |  +--S0012
+   +--|
+      +-------------------------------------S0009
+
+Tree in newick format:
+
+(S0001:0.0002350415,(S0002:0.0004354768,S0011:0.0005026588):0.0001669195,((((((((S0003:0.0000674988,(S0013:0.0002349765,S0020:0.0002013208):0.0000329836):0.0000010000,S0004:0.0000674988):0.0007048049,S0006:0.0004025190):0.0000010000,S0014:0.0003011491):0.0000010000,((S0010:0.0002380687,S0017:0.0003676378):0.0000010000,(S0015:0.0004022326,S0016:0.0003711686):0.0000010000):0.0000340710):0.0000010000,(S0007:0.0005687748,S0018:0.0005352070):0.0000010000):0.0001002369,(S0008:0.0002689647,S0019:0.0003366975):0.0000669721):0.0000332382,((S0005:0.0001677760,S0012:0.0000674988):0.0000010000,S0009:0.0007391782):0.0000340502):0.0000330109);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition/covid_n20/partition/aln.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition/covid_n20/partition/aln.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/covid/aln/covid_n20.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/covid/aln/covid_n20.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Oct 18 08:58:37 2026
+Total CPU time used: 2.74982 seconds (0h:0m:2s)
+Total wall-clock time used: 3.15481 seconds (0h:0m:3s)
+

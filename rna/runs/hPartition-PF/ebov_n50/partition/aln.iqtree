@@ -1,0 +1,228 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_n50/hPartition/aln.partitions
+Input file name: /home/diepht/sliferskyd/hPartition/rna_datasets/ebov/aln/ebov_n50.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 50 taxa with 5 partitions and 18966 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	50	3884	97	35	3776	3776	P0
+   2	DNA	50	3840	91	26	3748	3748	P1
+   3	DNA	50	3768	45	4	3745	3745	P2
+   4	DNA	50	3764	25	0	3764	3764	P3
+   5	DNA	50	3710	46	4	3695	3695	P4
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F:P0,GTR+F:P1,TPM3u+F:P2,F81+F:P3,TPM3u+F:P4
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F             -6161.781   12341.562 + 1.69e-316   12341.608 - 5.4e-317   12397.943 - 7.38e-317
+   2  GTR+F             -5956.404   11930.808 + 1.69e-316   11930.855 - 5.4e-317   11987.087 - 7.38e-317
+   3  TPM3u+F           -5011.784   10035.568 + 1.69e-316   10035.590 - 5.4e-317   10072.974 - 7.38e-317
+   4  F81+F             -5102.759   10213.518 + 1.69e-316   10213.528 - 5.4e-317   10238.451 - 7.38e-317
+   5  TPM3u+F           -5264.414   10540.828 + 1.69e-316   10540.851 - 5.4e-317   10578.141 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F          2.1961  GTR{0.0001,0.0001,0.0001,0.0001,85.2797}+F{0.233191,0.326211,0.17624,0.264358}
+   2  GTR+F          1.8978  GTR{0.0001,71.7419,0.0001,0.0001,0.0001}+F{0.348327,0.192758,0.252326,0.206589}
+   3  TPM3u+F        0.4727  TPM3u{0.0001,0.0001}+F{0.371003,0.10027,0.169233,0.359493}
+   4  F81+F          0.0545  F81+F{0.337872,0.224824,0.16842,0.268884}
+   5  TPM3u+F        0.3133  TPM3u{32.8571,0.0001}+F{0.306883,0.222428,0.224385,0.246304}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -27493.6633 (s.e. 120.8861)
+Unconstrained log-likelihood (without tree): -28587.9945
+Number of free parameters (#branches + #model parameters): 130
+Akaike information criterion (AIC) score: 55247.3265
+Corrected Akaike information criterion (AICc) score: 55249.1348
+Bayesian information criterion (BIC) score: 56267.8789
+
+Total tree length (sum of branch lengths): 0.0129
+Sum of internal branch lengths: 0.0035 (27.4655% of tree length)
+
+WARNING: 24 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'KR817121' is drawn at root
+
++--KR817121
+|
+|                +**KP260799
+|            +---|
+|            |   +---KR817138
+|         +**|
+|         |  |           +--KR817100
+|         |  |        +--|
+|         |  |        |  +**KR817161
+|         |  |     +--|
+|         |  |     |  |            +---KR817169
+|         |  |     |  +------------|
+|         |  |     |               +**KR817166
+|         |  |  +--|
+|         |  |  |  +---KR817148
+|         |  +**|
+|         |     +-----KR534559
+|      +**|
+|      |  |  +--KR817137
+|      |  +**|
+|      |     +**KR817123
+|  +---|
+|  |   |   +-----KR817096
+|  |   +---|
+|  |       +--KR817130
++**|
+|  +---KT725295
+|
+|                           +**KR534508
+|                        +**|
+|                        |  |     +-------------------KU296717
+|                        |  |  +--|
+|                        |  |  |  +-----KR653295
+|                        |  +**|
+|                        |     +-------------------KR653264
+|                     +--|
+|                     |  |     +----------KR534534
+|                     |  |  +**|
+|                     |  |  |  |        +------------KU296632
+|                     |  |  |  |     +--|
+|                     |  |  |  |     |  |            +---KU296562
+|                     |  |  |  |     |  +------------|
+|                     |  |  |  |     |               +---KU296713
+|                     |  |  |  |  +**|
+|                     |  |  |  |  |  +---KP759725
+|                     |  |  |  +--|
+|                     |  |  |     +----------KR653257
+|                     |  +**|
+|                     |     |                 +**KR534564
+|                     |     |        +--------|
+|                     |     |        |        +--KR534566
+|                     |     |  +-----|
+|                     |     |  |     +-----------------KP759705
+|                     |     +**|
+|                     |        |  +-----------------KU296476
+|                     |        +**|
+|                     |           +------------KP759702
+|                  +**|
+|                  |  +----------KR653233
+|               +**|
+|               |  |     +-----------------KR653286
+|               |  |  +**|
+|               |  |  |  +----------KR534540
+|               |  +**|
+|               |     |  +--------KR105216
+|               |     +**|
+|               |        +---------------------------------KT357836
+|            +--|
+|            |  +--------KR105306
+|         +**|
+|         |  |     +--------KR817089
+|         |  |  +**|
+|         |  |  |  +-----KR817068
+|         |  +--|
+|         |     +---KR817072
+|      +**|
+|      |  |                                                +**KR534544
+|      |  |                                             +--|
+|      |  |                                             |  |  +**KR534571
+|      |  |                                             |  +--|
+|      |  |                                             |     +**KR534548
+|      |  |                    +------------------------|
+|      |  |                    |                        +----------KR534569
+|      |  |  +-----------------|
+|      |  |  |                 |               +**KR817230
+|      |  |  |                 |            +**|
+|      |  |  |                 |            |  +--KR534510
+|      |  |  |                 +------------|
+|      |  |  |                              +----------KR817107
+|      |  +**|
+|      |     |        +--KR817117
+|      |     +--------|
+|      |              +--KT725297
+|   +**|
+|   |  |  +---------------------KR817106
+|   |  +**|
+|   |     +-------------------------------KR817241
++---|
+    +--------KT725364
+
+Tree in newick format:
+
+(KR817121:0.0000534623,(((((KP260799:0.0000015922,KR817138:0.0001058089):0.0001055764,((((KR817100:0.0000535097,KR817161:0.0000015922):0.0000535203,(KR817169:0.0001056904,KR817166:0.0000015922):0.0003174420):0.0000535195,KR817148:0.0001057178):0.0000535200,KR534559:0.0001597574):0.0000015922):0.0000015922,(KR817137:0.0000534578,KR817123:0.0000015922):0.0000015922):0.0000015922,(KR817096:0.0001594371,KR817130:0.0000534430):0.0001056368):0.0001055815,KT725295:0.0001058608):0.0000015922,(((((((((KR534508:0.0000015922,((KU296717:0.0004773108,KR653295:0.0001593228):0.0000535805,KR653264:0.0004761362):0.0000015922):0.0000015922,((KR534534:0.0002641277,(((KU296632:0.0003182871,(KU296562:0.0001059181,KU296713:0.0001058049):0.0003182743):0.0000533446,KP759725:0.0001058792):0.0000015922,KR653257:0.0002645787):0.0000534631):0.0000015922,(((KR534564:0.0000015922,KR534566:0.0000535494):0.0002114637,KP759705:0.0004243328):0.0001593274,(KU296476:0.0004238846,KP759702:0.0003178640):0.0000015922):0.0000015922):0.0000015922):0.0000534622,KR653233:0.0002643965):0.0000015922,((KR653286:0.0004232831,KR534540:0.0002645053):0.0000015922,(KR105216:0.0002116427,KT357836:0.0007958653):0.0000015922):0.0000015922):0.0000015922,KR105306:0.0002116601):0.0000534595,((KR817089:0.0002112532,KR817068:0.0001593587):0.0000015922,KR817072:0.0001056491):0.0000534593):0.0000015922,((((KR534544:0.0000015922,(KR534571:0.0000015922,KR534548:0.0000015922):0.0000534536):0.0000534847,KR534569:0.0002641769):0.0005826149,((KR817230:0.0000015922,KR534510:0.0000534531):0.0000015922,KR817107:0.0002640726):0.0003171401):0.0004235481,(KR817117:0.0000535632,KT725297:0.0000536551):0.0002118108):0.0000015922):0.0000015922,(KR817106:0.0005286922,KR817241:0.0007416783):0.0000015922):0.0000015922,KT725364:0.0002116466):0.0001055845);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_n50/partition/aln.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_n50/partition/aln.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/ebov/aln/ebov_n50.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/ebov/aln/ebov_n50.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Oct 18 08:54:55 2026
+Total CPU time used: 9.6717 seconds (0h:0m:9s)
+Total wall-clock time used: 10.9363 seconds (0h:0m:10s)
+

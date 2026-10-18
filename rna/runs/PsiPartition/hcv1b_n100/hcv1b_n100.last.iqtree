@@ -1,0 +1,328 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/hcv1b_n100/hcv1b_n100.parts
+Input file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/hcv1b_n100/hcv1b_n100.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 100 taxa with 6 partitions and 9327 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	100	2305	2	0	2305	2305	part1
+   2	DNA	100	2246	2	0	2246	2246	part2
+   3	DNA	100	1739	1301	1095	296	296	part3
+   4	DNA	100	1581	1446	1288	0	0	part4
+   5	DNA	100	1454	1378	1202	0	0	part5
+   6	DNA	100	2	2	0	0	0	part6
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F:part1,F81+F:part2,GTR+F+R4:part3,GTR+F+ASC+R6:part4,SYM+ASC+R6:part5,F81+F+ASC:part6
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  F81+F             -1610.091    3228.183 + 2.29e-316    3228.200 - 5.4e-317    3251.154 - 7.38e-317
+   2  F81+F             -1611.735    3231.469 + 2.29e-316    3231.487 - 5.4e-317    3254.337 - 7.38e-317
+   3  GTR+F+R4         -36450.446   72930.892 + 2.29e-316   72931.170 - 5.4e-317   73012.808 - 7.38e-317
+   4  GTR+F+ASC+R6     -42700.380   85438.759 + 2.29e-316   85439.246 - 5.4e-317   85540.710 - 7.38e-317
+   5  SYM+ASC+R6       -52965.830  105963.660 + 2.29e-316  105964.039 - 5.4e-317  106048.173 - 7.38e-317
+   6  F81+F+ASC           -21.704      51.408 + 2.29e-316      91.408 - 5.4e-317      46.180 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  F81+F          0.0012  F81+F{0.397831,0,0.602169,0}
+   2  F81+F          0.0012  F81+F{0,0.531167,0,0.468833}
+   3  GTR+F+R4       1.7280  GTR{2.4185,65.8916,4.96251,0.946571,97.9836}+F{0.264674,0.185885,0.439482,0.109958}+R4{0.516919,0.152273,0.275382,0.854964,0.123292,2.24537,0.0844071,4.84568}
+   4  GTR+F+ASC+R6   1.5663  GTR{0.082792,6.01365,0.808026,0.290853,2.3505}+F{0.10687,0.630236,0.062173,0.20072}+ASC+R6{0.414402,0.0233883,0.189711,0.452979,0.208852,1.12599,0.126972,1.94707,0.050463,4.42533,0.00959979,20.6952}
+   5  SYM+ASC+R6     2.6356  SYM{2.47928,9.91487,1.29144,1.43901,15.1135}+FQ+ASC+R6{0.321206,0.115081,0.208911,0.491217,0.257283,1.13178,0.174818,2.21627,0.0292709,3.90005,0.00851225,7.94454}
+   6  F81+F+ASC      4.0895  F81+F{0.98,0.01,0,0.01}+ASC
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -135153.2973 (s.e. 1910.5022)
+Unconstrained log-likelihood (without tree): -36676.0113
+Number of free parameters (#branches + #model parameters): 258
+Akaike information criterion (AIC) score: 270822.5945
+Corrected Akaike information criterion (AICc) score: 270837.3325
+Bayesian information criterion (BIC) score: 272664.8870
+
+Total tree length (sum of branch lengths): 3.9801
+Sum of internal branch lengths: 0.9292 (23.3469% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'LC435026' is drawn at root
+
++--LC435026
+|
+|                                                                                         +--GU451221
+|                                                                                      +--|
+|                                                                                      |  +--GU451223
+|                                                                                   +--|
+|                                                                                   |  |  +----GU451222
+|                                                                                   |  +--|
+|                                                                                   |     +--GU451224
+|                                                                                +--|
+|                                                                                |  |  +---HQ912959
+|                                                                                |  +--|
+|                                                                                |     +----AY460204
+|                                                                             +--|
+|                                                                             |  +--HQ912956
+|                                                                          +--|
+|                                                                          |  |     +----KC844052
+|                                                                          |  |  +--|
+|                                                                          |  |  |  +--HQ912958
+|                                                                          |  +--|
+|                                                                          |     +-----------EF638081
+|                                                               +----------|
+|                                                               |          +---HQ639946
+|                                                            +--|
+|                                                            |  |            +---HQ639947
+|                                                            |  +------------|
+|                                                            |               +------KC844051
+|                                                         +--|
+|                                                         |  |              +--AF054248
+|                                                         |  +--------------|
+|                                                         |                 +--AF054249
+|                                                      +--|
+|                                                      |  |           +----------------LC368433
+|                                                      |  |        +--|
+|                                                      |  |        |  |       +---------AF207762
+|                                                      |  |        |  |  +----|
+|                                                      |  |        |  |  |    +------AF207765
+|                                                      |  |        |  +--|
+|                                                      |  |        |     +----------AF165062
+|                                                      |  |     +--|
+|                                                      |  |     |  +--------------------M96362
+|                                                      |  |  +--|
+|                                                      |  |  |  |                +--AB426117
+|                                                      |  |  |  +----------------|
+|                                                      |  |  |                   +**AB249644
+|                                                      |  +--|
+|                                                      |     |  +--------------------S62220
+|                                                      |     +--|
+|                                                      |        |  +---------------L02836
+|                                                      |        +--|
+|                                                      |           +-------------M58335
+|                                                   +--|
+|                                                   |  |                               +--AB828703
+|                                                   |  |                            +--|
+|                                                   |  |                            |  +--AB828704
+|                                                   |  |                         +--|
+|                                                   |  |                         |  +--AB828700
+|                                                   |  |                      +--|
+|                                                   |  |                      |  +--AB828701
+|                                                   |  |     +----------------|
+|                                                   |  |     |                |  +--AB828699
+|                                                   |  |     |                +--|
+|                                                   |  |     |                   +--AB828702
+|                                                   |  |  +--|
+|                                                   |  |  |  +----------------AB779562
+|                                                   |  +--|
+|                                                   |     +------------------------AF207769
+|                                                +--|
+|                                                |  |  +---------------EU155381
+|                                                |  +--|
+|                                                |     +----------------AY587844
+|                                             +--|
+|                                             |  +---------------AF207766
+|                                          +--|
+|                                          |  |     +-------------------EU155382
+|                                          |  |  +--|
+|                                          |  |  |  +-------------------EU155316
+|                                          |  +--|
+|                                          |     |  +-------------EU482885
+|                                          |     +--|
+|                                          |        +-----------------EU155372
+|                                       +--|
+|                                       |  |                               +------AB154195
+|                                       |  |                            +--|
+|                                       |  |                            |  |  +---AB154200
+|                                       |  |                            |  +--|
+|                                       |  |                            |     +----AB154181
+|                                       |  |                         +--|
+|                                       |  |                         |  +----AB154192
+|                                       |  |                 +-------|
+|                                       |  |                 |       +---AB154206
+|                                       |  |              +--|
+|                                       |  |              |  |  +------------LC435022
+|                                       |  |              |  +--|
+|                                       |  |              |     |  +--------EU256100
+|                                       |  |              |     +--|
+|                                       |  |              |        +----------EU155300
+|                                       |  |           +--|
+|                                       |  |           |  |            +--AJ238800
+|                                       |  |           |  |     +------|
+|                                       |  |           |  |     |      +--AJ238799
+|                                       |  |           |  |  +--|
+|                                       |  |           |  |  |  +-----EU155334
+|                                       |  |           |  +--|
+|                                       |  |           |     |  +------EU256098
+|                                       |  |           |     +--|
+|                                       |  |           |        +-----EU155330
+|                                       |  |        +--|
+|                                       |  |        |  +---------------EU660386
+|                                       |  |     +--|
+|                                       |  |     |  |  +-------------EU234062
+|                                       |  |     |  +--|
+|                                       |  |     |     +--------------EU155217
+|                                       |  |  +--|
+|                                       |  |  |  |  +-----------HQ110091
+|                                       |  |  |  +--|
+|                                       |  |  |     +---------EU155332
+|                                       |  +--|
+|                                       |     |        +-------------AF176573
+|                                       |     |     +--|
+|                                       |     |     |  +-----------EU155366
+|                                       |     |  +--|
+|                                       |     |  |  +----------------------AF483269
+|                                       |     +--|
+|                                       |        |  +----------------EU155222
+|                                       |        +--|
+|                                       |           |       +-------EU155221
+|                                       |           |    +--|
+|                                       |           |    |  +------------EU155367
+|                                       |           +----|
+|                                       |                +--------FJ390397
+|                                    +--|
+|                                    |  |     +----------LC368325
+|                                    |  +-----|
+|                                    |        +---------EU155279
+|                                 +--|
+|                                 |  |              +---------------EU482833
+|                                 |  |           +--|
+|                                 |  |           |  |     +--------------EU155360
+|                                 |  |           |  |  +--|
+|                                 |  |           |  |  |  +-------------EU155370
+|                                 |  |           |  +--|
+|                                 |  |           |     +----------------EU155357
+|                                 |  |        +--|
+|                                 |  |        |  |  +-----------------EU155377
+|                                 |  |        |  +--|
+|                                 |  |        |     |  +--------------------EU256077
+|                                 |  |        |     +--|
+|                                 |  |        |        +------------------EU256065
+|                                 |  |     +--|
+|                                 |  |     |  |                         +**OM222702
+|                                 |  |     |  |     +-------------------|
+|                                 |  |     |  |     |                   +--OM222703
+|                                 |  |     |  |  +--|
+|                                 |  |     |  |  |  +---------------EU482859
+|                                 |  |     |  +--|
+|                                 |  |     |     +-------------------EU256078
+|                                 |  |  +--|
+|                                 |  |  |  +---------------EU256079
+|                                 |  +--|
+|                                 |     |     +------------------EU155358
+|                                 |     |  +--|
+|                                 |     |  |  +-----------------EU155361
+|                                 |     +--|
+|                                 |        +--------------------EU155368
+|                              +--|
+|                              |  +--------------EU155359
+|                           +--|
+|                           |  |    +--------------EU256080
+|                           |  +----|
+|                           |       +------------------EU256084
+|                        +--|
+|                        |  +----------------EU857431
+|                     +--|
+|                     |  |                 +**LC011930
+|                     |  +-----------------|
+|                     |                    +--LC011931
+|                  +--|
+|                  |  |  +--------AF165055
+|                  |  +--|
+|                  |     +-----------AF165047
+|               +--|
+|               |  |            +--GU451218
+|               |  +------------|
+|               |               |  +--GU451219
+|               |               +--|
+|               |                  +---GU451220
+|           +---|
+|           |   |              +**LC011928
+|           |   |           +--|
+|           |   |           |  +**LC011929
+|           |   +-----------|
+|           |               +**LC011927
++-----------|
+|           |         +--LC435025
+|           +---------|
+|                     +--LC435029
+|
++--LC435030
+
+Tree in newick format:
+
+(LC435026:0.0037975730,((((((((((((((((((((((((GU451221:0.0004794282,GU451223:0.0060892247):0.0008844165,(GU451222:0.0174160793,GU451224:0.0061616021):0.0070957344):0.0116964754,(HQ912959:0.0154511307,AY460204:0.0185586824):0.0009483400):0.0023664952,HQ912956:0.0088240749):0.0010723185,((KC844052:0.0164137527,HQ912958:0.0120975897):0.0003711990,EF638081:0.0398043785):0.0011165865):0.0040304584,HQ639946:0.0134019918):0.0364540460,(HQ639947:0.0144093866,KC844051:0.0222931051):0.0416214014):0.0042380170,(AF054248:0.0045888657,AF054249:0.0035382768):0.0469895086):0.0013053935,((((LC368433:0.0558796085,((AF207762:0.0315677326,AF207765:0.0233995118):0.0156228343,AF165062:0.0356634187):0.0031918254):0.0106010782,M96362:0.0683272144):0.0031283289,(AB426117:0.0004617412,AB249644:0.0000024301):0.0561054598):0.0011907678,(S62220:0.0657715533,(L02836:0.0510846857,M58335:0.0437482994):0.0088195765):0.0042550170):0.0016138124):0.0005511459,((((((AB828703:0.0024832799,AB828704:0.0037311692):0.0021876385,AB828700:0.0011919225):0.0014717561,AB828701:0.0027544612):0.0057700228,(AB828699:0.0008528335,AB828702:0.0046878680):0.0065825352):0.0553875245,AB779562:0.0536659341):0.0036394322,AF207769:0.0789046464):0.0019902854):0.0055539307,(EU155381:0.0509341174,AY587844:0.0560690093):0.0025541973):0.0052313071,AF207766:0.0504347421):0.0024370813,((EU155382:0.0641229076,EU155316:0.0636855217):0.0078311034,(EU482885:0.0455081051,EU155372:0.0564866234):0.0039778076):0.0003382119):0.0005203907,(((((((((AB154195:0.0229739338,(AB154200:0.0151395706,AB154181:0.0170621856):0.0012315759):0.0005677373,AB154192:0.0165064037):0.0011122576,AB154206:0.0154230860):0.0274070753,(LC435022:0.0422400785,(EU256100:0.0286303374,EU155300:0.0356192296):0.0037263125):0.0043297629):0.0015214556,(((AJ238800:0.0070721739,AJ238799:0.0031710515):0.0226813276,EU155334:0.0214952060):0.0031156446,(EU256098:0.0242004126,EU155330:0.0200663285):0.0039029753):0.0115425912):0.0017073747,EU660386:0.0510371732):0.0027651708,(EU234062:0.0443936221,EU155217:0.0492585802):0.0051975635):0.0024608938,(HQ110091:0.0396616257,EU155332:0.0337128410):0.0061528414):0.0038529623,(((AF176573:0.0458805543,EU155366:0.0375984234):0.0124305722,AF483269:0.0733485527):0.0028703043,(EU155222:0.0548705127,((EU155221:0.0278235277,EU155367:0.0430482221):0.0047515640,FJ390397:0.0305585153):0.0165470707):0.0046543685):0.0013668906):0.0005840847):0.0010995484,(LC368325:0.0371432711,EU155279:0.0340658303):0.0199273011):0.0007892449,(((((EU482833:0.0519397962,((EU155360:0.0473637935,EU155370:0.0462596100):0.0069336511,EU155357:0.0557659460):0.0023705394):0.0007547538,(EU155377:0.0578554150,(EU256077:0.0670973253,EU256065:0.0611665657):0.0034617722):0.0008528470):0.0009363702,(((OM222702:0.0000020331,OM222703:0.0038716475):0.0638228855,EU482859:0.0524114296):0.0085431529,EU256078:0.0654217534):0.0039922028):0.0009529716,EU256079:0.0529952870):0.0002171591,((EU155358:0.0594390572,EU155361:0.0573138767):0.0067458297,EU155368:0.0666089392):0.0025058622):0.0010303246):0.0023161021,EU155359:0.0475300323):0.0014556569,(EU256080:0.0486467516,EU256084:0.0614621238):0.0170322378):0.0103285190,EU857431:0.0538761521):0.0042822864,(LC011930:0.0000023326,LC011931:0.0001838247):0.0572083395):0.0007740856,(AF165055:0.0308915875,AF165047:0.0383571627):0.0064630369):0.0026599696,(GU451218:0.0104924560,(GU451219:0.0021817654,GU451220:0.0150694907):0.0062015878):0.0429331523):0.0087268382,((LC011928:0.0000015270,LC011929:0.0000937770):0.0002796110,LC011927:0.0000021237):0.0400104447):0.0142988682,(LC435025:0.0044029380,LC435029:0.0030677395):0.0329378525):0.0394433479,LC435030:0.0020851010);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/hcv1b_n100/hcv1b_n100.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/hcv1b_n100/hcv1b_n100.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/hcv1b_n100/hcv1b_n100.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/hcv1b_n100/hcv1b_n100.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Oct 18 02:14:17 2026
+Total CPU time used: 5176.31 seconds (1h:26m:16s)
+Total wall-clock time used: 1783.96 seconds (0h:29m:43s)
+

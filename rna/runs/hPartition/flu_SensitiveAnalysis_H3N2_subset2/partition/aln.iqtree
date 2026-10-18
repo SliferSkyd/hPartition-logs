@@ -1,0 +1,855 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition/flu_SensitiveAnalysis_H3N2_subset2/hPartition/aln.partitions
+Input file name: /home/diepht/sliferskyd/hPartition/rna_datasets/flu/aln/flu_SensitiveAnalysis_H3N2_subset2.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 365 taxa with 4 partitions and 1701 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	365	486	283	141	214	214	P0
+   2	DNA	365	434	219	96	230	230	P1
+   3	DNA	365	414	130	116	298	298	P2
+   4	DNA	365	367	78	60	307	307	P3
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F:P0,TIM3e:P1,TVM+F+I:P2,TPM3u+F+I:P3
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F             -3505.218    7028.436 + 2.69e-316    7028.814 - 5.4e-317    7066.112 - 7.38e-317
+   2  TIM3e             -2850.961    5709.922 + 2.69e-316    5710.015 - 5.4e-317    5726.214 - 7.38e-317
+   3  TVM+F+I           -4047.544    8113.089 + 2.69e-316    8113.534 - 5.4e-317    8149.322 - 7.38e-317
+   4  TPM3u+F+I         -1895.842    3805.684 + 2.69e-316    3805.996 - 5.4e-317    3833.022 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F          0.9221  GTR{25.172,100,0.0001,5.06969,46.9796}+F{0.439861,0.17905,0.15958,0.22151}
+   2  TIM3e          0.8259  TIM3e{0.011369,1.45472,4.50892}+FQ
+   3  TVM+F+I        1.5819  TVM{2.63576,7.01082,0.588862,0.16238}+F{0.308457,0.190076,0.23852,0.262947}+I{0.716188}
+   4  TPM3u+F+I      0.6527  TPM3u{0.0001,22.2634}+F{0.341399,0.125216,0.23618,0.297206}+I{0.823922}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -12285.3804 (s.e. 372.4133)
+Unconstrained log-likelihood (without tree): -6136.4783
+Number of free parameters (#branches + #model parameters): 755
+Akaike information criterion (AIC) score: 26080.7608
+Corrected Akaike information criterion (AICc) score: 27288.7608
+Bayesian information criterion (BIC) score: 30187.1843
+
+Total tree length (sum of branch lengths): 0.8482
+Sum of internal branch lengths: 0.2499 (29.4635% of tree length)
+
+WARNING: 233 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'S0001' is drawn at root
+
++--S0001
+|
+|                                            +--S0002
+|                                         +**|
+|                                         |  +--S0285
+|                                      +**|
+|                                      |  |  +--S0148
+|                                      |  +--|
+|                                      |     +--S0322
+|                                   +**|
+|                                   |  |              +--S0019
+|                                   |  |           +**|
+|                                   |  |           |  +--S0262
+|                                   |  |        +**|
+|                                   |  |        |  |  +--S0224
+|                                   |  |        |  +**|
+|                                   |  |        |     +--S0233
+|                                   |  |     +**|
+|                                   |  |     |  |              +--S0081
+|                                   |  |     |  |           +--|
+|                                   |  |     |  |           |  +--S0200
+|                                   |  |     |  |        +**|
+|                                   |  |     |  |        |  +--S0120
+|                                   |  |     |  |     +**|
+|                                   |  |     |  |     |  +--S0117
+|                                   |  |     |  |  +**|
+|                                   |  |     |  |  |  +--S0244
+|                                   |  |     |  +**|
+|                                   |  |     |     +--S0347
+|                                   |  |  +**|
+|                                   |  |  |  +--S0119
+|                                   |  +**|
+|                                   |     |  +--S0136
+|                                   |     +**|
+|                                   |        +**S0263
+|                                +**|
+|                                |  |              +--S0015
+|                                |  |           +--|
+|                                |  |           |  |  +--S0238
+|                                |  |           |  +**|
+|                                |  |           |     +**S0259
+|                                |  |        +**|
+|                                |  |        |  +--S0036
+|                                |  |     +--|
+|                                |  |     |  +--S0214
+|                                |  |  +**|
+|                                |  |  |  |  +--S0064
+|                                |  |  |  +--|
+|                                |  |  |     |        +--S0138
+|                                |  |  |     |     +**|
+|                                |  |  |     |     |  +**S0143
+|                                |  |  |     |  +**|
+|                                |  |  |     |  |  +--S0335
+|                                |  |  |     +--|
+|                                |  |  |        +--S0305
+|                                |  +**|
+|                                |     +--S0167
+|                             +**|
+|                             |  |                                                                         +--S0003
+|                             |  |                                                                      +**|
+|                             |  |                                                                      |  |                                                                                      +**S0005
+|                             |  |                                                                      |  |                                                                                   +**|
+|                             |  |                                                                      |  |                                                                                   |  |        +--S0165
+|                             |  |                                                                      |  |                                                                                   |  |     +**|
+|                             |  |                                                                      |  |                                                                                   |  |     |  +--S0178
+|                             |  |                                                                      |  |                                                                                   |  |  +**|
+|                             |  |                                                                      |  |                                                                                   |  |  |  +--S0264
+|                             |  |                                                                      |  |                                                                                   |  +**|
+|                             |  |                                                                      |  |                                                                                   |     +--S0339
+|                             |  |                                                                      |  |                                                                                +**|
+|                             |  |                                                                      |  |                                                                                |  |  +**S0116
+|                             |  |                                                                      |  |                                                                                |  +**|
+|                             |  |                                                                      |  |                                                                                |     |     +**S0288
+|                             |  |                                                                      |  |                                                                                |     |  +--|
+|                             |  |                                                                      |  |                                                                                |     |  |  +**S0330
+|                             |  |                                                                      |  |                                                                                |     +**|
+|                             |  |                                                                      |  |                                                                                |        +--S0352
+|                             |  |                                                                      |  |                                                                             +--|
+|                             |  |                                                                      |  |                                                                             |  +--S0022
+|                             |  |                                                                      |  |                                                                          +**|
+|                             |  |                                                                      |  |                                                                          |  |        +--S0065
+|                             |  |                                                                      |  |                                                                          |  |     +--|
+|                             |  |                                                                      |  |                                                                          |  |     |  +**S0252
+|                             |  |                                                                      |  |                                                                          |  |  +--|
+|                             |  |                                                                      |  |                                                                          |  |  |  |  +**S0098
+|                             |  |                                                                      |  |                                                                          |  |  |  +--|
+|                             |  |                                                                      |  |                                                                          |  |  |     +--S0365
+|                             |  |                                                                      |  |                                                                          |  +--|
+|                             |  |                                                                      |  |                                                                          |     |           +**S0070
+|                             |  |                                                                      |  |                                                                          |     |        +--|
+|                             |  |                                                                      |  |                                                                          |     |        |  +--S0355
+|                             |  |                                                                      |  |                                                                          |     |     +**|
+|                             |  |                                                                      |  |                                                                          |     |     |  |  +--S0109
+|                             |  |                                                                      |  |                                                                          |     |     |  +--|
+|                             |  |                                                                      |  |                                                                          |     |     |     |        +--S0141
+|                             |  |                                                                      |  |                                                                          |     |     |     |     +**|
+|                             |  |                                                                      |  |                                                                          |     |     |     |     |  +--S0196
+|                             |  |                                                                      |  |                                                                          |     |     |     |  +**|
+|                             |  |                                                                      |  |                                                                          |     |     |     |  |  +**S0217
+|                             |  |                                                                      |  |                                                                          |     |     |     +**|
+|                             |  |                                                                      |  |                                                                          |     |     |        +**S0179
+|                             |  |                                                                      |  |                                                                          |     |  +**|
+|                             |  |                                                                      |  |                                                                          |     |  |  +--S0204
+|                             |  |                                                                      |  |                                                                          |     +**|
+|                             |  |                                                                      |  |                                                                          |        |     +--S0147
+|                             |  |                                                                      |  |                                                                          |        |  +--|
+|                             |  |                                                                      |  |                                                                          |        |  |  +**S0197
+|                             |  |                                                                      |  |                                                                          |        +--|
+|                             |  |                                                                      |  |                                                                          |           +--S0215
+|                             |  |                                                                      |  |                                                                   +------|
+|                             |  |                                                                      |  |                                                                   |      +--S0277
+|                             |  |                                                                      |  |                                                                +**|
+|                             |  |                                                                      |  |                                                                |  |   +----S0024
+|                             |  |                                                                      |  |                                                                |  +---|
+|                             |  |                                                                      |  |                                                                |      |     +--S0039
+|                             |  |                                                                      |  |                                                                |      |  +**|
+|                             |  |                                                                      |  |                                                                |      |  |  |  +--S0060
+|                             |  |                                                                      |  |                                                                |      |  |  +**|
+|                             |  |                                                                      |  |                                                                |      |  |     +--S0236
+|                             |  |                                                                      |  |                                                                |      +**|
+|                             |  |                                                                      |  |                                                                |         |  +--S0100
+|                             |  |                                                                      |  |                                                                |         +**|
+|                             |  |                                                                      |  |                                                                |            |           +**S0129
+|                             |  |                                                                      |  |                                                                |            |        +**|
+|                             |  |                                                                      |  |                                                                |            |        |  |  +--S0142
+|                             |  |                                                                      |  |                                                                |            |        |  +**|
+|                             |  |                                                                      |  |                                                                |            |        |     +--S0316
+|                             |  |                                                                      |  |                                                                |            |     +**|
+|                             |  |                                                                      |  |                                                                |            |     |  |  +--S0149
+|                             |  |                                                                      |  |                                                                |            |     |  +**|
+|                             |  |                                                                      |  |                                                                |            |     |     +**S0345
+|                             |  |                                                                      |  |                                                                |            |  +**|
+|                             |  |                                                                      |  |                                                                |            |  |  +--S0261
+|                             |  |                                                                      |  |                                                                |            +**|
+|                             |  |                                                                      |  |                                                                |               +--S0163
+|                             |  |                                                                      |  |                                                             +--|
+|                             |  |                                                                      |  |                                                             |  |               +--S0009
+|                             |  |                                                                      |  |                                                             |  |            +--|
+|                             |  |                                                                      |  |                                                             |  |            |  +**S0284
+|                             |  |                                                                      |  |                                                             |  |         +**|
+|                             |  |                                                                      |  |                                                             |  |         |  +**S0253
+|                             |  |                                                                      |  |                                                             |  |      +**|
+|                             |  |                                                                      |  |                                                             |  |      |  +--S0185
+|                             |  |                                                                      |  |                                                             |  |  +---|
+|                             |  |                                                                      |  |                                                             |  |  |   +**S0271
+|                             |  |                                                                      |  |                                                             |  +--|
+|                             |  |                                                                      |  |                                                             |     +--------S0097
+|                             |  |                                                                      |  |                                                          +--|
+|                             |  |                                                                      |  |                                                          |  +---S0269
+|                             |  |                                                                      |  |                                                       +**|
+|                             |  |                                                                      |  |                                                       |  +---S0180
+|                             |  |                                                                      |  |                                                    +**|
+|                             |  |                                                                      |  |                                                    |  +--S0319
+|                             |  |                                                                      |  |                                                 +**|
+|                             |  |                                                                      |  |                                                 |  +----S0318
+|                             |  |                                                                      |  |                                          +------|
+|                             |  |                                                                      |  |                                          |      +--S0212
+|                             |  |                                                                      |  |                                      +---|
+|                             |  |                                                                      |  |                                      |   +--S0257
+|                             |  |                                                                      |  |                                   +--|
+|                             |  |                                                                      |  |                                   |  +--------S0326
+|                             |  |                                                                      |  |                                +--|
+|                             |  |                                                                      |  |                                |  +--S0296
+|                             |  |                                                                      |  |                             +**|
+|                             |  |                                                                      |  |                             |  +--S0130
+|                             |  |                                                                      |  |                          +--|
+|                             |  |                                                                      |  |                          |  +--S0183
+|                             |  |                                                                      |  |                       +**|
+|                             |  |                                                                      |  |                       |  +--S0035
+|                             |  |                                                                      |  |                    +--|
+|                             |  |                                                                      |  |                    |  |                 +--S0013
+|                             |  |                                                                      |  |                    |  |              +**|
+|                             |  |                                                                      |  |                    |  |              |  +--S0329
+|                             |  |                                                                      |  |                    |  |           +**|
+|                             |  |                                                                      |  |                    |  |           |  |        +--S0023
+|                             |  |                                                                      |  |                    |  |           |  |     +**|
+|                             |  |                                                                      |  |                    |  |           |  |     |  +--S0076
+|                             |  |                                                                      |  |                    |  |           |  |  +--|
+|                             |  |                                                                      |  |                    |  |           |  |  |  +**S0173
+|                             |  |                                                                      |  |                    |  |           |  +**|
+|                             |  |                                                                      |  |                    |  |           |     +--S0301
+|                             |  |                                                                      |  |                    |  |        +--|
+|                             |  |                                                                      |  |                    |  |        |  +--S0302
+|                             |  |                                                                      |  |                    |  |     +**|
+|                             |  |                                                                      |  |                    |  |     |  +--S0299
+|                             |  |                                                                      |  |                    |  |  +--|
+|                             |  |                                                                      |  |                    |  |  |  |        +--S0122
+|                             |  |                                                                      |  |                    |  |  |  |     +--|
+|                             |  |                                                                      |  |                    |  |  |  |     |  |     +**S0219
+|                             |  |                                                                      |  |                    |  |  |  |     |  |  +**|
+|                             |  |                                                                      |  |                    |  |  |  |     |  |  |  +**S0327
+|                             |  |                                                                      |  |                    |  |  |  |     |  +**|
+|                             |  |                                                                      |  |                    |  |  |  |     |     |     +--S0239
+|                             |  |                                                                      |  |                    |  |  |  |     |     |  +**|
+|                             |  |                                                                      |  |                    |  |  |  |     |     |  |  +**S0266
+|                             |  |                                                                      |  |                    |  |  |  |     |     +**|
+|                             |  |                                                                      |  |                    |  |  |  |     |        +--S0250
+|                             |  |                                                                      |  |                    |  |  |  |  +--|
+|                             |  |                                                                      |  |                    |  |  |  |  |  +**S0311
+|                             |  |                                                                      |  |                    |  |  |  +**|
+|                             |  |                                                                      |  |                    |  |  |     |           +--S0126
+|                             |  |                                                                      |  |                    |  |  |     |        +**|
+|                             |  |                                                                      |  |                    |  |  |     |        |  +--S0135
+|                             |  |                                                                      |  |                    |  |  |     |     +--|
+|                             |  |                                                                      |  |                    |  |  |     |     |  +--S0209
+|                             |  |                                                                      |  |                    |  |  |     |  +**|
+|                             |  |                                                                      |  |                    |  |  |     |  |  +--S0356
+|                             |  |                                                                      |  |                    |  |  |     +--|
+|                             |  |                                                                      |  |                    |  |  |        +--S0225
+|                             |  |                                                                      |  |                    |  +**|
+|                             |  |                                                                      |  |                    |     |        +**S0079
+|                             |  |                                                                      |  |                    |     |     +**|
+|                             |  |                                                                      |  |                    |     |     |  |  +--S0145
+|                             |  |                                                                      |  |                    |     |     |  +**|
+|                             |  |                                                                      |  |                    |     |     |     |  +--S0268
+|                             |  |                                                                      |  |                    |     |     |     +**|
+|                             |  |                                                                      |  |                    |     |     |        +--S0308
+|                             |  |                                                                      |  |                    |     |  +--|
+|                             |  |                                                                      |  |                    |     |  |  +--S0254
+|                             |  |                                                                      |  |                    |     +--|
+|                             |  |                                                                      |  |                    |        +--S0293
+|                             |  |                                                                      |  |                 +**|
+|                             |  |                                                                      |  |                 |  |        +--S0021
+|                             |  |                                                                      |  |                 |  |     +**|
+|                             |  |                                                                      |  |                 |  |     |  +**S0131
+|                             |  |                                                                      |  |                 |  +-----|
+|                             |  |                                                                      |  |                 |        +**S0095
+|                             |  |                                                                      |  |              +--|
+|                             |  |                                                                      |  |              |  |  +--S0096
+|                             |  |                                                                      |  |              |  +--|
+|                             |  |                                                                      |  |              |     +---S0283
+|                             |  |                                                                      |  |           +**|
+|                             |  |                                                                      |  |           |  |  +-------S0105
+|                             |  |                                                                      |  |           |  +--|
+|                             |  |                                                                      |  |           |     |  +--S0161
+|                             |  |                                                                      |  |           |     +**|
+|                             |  |                                                                      |  |           |        +--S0198
+|                             |  |                                                                      |  |        +--|
+|                             |  |                                                                      |  |        |  +--S0170
+|                             |  |                                                                      |  |     +--|
+|                             |  |                                                                      |  |     |  |           +--S0033
+|                             |  |                                                                      |  |     |  |        +**|
+|                             |  |                                                                      |  |     |  |        |  +--S0364
+|                             |  |                                                                      |  |     |  |     +**|
+|                             |  |                                                                      |  |     |  |     |  |  +--S0058
+|                             |  |                                                                      |  |     |  |     |  +**|
+|                             |  |                                                                      |  |     |  |     |     +--S0256
+|                             |  |                                                                      |  |     |  |  +--|
+|                             |  |                                                                      |  |     |  |  |  +**S0113
+|                             |  |                                                                      |  |     |  +**|
+|                             |  |                                                                      |  |     |     +--S0052
+|                             |  |                                                                      |  |  +**|
+|                             |  |                                                                      |  |  |  |  +--S0007
+|                             |  |                                                                      |  |  |  +--|
+|                             |  |                                                                      |  |  |     +**S0342
+|                             |  |                                                                      |  +--|
+|                             |  |                                                                      |     |     +--S0028
+|                             |  |                                                                      |     |  +--|
+|                             |  |                                                                      |     |  |  +**S0351
+|                             |  |                                                                      |     +**|
+|                             |  |                                                                      |        +--S0246
+|                             |  |                                                                   +**|
+|                             |  |                                                                   |  |              +--S0040
+|                             |  |                                                                   |  |           +--|
+|                             |  |                                                                   |  |           |  +**S0362
+|                             |  |                                                                   |  |        +**|
+|                             |  |                                                                   |  |        |  +--S0208
+|                             |  |                                                                   |  |     +**|
+|                             |  |                                                                   |  |     |  +--S0229
+|                             |  |                                                                   |  |  +--|
+|                             |  |                                                                   |  |  |  +--S0174
+|                             |  |                                                                   |  +**|
+|                             |  |                                                                   |     +---S0314
+|                             |  |                                                                +**|
+|                             |  |                                                                |  +--S0291
+|                             |  |                                                            +---|
+|                             |  |                                                            |   |     +--S0047
+|                             |  |                                                            |   |  +**|
+|                             |  |                                                            |   |  |  +--S0228
+|                             |  |                                                            |   +--|
+|                             |  |                                                            |      +--S0085
+|                             |  |                                                         +**|
+|                             |  |                                                         |  |  +--S0182
+|                             |  |                                                         |  +**|
+|                             |  |                                                         |     +----S0353
+|                             |  |                                                      +**|
+|                             |  |                                                      |  |  +--S0042
+|                             |  |                                                      |  +--|
+|                             |  |                                                      |     +--S0274
+|                             |  |                                                   +**|
+|                             |  |                                                   |  |           +**S0012
+|                             |  |                                                   |  |        +**|
+|                             |  |                                                   |  |        |  +--S0267
+|                             |  |                                                   |  |     +**|
+|                             |  |                                                   |  |     |  |        +--S0034
+|                             |  |                                                   |  |     |  |     +--|
+|                             |  |                                                   |  |     |  |     |  +--S0132
+|                             |  |                                                   |  |     |  |  +**|
+|                             |  |                                                   |  |     |  |  |  +--S0192
+|                             |  |                                                   |  |     |  +**|
+|                             |  |                                                   |  |     |     |        +--S0086
+|                             |  |                                                   |  |     |     |     +--|
+|                             |  |                                                   |  |     |     |     |  |     +--S0094
+|                             |  |                                                   |  |     |     |     |  |  +**|
+|                             |  |                                                   |  |     |     |     |  |  |  |  +--S0199
+|                             |  |                                                   |  |     |     |     |  |  |  +**|
+|                             |  |                                                   |  |     |     |     |  |  |     +---S0278
+|                             |  |                                                   |  |     |     |     |  +--|
+|                             |  |                                                   |  |     |     |     |     +--S0139
+|                             |  |                                                   |  |     |     |  +--|
+|                             |  |                                                   |  |     |     |  |  |  +**S0128
+|                             |  |                                                   |  |     |     |  |  +--|
+|                             |  |                                                   |  |     |     |  |     +**S0223
+|                             |  |                                                   |  |     |     +**|
+|                             |  |                                                   |  |     |        |  +--S0248
+|                             |  |                                                   |  |     |        +**|
+|                             |  |                                                   |  |     |           +--S0273
+|                             |  |                                                   |  |  +**|
+|                             |  |                                                   |  |  |  |              +--S0057
+|                             |  |                                                   |  |  |  |           +**|
+|                             |  |                                                   |  |  |  |           |  +--S0074
+|                             |  |                                                   |  |  |  |        +--|
+|                             |  |                                                   |  |  |  |        |  +--S0155
+|                             |  |                                                   |  |  |  |     +**|
+|                             |  |                                                   |  |  |  |     |  +--S0106
+|                             |  |                                                   |  |  |  |  +**|
+|                             |  |                                                   |  |  |  |  |  +--S0240
+|                             |  |                                                   |  |  |  +**|
+|                             |  |                                                   |  |  |     |  +--S0150
+|                             |  |                                                   |  |  |     +**|
+|                             |  |                                                   |  |  |        +--S0210
+|                             |  |                                                   |  +**|
+|                             |  |                                                   |     |  +--S0194
+|                             |  |                                                   |     +**|
+|                             |  |                                                   |        +--S0270
+|                             |  |                                                +--|
+|                             |  |                                                |  +--S0108
+|                             |  |                                             +--|
+|                             |  |                                             |  +**S0304
+|                             |  |                                          +**|
+|                             |  |                                          |  |     +--S0080
+|                             |  |                                          |  |  +--|
+|                             |  |                                          |  |  |  |  +--S0177
+|                             |  |                                          |  |  |  +--|
+|                             |  |                                          |  |  |     |  +--S0205
+|                             |  |                                          |  |  |     +--|
+|                             |  |                                          |  |  |        +--S0275
+|                             |  |                                          |  +--|
+|                             |  |                                          |     |  +---S0221
+|                             |  |                                          |     +--|
+|                             |  |                                          |        +--S0231
+|                             |  |                                      +---|
+|                             |  |                                      |   +---S0272
+|                             |  |                                   +**|
+|                             |  |                                   |  +--S0082
+|                             |  |                                +**|
+|                             |  |                                |  +**S0323
+|                             |  |                             +**|
+|                             |  |                             |  |        +--S0056
+|                             |  |                             |  |     +--|
+|                             |  |                             |  |     |  +--S0151
+|                             |  |                             |  |  +--|
+|                             |  |                             |  |  |  |     +--S0172
+|                             |  |                             |  |  |  |  +**|
+|                             |  |                             |  |  |  |  |  +--S0237
+|                             |  |                             |  |  |  +**|
+|                             |  |                             |  |  |     +--S0191
+|                             |  |                             |  +**|
+|                             |  |                             |     +--S0137
+|                             |  |                          +**|
+|                             |  |                          |  |  +**S0006
+|                             |  |                          |  +--|
+|                             |  |                          |     |  +--S0175
+|                             |  |                          |     +--|
+|                             |  |                          |        +--S0357
+|                             |  |                       +**|
+|                             |  |                       |  +--S0154
+|                             |  |                    +**|
+|                             |  |                    |  +--S0189
+|                             |  |                 +**|
+|                             |  |                 |  |        +**S0041
+|                             |  |                 |  |     +--|
+|                             |  |                 |  |     |  +--S0043
+|                             |  |                 |  |  +**|
+|                             |  |                 |  |  |  |        +--S0073
+|                             |  |                 |  |  |  |     +**|
+|                             |  |                 |  |  |  |     |  |     +--S0088
+|                             |  |                 |  |  |  |     |  |  +--|
+|                             |  |                 |  |  |  |     |  |  |  +**S0282
+|                             |  |                 |  |  |  |     |  +**|
+|                             |  |                 |  |  |  |     |     +--S0336
+|                             |  |                 |  |  |  |  +**|
+|                             |  |                 |  |  |  |  |  |     +--S0280
+|                             |  |                 |  |  |  |  |  |  +**|
+|                             |  |                 |  |  |  |  |  |  |  +**S0346
+|                             |  |                 |  |  |  |  |  +**|
+|                             |  |                 |  |  |  |  |     |  +--S0348
+|                             |  |                 |  |  |  |  |     +--|
+|                             |  |                 |  |  |  |  |        |  +--S0360
+|                             |  |                 |  |  |  |  |        +**|
+|                             |  |                 |  |  |  |  |           +--S0363
+|                             |  |                 |  |  |  +**|
+|                             |  |                 |  |  |     |    +**S0099
+|                             |  |                 |  |  |     +----|
+|                             |  |                 |  |  |          +--S0162
+|                             |  |                 |  +**|
+|                             |  |                 |     +--S0226
+|                             |  |              +**|
+|                             |  |              |  +--S0207
+|                             |  |           +**|
+|                             |  |           |  |  +--S0029
+|                             |  |           |  +**|
+|                             |  |           |     |        +**S0032
+|                             |  |           |     |     +**|
+|                             |  |           |     |     |  +**S0206
+|                             |  |           |     |  +--|
+|                             |  |           |     |  |  +--S0344
+|                             |  |           |     +--|
+|                             |  |           |        +--S0112
+|                             |  |        +**|
+|                             |  |        |  |  +--S0054
+|                             |  |        |  +**|
+|                             |  |        |     +--S0202
+|                             |  |     +--|
+|                             |  |     |  |              +---S0092
+|                             |  |     |  |           +**|
+|                             |  |     |  |           |  +--S0164
+|                             |  |     |  |        +--|
+|                             |  |     |  |        |  +--S0300
+|                             |  |     |  |     +--|
+|                             |  |     |  |     |  |        +--S0093
+|                             |  |     |  |     |  |     +**|
+|                             |  |     |  |     |  |     |  +--S0235
+|                             |  |     |  |     |  |  +--|
+|                             |  |     |  |     |  |  |  +----S0337
+|                             |  |     |  |     |  +**|
+|                             |  |     |  |     |     +--S0328
+|                             |  |     |  |  +**|
+|                             |  |     |  |  |  |   +--S0114
+|                             |  |     |  |  |  +---|
+|                             |  |     |  |  |      +--S0115
+|                             |  |     |  +--|
+|                             |  |     |     |     +--S0127
+|                             |  |     |     |  +**|
+|                             |  |     |     |  |  +--S0176
+|                             |  |     |     +**|
+|                             |  |     |        |  +**S0186
+|                             |  |     |        +--|
+|                             |  |     |           +--S0220
+|                             |  |  +**|
+|                             |  |  |  |  +-----S0101
+|                             |  |  |  +--|
+|                             |  |  |     +--S0310
+|                             |  +**|
+|                             |     +--S0279
+|                          +**|
+|                          |  +---S0281
+|                       +**|
+|                       |  |  +--S0190
+|                       |  +--|
+|                       |     +--S0324
+|                    +--|
+|                    |  |                                      +--S0008
+|                    |  |                                   +**|
+|                    |  |                                   |  +--S0152
+|                    |  |                                +--|
+|                    |  |                                |  |        +--S0016
+|                    |  |                                |  |     +**|
+|                    |  |                                |  |     |  +--S0104
+|                    |  |                                |  |  +--|
+|                    |  |                                |  |  |  +--S0037
+|                    |  |                                |  +**|
+|                    |  |                                |     |  +--S0077
+|                    |  |                                |     +**|
+|                    |  |                                |        +--S0157
+|                    |  |                             +**|
+|                    |  |                             |  +--S0075
+|                    |  |                          +**|
+|                    |  |                          |  |  +--S0051
+|                    |  |                          |  +**|
+|                    |  |                          |     |  +--S0158
+|                    |  |                          |     +--|
+|                    |  |                          |        +--S0350
+|                    |  |                       +--|
+|                    |  |                       |  |           +---S0046
+|                    |  |                       |  |        +--|
+|                    |  |                       |  |        |  +--S0169
+|                    |  |                       |  |     +**|
+|                    |  |                       |  |     |  |  +**S0201
+|                    |  |                       |  |     |  +--|
+|                    |  |                       |  |     |     +--S0232
+|                    |  |                       |  |  +--|
+|                    |  |                       |  |  |  +--S0265
+|                    |  |                       |  +--|
+|                    |  |                       |     +--S0245
+|                    |  |                    +--|
+|                    |  |                    |  |                                   +--S0011
+|                    |  |                    |  |                                +**|
+|                    |  |                    |  |                                |  |  +**S0153
+|                    |  |                    |  |                                |  +--|
+|                    |  |                    |  |                                |     +--S0203
+|                    |  |                    |  |                             +**|
+|                    |  |                    |  |                             |  |     +--S0111
+|                    |  |                    |  |                             |  |  +**|
+|                    |  |                    |  |                             |  |  |  +**S0140
+|                    |  |                    |  |                             |  +--|
+|                    |  |                    |  |                             |     +**S0333
+|                    |  |                    |  |                          +--|
+|                    |  |                    |  |                          |  |  +**S0061
+|                    |  |                    |  |                          |  +--|
+|                    |  |                    |  |                          |     +--S0072
+|                    |  |                    |  |                       +**|
+|                    |  |                    |  |                       |  |        +--S0090
+|                    |  |                    |  |                       |  |     +**|
+|                    |  |                    |  |                       |  |     |  +--S0249
+|                    |  |                    |  |                       |  |  +**|
+|                    |  |                    |  |                       |  |  |  +---S0160
+|                    |  |                    |  |                       |  +**|
+|                    |  |                    |  |                       |     +--S0123
+|                    |  |                    |  |                    +**|
+|                    |  |                    |  |                    |  |           +--S0014
+|                    |  |                    |  |                    |  |        +**|
+|                    |  |                    |  |                    |  |        |  +--S0053
+|                    |  |                    |  |                    |  |     +**|
+|                    |  |                    |  |                    |  |     |  +--S0159
+|                    |  |                    |  |                    |  |  +**|
+|                    |  |                    |  |                    |  |  |  |     +**S0102
+|                    |  |                    |  |                    |  |  |  |  +**|
+|                    |  |                    |  |                    |  |  |  |  |  |  +**S0211
+|                    |  |                    |  |                    |  |  |  |  |  +**|
+|                    |  |                    |  |                    |  |  |  |  |     +--S0255
+|                    |  |                    |  |                    |  |  |  +**|
+|                    |  |                    |  |                    |  |  |     |     +**S0124
+|                    |  |                    |  |                    |  |  |     |  +**|
+|                    |  |                    |  |                    |  |  |     |  |  +**S0234
+|                    |  |                    |  |                    |  |  |     +**|
+|                    |  |                    |  |                    |  |  |        |           +**S0166
+|                    |  |                    |  |                    |  |  |        |        +**|
+|                    |  |                    |  |                    |  |  |        |        |  +--S0227
+|                    |  |                    |  |                    |  |  |        |     +**|
+|                    |  |                    |  |                    |  |  |        |     |  +**S0321
+|                    |  |                    |  |                    |  |  |        |  +**|
+|                    |  |                    |  |                    |  |  |        |  |  +--S0340
+|                    |  |                    |  |                    |  |  |        +**|
+|                    |  |                    |  |                    |  |  |           +--S0315
+|                    |  |                    |  |                    |  +**|
+|                    |  |                    |  |                    |     |     +--S0038
+|                    |  |                    |  |                    |     |  +**|
+|                    |  |                    |  |                    |     |  |  +--S0171
+|                    |  |                    |  |                    |     +**|
+|                    |  |                    |  |                    |        +**S0066
+|                    |  |                    |  |                 +--|
+|                    |  |                    |  |                 |  +--S0110
+|                    |  |                    |  |              +--|
+|                    |  |                    |  |              |  |           +**S0027
+|                    |  |                    |  |              |  |        +**|
+|                    |  |                    |  |              |  |        |  +**S0168
+|                    |  |                    |  |              |  |     +**|
+|                    |  |                    |  |              |  |     |  +--S0078
+|                    |  |                    |  |              |  |  +**|
+|                    |  |                    |  |              |  |  |  +--S0325
+|                    |  |                    |  |              |  +--|
+|                    |  |                    |  |              |     +--S0045
+|                    |  |                    |  |           +--|
+|                    |  |                    |  |           |  +--S0230
+|                    |  |                    |  |        +--|
+|                    |  |                    |  |        |  +**S0107
+|                    |  |                    |  |     +**|
+|                    |  |                    |  |     |  +--S0188
+|                    |  |                    |  |  +**|
+|                    |  |                    |  |  |  |     +**S0071
+|                    |  |                    |  |  |  |  +--|
+|                    |  |                    |  |  |  |  |  +--S0213
+|                    |  |                    |  |  |  +**|
+|                    |  |                    |  |  |     +---S0195
+|                    |  |                    |  +**|
+|                    |  |                    |     |     +--S0020
+|                    |  |                    |     |  +**|
+|                    |  |                    |     |  |  +**S0083
+|                    |  |                    |     +**|
+|                    |  |                    |        |  +**S0048
+|                    |  |                    |        +--|
+|                    |  |                    |           +--S0276
+|                    |  |                 +--|
+|                    |  |                 |  |     +--S0247
+|                    |  |                 |  |  +**|
+|                    |  |                 |  |  |  +--S0334
+|                    |  |                 |  +--|
+|                    |  |                 |     |  +--S0290
+|                    |  |                 |     +**|
+|                    |  |                 |        +--S0295
+|                    |  |              +**|
+|                    |  |              |  +--S0069
+|                    |  |           +**|
+|                    |  |           |  +---S0338
+|                    |  |        +--|
+|                    |  |        |  +**S0059
+|                    |  |     +**|
+|                    |  |     |  |        +--S0087
+|                    |  |     |  |     +--|
+|                    |  |     |  |     |  +--S0156
+|                    |  |     |  |  +**|
+|                    |  |     |  |  |  +--S0134
+|                    |  |     |  +**|
+|                    |  |     |     |  +--S0193
+|                    |  |     |     +--|
+|                    |  |     |        +**S0349
+|                    |  |  +**|
+|                    |  |  |  |              +--S0010
+|                    |  |  |  |           +--|
+|                    |  |  |  |           |  |  +--S0258
+|                    |  |  |  |           |  +--|
+|                    |  |  |  |           |     +**S0306
+|                    |  |  |  |        +**|
+|                    |  |  |  |        |  +--S0091
+|                    |  |  |  |     +**|
+|                    |  |  |  |     |  +--S0343
+|                    |  |  |  |  +**|
+|                    |  |  |  |  |  |  +--S0089
+|                    |  |  |  |  |  +**|
+|                    |  |  |  |  |     +--S0243
+|                    |  |  |  +**|
+|                    |  |  |     |        +--S0026
+|                    |  |  |     |     +**|
+|                    |  |  |     |     |  +--S0216
+|                    |  |  |     |  +--|
+|                    |  |  |     |  |  |     +--S0050
+|                    |  |  |     |  |  |  +--|
+|                    |  |  |     |  |  |  |  |  +--S0121
+|                    |  |  |     |  |  |  |  +**|
+|                    |  |  |     |  |  |  |     |  +--S0241
+|                    |  |  |     |  |  |  |     +**|
+|                    |  |  |     |  |  |  |        +--S0317
+|                    |  |  |     |  |  +**|
+|                    |  |  |     |  |     +--S0320
+|                    |  |  |     +**|
+|                    |  |  |        +--S0260
+|                    |  +**|
+|                    |     |     +**S0049
+|                    |     |  +--|
+|                    |     |  |  +--S0218
+|                    |     +**|
+|                    |        +--S0187
+|                 +--|
+|                 |  +**S0004
+|              +**|
+|              |  |                             +**S0017
+|              |  |                          +**|
+|              |  |                          |  |           +--S0031
+|              |  |                          |  |        +**|
+|              |  |                          |  |        |  +--S0067
+|              |  |                          |  |     +**|
+|              |  |                          |  |     |  |  +--S0125
+|              |  |                          |  |     |  +**|
+|              |  |                          |  |     |     +--S0359
+|              |  |                          |  |  +**|
+|              |  |                          |  |  |  +**S0118
+|              |  |                          |  +**|
+|              |  |                          |     +**S0297
+|              |  |                       +**|
+|              |  |                       |  +**S0103
+|              |  |                    +**|
+|              |  |                    |  +--S0292
+|              |  |                 +--|
+|              |  |                 |  +--S0055
+|              |  |              +**|
+|              |  |              |  +--S0286
+|              |  |           +--|
+|              |  |           |  +---S0062
+|              |  |        +**|
+|              |  |        |  +--S0222
+|              |  |     +**|
+|              |  |     |  +**S0030
+|              |  |  +--|
+|              |  |  |  |  +--S0144
+|              |  |  |  +--|
+|              |  |  |     +**S0251
+|              |  +**|
+|              |     +--S0287
+|           +**|
+|           |  |                 +--S0018
+|           |  |              +**|
+|           |  |              |  +--S0146
+|           |  |           +**|
+|           |  |           |  |  +--S0044
+|           |  |           |  +**|
+|           |  |           |     |  +---S0133
+|           |  |           |     +--|
+|           |  |           |        +**S0309
+|           |  |        +**|
+|           |  |        |  |     +--S0184
+|           |  |        |  |  +--|
+|           |  |        |  |  |  |  +**S0331
+|           |  |        |  |  |  +--|
+|           |  |        |  |  |     +--S0361
+|           |  |        |  +--|
+|           |  |        |     +**S0341
+|           |  |     +**|
+|           |  |     |  |  +--S0063
+|           |  |     |  +**|
+|           |  |     |     +--S0068
+|           |  |  +--|
+|           |  |  |  |  +--S0242
+|           |  |  |  +**|
+|           |  |  |     +--S0312
+|           |  +**|
+|           |     |  +----S0289
+|           |     +**|
+|           |        +---S0332
+|        +**|
+|        |  |     +----S0294
+|        |  |  +**|
+|        |  |  |  +--S0307
+|        |  +**|
+|        |     +--S0313
+|     +**|
+|     |  +**S0025
+|  +**|
+|  |  +--S0084
++--|
+|  |  +--S0181
+|  +--|
+|     |     +--S0298
+|     |  +**|
+|     |  |  +--S0354
+|     +**|
+|        +**S0358
+|
++**S0303
+
+Tree in newick format:
+
+(S0001:0.0011802962,(((((((((((((((S0002:0.0035691237,S0285:0.0018310475):0.0000020513,(S0148:0.0011898974,S0322:0.0036941464):0.0011752127):0.0005864476,(((((S0019:0.0029691589,S0262:0.0005899674):0.0000010000,(S0224:0.0005898610,S0233:0.0017737198):0.0000010000):0.0000010000,(((((S0081:0.0012200990,S0200:0.0006096300):0.0006059956,S0120:0.0023688015):0.0000029100,S0117:0.0018299445):0.0000010000,S0244:0.0006118487):0.0000010000,S0347:0.0005902689):0.0000010000):0.0000010000,S0119:0.0005897290):0.0000021442,(S0136:0.0006090903,S0263:0.0000010000):0.0005873355):0.0005874836):0.0000010000,(((((S0015:0.0023637437,(S0238:0.0011836129,S0259:0.0000010000):0.0000020690):0.0005885881,S0036:0.0017708586):0.0000027056,S0214:0.0017856325):0.0011763720,(S0064:0.0017774516,(((S0138:0.0017728274,S0143:0.0000010000):0.0000010000,S0335:0.0041624476):0.0005858410,S0305:0.0017794849):0.0011843404):0.0017764780):0.0000022017,S0167:0.0017741654):0.0000020409):0.0000022046,((((((((((((((((((((((((S0003:0.0023801790,((((((((((((((((((((((((((S0005:0.0005843818,(((S0165:0.0011726101,S0178:0.0011713327):0.0000021277,S0264:0.0011726104):0.0005849596,S0339:0.0023541498):0.0000021394):0.0000021357,(S0116:0.0005844726,((S0288:0.0005843361,S0330:0.0000010000):0.0023510506,S0352:0.0023524109):0.0000021272):0.0000010000):0.0000021357,S0022:0.0017598530):0.0005901469,(((S0065:0.0017656448,S0252:0.0000010000):0.0011690558,(S0098:0.0005787880,S0365:0.0011773235):0.0023695954):0.0011793656,((((S0070:0.0005826670,S0355:0.0011793169):0.0011760746,(S0109:0.0029374502,(((S0141:0.0011702104,S0196:0.0011701443):0.0000021274,S0217:0.0005842928):0.0005844383,S0179:0.0000024015):0.0000021369):0.0011714558):0.0000020951,S0204:0.0017616401):0.0005842967,((S0147:0.0011733348,S0197:0.0000010000):0.0011773475,S0215:0.0011770067):0.0011711059):0.0000027089):0.0011724042):0.0005301997,S0277:0.0018188911):0.0079751608,(S0024:0.0059461025,((S0039:0.0023636240,(S0060:0.0011803723,S0236:0.0005899067):0.0005864388):0.0005870189,(S0100:0.0035392779,((((S0129:0.0005866122,(S0142:0.0041403685,S0316:0.0017676843):0.0000010000):0.0000010000,(S0149:0.0017666489,S0345:0.0005868534):0.0000010000):0.0000010000,S0261:0.0011762286):0.0000021271,S0163:0.0017669278):0.0005862643):0.0000024630):0.0005873296):0.0043034388):0.0000739208,(((((S0009:0.0011661165,S0284:0.0005825899):0.0011640276,S0253:0.0005807589):0.0000021292,S0185:0.0005999964):0.0000028121,S0271:0.0005811595):0.0047753152,S0097:0.0102688340):0.0009066850):0.0017767753,S0269:0.0044180609):0.0021270677,S0180:0.0047349838):0.0000010000,S0319:0.0011771279):0.0000010000,S0318:0.0053344705):0.0005183640,S0212:0.0024241441):0.0078411804,S0257:0.0030889780):0.0047152006,S0326:0.0095063882):0.0013753094,S0296:0.0024560478):0.0006504646,S0130:0.0011858045):0.0000020343,S0183:0.0005926006):0.0005889534,S0035:0.0023643179):0.0000021439,((((((S0013:0.0005886349,S0329:0.0023646188):0.0000020403,(((S0023:0.0005890218,S0076:0.0011788348):0.0005877577,S0173:0.0000022985):0.0023640915,S0301:0.0029834551):0.0000010000):0.0000021487,S0302:0.0017722049):0.0011820356,S0299:0.0035637782):0.0005875299,(((S0122:0.0018263958,((S0219:0.0005878038,S0327:0.0005877971):0.0000010000,((S0239:0.0011767029,S0266:0.0000010000):0.0005875010,S0250:0.0017710332):0.0000010000):0.0000021194):0.0011779580,S0311:0.0000026017):0.0005879912,((((S0126:0.0017741297,S0135:0.0005887515):0.0000021528,S0209:0.0011799689):0.0023655026,S0356:0.0011783094):0.0000021432,S0225:0.0005887000):0.0005884308):0.0000021465):0.0017711624,(((S0079:0.0000010000,(S0145:0.0017715185,(S0268:0.0035495945,S0308:0.0011785499):0.0000021076):0.0000020975):0.0000021439,S0254:0.0005920949):0.0005890961,S0293:0.0006081456):0.0005889949):0.0000021956):0.0005981050,((S0021:0.0011784124,S0131:0.0000010000):0.0000024848,S0095:0.0005875633):0.0065596932):0.0005871859,(S0096:0.0017912786,S0283:0.0041922203):0.0035794627):0.0005989933,(S0105:0.0084027924,(S0161:0.0017755562,S0198:0.0035631784):0.0000027009):0.0011804050):0.0000023783,S0170:0.0029598669):0.0023648455,((((S0033:0.0005902409,S0364:0.0023616143):0.0000025061,(S0058:0.0011772549,S0256:0.0011790733):0.0000021362):0.0005878255,S0113:0.0000027642):0.0005879413,S0052:0.0029583179):0.0000021096):0.0023643538,(S0007:0.0017950945,S0342:0.0005717734):0.0029769185):0.0000021503,((S0028:0.0011788623,S0351:0.0000010000):0.0017712570,S0246:0.0017710971):0.0005872575):0.0005884466):0.0000025967,(((((S0040:0.0023706976,S0362:0.0000021475):0.0005895846,S0208:0.0005900397):0.0000010000,S0229:0.0005892415):0.0000021278,S0174:0.0017733347):0.0005887757,S0314:0.0047573003):0.0000028898):0.0000010000,S0291:0.0017723566):0.0000021499,((S0047:0.0017672603,S0228:0.0017697189):0.0000010000,S0085:0.0017672551):0.0041529947):0.0047844406,(S0182:0.0012068453,S0353:0.0054036763):0.0005676069):0.0005873956,(S0042:0.0017718233,S0274:0.0011806655):0.0005897229):0.0000021423,((((S0012:0.0000010000,S0267:0.0011838552):0.0000010000,(((S0034:0.0005907418,S0132:0.0017764596):0.0011793014,S0192:0.0005879983):0.0000021460,(((S0086:0.0011900591,((S0094:0.0011826251,(S0199:0.0012069549,S0278:0.0042863172):0.0005534276):0.0000020430,S0139:0.0005963816):0.0005901200):0.0029859641,(S0128:0.0000010000,S0223:0.0000010000):0.0023769781):0.0005880073,(S0248:0.0029624870,S0273:0.0017721717):0.0000010000):0.0000010000):0.0000010000):0.0000010000,(((((S0057:0.0041681209,S0074:0.0017742277):0.0000024632,S0155:0.0011799205):0.0030208703,S0106:0.0036178017):0.0005370572,S0240:0.0005883690):0.0000010000,(S0150:0.0017696175,S0210:0.0005881097):0.0000010000):0.0000010000):0.0000010000,(S0194:0.0005879932,S0270:0.0017724653):0.0000010000):0.0000023379):0.0000021397,S0108:0.0005881149):0.0017754552,S0304:0.0005845351):0.0006023585,((S0080:0.0012757229,(S0177:0.0023734789,(S0205:0.0011815943,S0275:0.0005916314):0.0005922299):0.0010815268):0.0011938814,(S0221:0.0042266632,S0231:0.0024163376):0.0006367408):0.0034987958):0.0005627436,S0272:0.0041969905):0.0041722928,S0082:0.0023646943):0.0000021099,S0323:0.0000010000):0.0000010000,(((S0056:0.0011800448,S0151:0.0012287059):0.0023671360,((S0172:0.0041599476,S0237:0.0011768241):0.0000021327,S0191:0.0017778787):0.0005864475):0.0005882321,S0137:0.0011747979):0.0000010000):0.0000029592,(S0006:0.0000010000,(S0175:0.0011755864,S0357:0.0012258178):0.0011808739):0.0011777834):0.0005845791,S0154:0.0012575631):0.0000011233,S0189:0.0005888406):0.0000020871,(((S0041:0.0000010000,S0043:0.0005892416):0.0005910485,(((S0073:0.0005883291,((S0088:0.0005887982,S0282:0.0000010000):0.0005883151,S0336:0.0011792075):0.0000023183):0.0000010000,((S0280:0.0023538163,S0346:0.0000010000):0.0005871332,(S0348:0.0011752351,(S0360:0.0035533651,S0363:0.0005879815):0.0000024646):0.0029483650):0.0000026726):0.0000021411,(S0099:0.0005505953,S0162:0.0018046513):0.0053792672):0.0005858712):0.0005874580,S0226:0.0035451819):0.0000020217):0.0000021404,S0207:0.0011788416):0.0005872566,(S0029:0.0017667666,(((S0032:0.0000010000,S0206:0.0000010000):0.0000010000,S0344:0.0011803022):0.0017635872,S0112:0.0024101487):0.0035628885):0.0000023814):0.0000028824,(S0054:0.0011821899,S0202:0.0005896949):0.0000021608):0.0000021416,(((((S0092:0.0047828870,S0164:0.0005914612):0.0000021516,S0300:0.0005913414):0.0011926869,(((S0093:0.0017638847,S0235:0.0023826980):0.0005876320,S0337:0.0054255641):0.0036348783,S0328:0.0030212393):0.0005390215):0.0017926540,(S0114:0.0035850148,S0115:0.0017767803):0.0041851190):0.0000021688,((S0127:0.0041637934,S0176:0.0029625979):0.0000010000,(S0186:0.0005851418,S0220:0.0023766400):0.0017817937):0.0000021515):0.0012048151):0.0029571320,(S0101:0.0066523910,S0310:0.0011937898):0.0011803785):0.0000026958,S0279:0.0035492639):0.0000028133):0.0000021416,S0281:0.0047379110):0.0005875269,(S0190:0.0041591315,S0324:0.0025329500):0.0022534161):0.0000021411,(((((((((((((S0008:0.0017741065,S0152:0.0017759699):0.0000021193,(((S0016:0.0011781856,S0104:0.0005900065):0.0000021447,S0037:0.0011779263):0.0011791825,(S0077:0.0005908933,S0157:0.0017785882):0.0000021458):0.0005875662):0.0017701813,S0075:0.0035740487):0.0000020914,(S0051:0.0017777857,(S0158:0.0011916601,S0350:0.0011815446):0.0011807118):0.0000021370):0.0000021313,((((S0046:0.0041775119,S0169:0.0005901441):0.0011802605,(S0201:0.0000010000,S0232:0.0005888248):0.0011801458):0.0000026045,S0265:0.0035662641):0.0035621188,S0245:0.0011952883):0.0005903350):0.0005886184,((((((((((((S0011:0.0011778842,(S0153:0.0000021409,S0203:0.0017693124):0.0005881538):0.0000024684,((S0111:0.0005883509,S0140:0.0000010000):0.0000021436,S0333:0.0005877746):0.0005878940):0.0000021348,(S0061:0.0005819141,S0072:0.0011822876):0.0011801546):0.0011764985,(((S0090:0.0011738404,S0249:0.0017601241):0.0000021254,S0160:0.0047683653):0.0005844522,S0123:0.0017685806):0.0005849940):0.0000021044,((((S0014:0.0005929425,S0053:0.0011811198):0.0005866293,S0159:0.0011740510):0.0000028102,((S0102:0.0005878438,(S0211:0.0005875320,S0255:0.0005880965):0.0000010000):0.0000010000,((S0124:0.0005878764,S0234:0.0005878765):0.0000010000,((((S0166:0.0005876233,S0227:0.0011781325):0.0000010000,S0321:0.0000010000):0.0000021108,S0340:0.0035497811):0.0005876232,S0315:0.0005881827):0.0000027097):0.0000010000):0.0000010000):0.0000010000,((S0038:0.0035418664,S0171:0.0011771151):0.0000010000,S0066:0.0005853078):0.0000010000):0.0000010000):0.0000024266,S0110:0.0017694715):0.0005891422,((((S0027:0.0005874113,S0168:0.0000010000):0.0000021100,S0078:0.0011767273):0.0005869687,S0325:0.0017732721):0.0000020196,S0045:0.0011716775):0.0011727033):0.0011790015,S0230:0.0011884190):0.0017708981,S0107:0.0000029875):0.0035570625,S0188:0.0005893471):0.0000021008,((S0071:0.0000026939,S0213:0.0011816840):0.0041539454,S0195:0.0041779613):0.0000021520):0.0000010000,((S0020:0.0005935986,S0083:0.0000010000):0.0000010000,(S0048:0.0000010000,S0276:0.0029624782):0.0005887456):0.0000021431):0.0000026667):0.0029787860,((S0247:0.0006091535,S0334:0.0023709751):0.0000020555,(S0290:0.0023738573,S0295:0.0011831945):0.0000029299):0.0011869036):0.0005976657,S0069:0.0035752764):0.0005806144,S0338:0.0047754445):0.0000022736,S0059:0.0000010000):0.0005881300,(((S0087:0.0023792815,S0156:0.0005955246):0.0012062236,S0134:0.0024448030):0.0005819588,(S0193:0.0011776586,S0349:0.0000010000):0.0005883417):0.0000010000):0.0000020633,(((((S0010:0.0012199636,(S0258:0.0005893600,S0306:0.0000010000):0.0005918979):0.0005885056,S0091:0.0017870756):0.0000010000,S0343:0.0012234750):0.0000010000,(S0089:0.0005902582,S0243:0.0005906343):0.0000010000):0.0000010000,(((S0026:0.0017968853,S0216:0.0030885661):0.0005622547,((S0050:0.0005895050,(S0121:0.0006073542,(S0241:0.0018265213,S0317:0.0023666196):0.0000021397):0.0000026220):0.0011808533,S0320:0.0017866298):0.0000025036):0.0011772440,S0260:0.0017718003):0.0000028119):0.0000021619):0.0000010000,((S0049:0.0000010000,S0218:0.0023911698):0.0005890285,S0187:0.0005881554):0.0000021261):0.0000024209):0.0017816353,S0004:0.0000010000):0.0011862186,((((((((((S0017:0.0000010000,((((S0031:0.0017707739,S0067:0.0017693310):0.0000010000,(S0125:0.0011795590,S0359:0.0005886178):0.0000010000):0.0000010000,S0118:0.0000010000):0.0000010000,S0297:0.0005864644):0.0000010000):0.0000010000,S0103:0.0000010000):0.0000010000,S0292:0.0011745802):0.0000022371,S0055:0.0029469855):0.0011841535,S0286:0.0023677558):0.0005725785,S0062:0.0047862902):0.0017739739,S0222:0.0005924520):0.0000026917,S0030:0.0005878352):0.0005855961,(S0144:0.0029679928,S0251:0.0005823073):0.0011864397):0.0017711656,S0287:0.0011764121):0.0000026135):0.0000024536,((((((S0018:0.0029611852,S0146:0.0041476250):0.0000010000,(S0044:0.0023587130,(S0133:0.0041797389,S0309:0.0005797585):0.0017839145):0.0000020979):0.0005875536,((S0184:0.0017778539,(S0331:0.0005843159,S0361:0.0005965412):0.0036068397):0.0029625931,S0341:0.0005823766):0.0005943115):0.0000010000,(S0063:0.0005897672,S0068:0.0011811148):0.0000027020):0.0000010000,(S0242:0.0023740969,S0312:0.0023576124):0.0000010000):0.0005878990,(S0289:0.0060663198,S0332:0.0048689796):0.0004992224):0.0000021497):0.0000010000,((S0294:0.0060548670,S0307:0.0030717802):0.0005042497,S0313:0.0017781120):0.0000010000):0.0000010000,S0025:0.0000010000):0.0000010000,S0084:0.0011808754):0.0000021457,(S0181:0.0011806328,((S0298:0.0011822813,S0354:0.0017713553):0.0000026615,S0358:0.0000010000):0.0000010000):0.0005895299):0.0011815089,S0303:0.0000021462);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition/flu_SensitiveAnalysis_H3N2_subset2/partition/aln.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition/flu_SensitiveAnalysis_H3N2_subset2/partition/aln.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/flu/aln/flu_SensitiveAnalysis_H3N2_subset2.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/flu/aln/flu_SensitiveAnalysis_H3N2_subset2.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Oct 18 01:07:56 2026
+Total CPU time used: 448.434 seconds (0h:7m:28s)
+Total wall-clock time used: 471.692 seconds (0h:7m:51s)
+

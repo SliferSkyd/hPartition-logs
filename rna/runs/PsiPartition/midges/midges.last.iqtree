@@ -1,0 +1,288 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/midges/midges.parts
+Input file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/midges/midges.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 74 taxa with 10 partitions and 2701 total sites (0.00300189% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	74	301	4	0	301	301	part1
+   2	DNA	74	772	55	21	748	748	part2
+   3	DNA	74	315	62	26	289	289	part3
+   4	DNA	74	48	48	48	0	0	part4
+   5	DNA	74	134	133	127	4	4	part5
+   6	DNA	74	328	312	269	3	3	part6
+   7	DNA	74	336	314	259	6	6	part7
+   8	DNA	74	254	253	228	0	0	part8
+   9	DNA	74	212	210	167	2	2	part9
+  10	DNA	68	1	1	0	0	0	part10
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F:part1,GTR+F+I+R3:part2,TIM2+F+I+G4:part3,TIM3+F+ASC+R3:part4,TPM2u+F+R3:part5,GTR+F+R3:part6,TVM+F+R4:part7,TPM3u+F+ASC+G4:part8,GTR+F+G4:part9,TIM3+F+ASC+R8:part10
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  F81+F              -382.226     772.452 + 2.44e-316     772.587 - 5.4e-317     787.280 - 7.38e-317
+   2  GTR+F+I+R3        -1654.299    3336.598 + 2.44e-316    3337.152 - 5.4e-317    3401.683 - 7.38e-317
+   3  TIM2+F+I+G4       -1241.209    2500.419 + 2.44e-316    2501.009 - 5.4e-317    2534.192 - 7.38e-317
+   4  TIM3+F+ASC+R3     -1562.545    3147.089 + 2.44e-316    3154.423 - 5.4e-317    3167.672 - 7.38e-317
+   5  TPM2u+F+R3        -3833.017    7686.033 + 2.44e-316    7687.822 - 5.4e-317    7715.012 - 7.38e-317
+   6  GTR+F+R3          -7511.001   15048.002 + 2.44e-316   15049.161 - 5.4e-317   15097.311 - 7.38e-317
+   7  TVM+F+R4          -9082.367   18192.733 + 2.44e-316   18194.042 - 5.4e-317   18246.173 - 7.38e-317
+   8  TPM3u+F+ASC+G4    -8748.517   17511.033 + 2.44e-316   17511.489 - 5.4e-317   17535.795 - 7.38e-317
+   9  GTR+F+G4          -5842.091   11704.182 + 2.44e-316   11705.276 - 5.4e-317   11737.748 - 7.38e-317
+  10  TIM3+F+ASC+R8        -9.356      60.712 + 2.44e-316     984.712 - 5.4e-317      18.712 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  F81+F          0.0045  F81+F{0.283333,3.71029e-21,0.3,0.416667}
+   2  GTR+F+I+R3     0.0318  GTR{0.0001,0.0001,8.7603,0.0001,78.5662}+F{0.247211,0.118775,0.233361,0.400653}+I{0.663773}+R3{0.29432,5.5781e-14,0.0267489,12.8661,0.0151581,43.2671}
+   3  TIM2+F+I+G4    0.0723  TIM2{0.0001,100,20.9094}+F{0.425083,0.491985,0.0318407,0.0510912}+I{0.896953}+G4{4.16788}
+   4  TIM3+F+ASC+R3  4.3100  TIM3{0.0001,7.60167,34.9259}+F{0.461494,0.117545,0.12044,0.300521}+ASC+R3{0.269815,0.197843,0.534234,0.564799,0.195951,3.29105}
+   5  TPM2u+F+R3     4.7996  TPM2u{4.31539,100}+F{0.216124,0.182542,0.0349308,0.566403}+R3{0.378871,0.176717,0.489973,0.541528,0.131155,5.09101}
+   6  GTR+F+R3       1.1457  GTR{0.603823,9.50414,3.4346,0.562342,17.9572}+F{0.4388,0.153793,0.122145,0.285263}+R3{0.49911,0.311855,0.391622,0.982887,0.109268,4.20462}
+   7  TVM+F+R4       1.5721  TVM{6.30855,11.0627,5.62934,3.42353}+F{0.31832,0.137641,0.14144,0.402599}+R4{0.436487,0.188321,0.254502,0.690488,0.228272,1.62054,0.0807385,4.60928}
+   8  TPM3u+F+ASC+G4 2.0235  TPM3u{1.54973,3.63627}+F{0.37759,0.124646,0.0810925,0.416672}+ASC+G4{0.986042}
+   9  GTR+F+G4       1.8103  GTR{26.6911,12.0622,7.12574,34.7904,100}+F{0.406399,0.0499243,0.115136,0.42854}+G4{1.00202}
+  10  TIM3+F+ASC+R8  0.5310  TIM3{1,1,1}+F{0.0147059,0.0147059,4.66978e-10,0.970588}+ASC+R8{0.125064,0.999925,0.125002,0.999958,0.125002,0.999977,0.125002,0.999995,0.125002,1.00002,0.124941,1.00002,0.125002,1.00005,0.124985,1.00006}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -39816.4045 (s.e. 928.1148)
+Unconstrained log-likelihood (without tree): -10227.1944
+Number of free parameters (#branches + #model parameters): 257
+Akaike information criterion (AIC) score: 80146.8090
+Corrected Akaike information criterion (AICc) score: 80201.0914
+Bayesian information criterion (BIC) score: 81663.4630
+
+Total tree length (sum of branch lengths): 7.9018
+Sum of internal branch lengths: 2.6688 (33.7743% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'S001' is drawn at root
+
++--S001
+|
++--S002
+|
+|                                            +--------S003
+|                                         +--|
+|                                         |  |          +--S006
+|                                         |  |     +----|
+|                                         |  |     |    +--S007
+|                                         |  |  +--|
+|                                         |  |  |  +----S049
+|                                         |  +--|
+|                                         |     |  +--S030
+|                                         |     +--|
+|                                         |        +--S041
+|                                      +--|
+|                                      |  |                 +-------S004
+|                                      |  |              +--|
+|                                      |  |              |  |     +--------S005
+|                                      |  |              |  |  +--|
+|                                      |  |              |  |  |  |  +---S023
+|                                      |  |              |  |  |  +--|
+|                                      |  |              |  |  |     +------S033
+|                                      |  |              |  +--|
+|                                      |  |              |     |  +-------S031
+|                                      |  |              |     +--|
+|                                      |  |              |        |           +**S038
+|                                      |  |              |        |        +--|
+|                                      |  |              |        |        |  +--S039
+|                                      |  |              |        |     +--|
+|                                      |  |              |        |     |  +--S040
+|                                      |  |              |        |  +--|
+|                                      |  |              |        |  |  |        +--S042
+|                                      |  |              |        |  |  |     +--|
+|                                      |  |              |        |  |  |     |  +--S045
+|                                      |  |              |        |  |  |  +--|
+|                                      |  |              |        |  |  |  |  +--S043
+|                                      |  |              |        |  |  +--|
+|                                      |  |              |        |  |     +--S044
+|                                      |  |              |        +--|
+|                                      |  |              |           |  +---S046
+|                                      |  |              |           +--|
+|                                      |  |              |              +--S047
+|                                      |  |           +--|
+|                                      |  |           |  +---------S020
+|                                      |  |        +--|
+|                                      |  |        |  |                       +**S009
+|                                      |  |        |  |                    +--|
+|                                      |  |        |  |                    |  +--S011
+|                                      |  |        |  |                 +--|
+|                                      |  |        |  |                 |  +--S012
+|                                      |  |        |  |              +--|
+|                                      |  |        |  |              |  +--S010
+|                                      |  |        |  |           +--|
+|                                      |  |        |  |           |  |  +--S024
+|                                      |  |        |  |           |  +--|
+|                                      |  |        |  |           |     |  +--S026
+|                                      |  |        |  |           |     +--|
+|                                      |  |        |  |           |        +**S027
+|                                      |  |        |  |        +--|
+|                                      |  |        |  |        |  |        +--S013
+|                                      |  |        |  |        |  |     +--|
+|                                      |  |        |  |        |  |     |  +--S014
+|                                      |  |        |  |        |  +-----|
+|                                      |  |        |  |        |        +--S015
+|                                      |  |        |  |     +--|
+|                                      |  |        |  |     |  |         +--S016
+|                                      |  |        |  |     |  |      +--|
+|                                      |  |        |  |     |  |      |  +--S017
+|                                      |  |        |  |     |  |  +---|
+|                                      |  |        |  |     |  |  |   +--S018
+|                                      |  |        |  |     |  +--|
+|                                      |  |        |  |     |     |      +--S025
+|                                      |  |        |  |     |     |   +--|
+|                                      |  |        |  |     |     |   |  +--S029
+|                                      |  |        |  |     |     +---|
+|                                      |  |        |  |     |         +--S028
+|                                      |  |        |  |  +--|
+|                                      |  |        |  |  |  |  +------S019
+|                                      |  |        |  |  |  +--|
+|                                      |  |        |  |  |     |         +--S021
+|                                      |  |        |  |  |     +---------|
+|                                      |  |        |  |  |               +--S022
+|                                      |  |        |  +--|
+|                                      |  |        |     |  +---S036
+|                                      |  |        |     +--|
+|                                      |  |        |        +--------S048
+|                                      |  |     +--|
+|                                      |  |     |  |  +--------S032
+|                                      |  |     |  +--|
+|                                      |  |     |     +------S054
+|                                      |  |  +--|
+|                                      |  |  |  |           +--S050
+|                                      |  |  |  |        +--|
+|                                      |  |  |  |        |  +--S055
+|                                      |  |  |  |    +---|
+|                                      |  |  |  |    |   |  +**S051
+|                                      |  |  |  |    |   +--|
+|                                      |  |  |  |    |      |  +--S052
+|                                      |  |  |  |    |      +--|
+|                                      |  |  |  |    |         +--S053
+|                                      |  |  |  +----|
+|                                      |  |  |       +------S056
+|                                      |  +--|
+|                                      |     |  +-------S008
+|                                      |     +--|
+|                                      |        |         +--S034
+|                                      |        +---------|
+|                                      |                  +--S035
+|                               +------|
+|                               |      +------------S037
+|                            +--|
+|                            |  |                           +--S057
+|                            |  |                        +--|
+|                            |  |                        |  +--S058
+|                            |  |                    +---|
+|                            |  |                    |   +--S059
+|                            |  |                 +--|
+|                            |  |                 |  +----S064
+|                            |  |           +-----|
+|                            |  |           |     +-----S060
+|                            |  |        +--|
+|                            |  |        |  |  +----------S062
+|                            |  |        |  +--|
+|                            |  |        |     +----------S067
+|                            |  |     +--|
+|                            |  |     |  +-----------S063
+|                            |  |  +--|
+|                            |  |  |  |     +---------S061
+|                            |  |  |  |  +--|
+|                            |  |  |  |  |  |  +-------S066
+|                            |  |  |  |  |  +--|
+|                            |  |  |  |  |     +----------S069
+|                            |  |  |  +--|
+|                            |  |  |     +-------------S065
+|                            |  +--|
+|                            |     +--------------S068
+|                         +--|
+|                         |  +----------------------S071
+|                    +----|
+|                    |    +------------------------S070
+|                 +--|
+|                 |  |  +---------------S072
+|                 |  +--|
+|                 |     +--------------S073
++-----------------|
+                  +---------------S074
+
+Tree in newick format:
+
+(S001:0.0176402488,S002:0.0259666569,((((((((S003:0.1368421871,(((S006:0.0025082037,S007:0.0022411854):0.0778501169,S049:0.0719322140):0.0373094091,(S030:0.0292065582,S041:0.0369115223):0.0481942126):0.0173537977):0.0552918265,((((((S004:0.1160926309,((S005:0.1289262655,(S023:0.0661557625,S033:0.0999414946):0.0111663502):0.0246513977,(S031:0.1200108471,((((S038:0.0000023753,S039:0.0012294251):0.0063791107,S040:0.0034295382):0.0384523133,(((S042:0.0040300037,S045:0.0054526366):0.0043238077,S043:0.0021875400):0.0135762501,S044:0.0200729691):0.0211089624):0.0094655735,(S046:0.0665251466,S047:0.0466039074):0.0123519351):0.0428681194):0.0128921159):0.0191769085):0.0248108225,S020:0.1429945304):0.0112039385,((((((((S009:0.0000026452,S011:0.0017099624):0.0008662437,S012:0.0056438841):0.0021803015,S010:0.0027532502):0.0471473078,(S024:0.0026416347,(S026:0.0008507489,S027:0.0000022587):0.0003932940):0.0406043404):0.0279919481,((S013:0.0015675956,S014:0.0023621652):0.0041835601,S015:0.0147173134):0.0895680972):0.0127113946,(((S016:0.0085482730,S017:0.0024505069):0.0145814262,S018:0.0188632075):0.0669494629,((S025:0.0069663875,S029:0.0088711427):0.0023947592,S028:0.0021902710):0.0708086525):0.0110928121):0.0417161990,(S019:0.1135397710,(S021:0.0017820229,S022:0.0025291612):0.1537839421):0.0141351386):0.0147216642,(S036:0.0626487905,S048:0.1392322429):0.0550742256):0.0253266560):0.0096821271,(S032:0.1308689766,S054:0.1119420356):0.0275870605):0.0141053212,(((S050:0.0480430116,S055:0.0465954868):0.0102110205,(S051:0.0002568188,(S052:0.0008415932,S053:0.0008411755):0.0005834455):0.0378512394):0.0596737769,S056:0.1086049846):0.0722509802):0.0256830688,(S008:0.1266389517,(S034:0.0041502902,S035:0.0051628223):0.1543296788):0.0346337217):0.0149975539):0.0229607574,S037:0.1856995969):0.1049123725,((((((((S057:0.0022462663,S058:0.0026171852):0.0030468615,S059:0.0071387775):0.0632566473,S064:0.0825629661):0.0323614638,S060:0.0934873868):0.0866330103,(S062:0.1574013952,S067:0.1596001105):0.0230236271):0.0339726726,S063:0.1817817054):0.0528681785,((S061:0.1515913906,(S066:0.1189565630,S069:0.1570064132):0.0388039517):0.0150910026,S065:0.2039282578):0.0262100969):0.0163665976,S068:0.2255647718):0.0215638648):0.0314468501,S071:0.3318219941):0.0317726243,S070:0.3646876905):0.0722870866,(S072:0.2292921070,S073:0.2164580469):0.0382919956):0.0477437579,S074:0.2304654521):0.2599229751);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/midges/midges.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/midges/midges.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/midges/midges.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/midges/midges.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Oct 19 01:17:51 2026
+Total CPU time used: 343.184 seconds (0h:5m:43s)
+Total wall-clock time used: 97.8225 seconds (0h:1m:37s)
+

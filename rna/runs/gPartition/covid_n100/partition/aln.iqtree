@@ -1,0 +1,319 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/covid_n100/gPartition/covid_n100.phy.FINAL.nex
+Input file name: /home/diepht/sliferskyd/hPartition/rna_datasets/covid/aln/covid_n100.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 100 taxa with 2 partitions and 29912 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	100	29123	310	25	29068	29068	Subset1
+   2	DNA	100	789	460	140	0	0	Subset2
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F+I:Subset1,GTR+F+ASC:Subset2
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  F81+F+I          -40298.849   80607.699 + 2.01e-316   80607.701 - 5.4e-317   80649.095 - 7.38e-317
+   2  GTR+F+ASC         -5537.563   11093.125 + 2.01e-316   11093.356 - 5.4e-317   11135.162 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  F81+F+I        0.3256  F81+F{0.30404,0.175771,0.194058,0.32613}+I{0.997381}
+   2  GTR+F+ASC      25.8919  GTR{0.114214,0.835032,0.0001,0.00828841,1.58434}+F{0.100724,0.473542,0.277157,0.148578}+ASC
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -45826.5658 (s.e. 220.2608)
+Unconstrained log-likelihood (without tree): -55213.9375
+Number of free parameters (#branches + #model parameters): 210
+Akaike information criterion (AIC) score: 92073.1316
+Corrected Akaike information criterion (AICc) score: 92076.1153
+Bayesian information criterion (BIC) score: 93817.3947
+
+Total tree length (sum of branch lengths): 0.0109
+Sum of internal branch lengths: 0.0013 (12.1090% of tree length)
+
+WARNING: 84 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'S0001' is drawn at root
+
++----------S0001
+|
+|                 +-------------------S0002
+|              +**|
+|              |  +----------------------S0011
+|           +**|
+|           |  |        +**S0076
+|           |  |  +-----|
+|           |  |  |     +---S0077
+|           |  +**|
+|           |     +-------------------S0098
+|        +**|
+|        |  +----------------------S0038
+|     +**|
+|     |  |                   +--------S0024
+|     |  +-------------------|
+|     |                      +--------S0099
+|  +**|
+|  |  |                                                                     +**S0003
+|  |  |                                                                  +**|
+|  |  |                                                                  |  +**S0065
+|  |  |                                                               +**|
+|  |  |                                                               |  +**S0004
+|  |  |                                                            +**|
+|  |  |                                                            |  |  +------S0057
+|  |  |                                                            |  +**|
+|  |  |                                                            |     +------S0069
+|  |  |                                                         +**|
+|  |  |                                                         |  |           +-----S0013
+|  |  |                                                         |  |        +**|
+|  |  |                                                         |  |        |  +-----S0100
+|  |  |                                                         |  |     +**|
+|  |  |                                                         |  |     |  +**S0029
+|  |  |                                                         |  |  +**|
+|  |  |                                                         |  |  |  |  +**S0042
+|  |  |                                                         |  |  |  +**|
+|  |  |                                                         |  |  |     +***S0084
+|  |  |                                                         |  +**|
+|  |  |                                                         |     |  +--------S0020
+|  |  |                                                         |     +**|
+|  |  |                                                         |        |                +**S0027
+|  |  |                                                         |        |  +-------------|
+|  |  |                                                         |        |  |             +**S0055
+|  |  |                                                         |        +**|
+|  |  |                                                         |           +------S0072
+|  |  |                        +--------------------------------|
+|  |  |                        |                                |  +**S0063
+|  |  |                        |                                +**|
+|  |  |                        |                                   +**S0068
+|  |  |                     +**|
+|  |  |                     |  +-----------------------S0018
+|  |  |                  +**|
+|  |  |                  |  |                                      +----------------S0006
+|  |  |                  |  |                                   +**|
+|  |  |                  |  |                                   |  +---------------------------------S0031
+|  |  |                  |  |                                +**|
+|  |  |                  |  |                                |  +------------------------------S0087
+|  |  |                  |  |                             +**|
+|  |  |                  |  |                             |  +**S0030
+|  |  |                  |  |                          +**|
+|  |  |                  |  |                          |  +-------------S0014
+|  |  |                  |  |                       +**|
+|  |  |                  |  |                       |  +--------S0097
+|  |  |                  |  |                    +**|
+|  |  |                  |  |                    |  +---------------------------S0093
+|  |  |                  |  |                 +**|
+|  |  |                  |  |                 |  +----------------S0041
+|  |  |                  |  |              +**|
+|  |  |                  |  |              |  |  +----------------S0032
+|  |  |                  |  |              |  +**|
+|  |  |                  |  |              |     +--------------S0033
+|  |  |                  |  |           +**|
+|  |  |                  |  |           |  |     +----------S0010
+|  |  |                  |  |           |  |  +**|
+|  |  |                  |  |           |  |  |  +----------------S0017
+|  |  |                  |  |           |  +**|
+|  |  |                  |  |           |     |  +-----------------S0015
+|  |  |                  |  |           |     +**|
+|  |  |                  |  |           |        +----------------S0016
+|  |  |                  |  |        +**|
+|  |  |                  |  |        |  +----------S0028
+|  |  |                  |  |     +**|
+|  |  |                  |  |     |  |            +------S0026
+|  |  |                  |  |     |  +------------|
+|  |  |                  |  |     |               +----------------S0044
+|  |  |                  |  |  +**|
+|  |  |                  |  |  |  +**S0043
+|  |  |                  |  +**|
+|  |  |                  |     |  +------------------S0059
+|  |  |                  |     +**|
+|  |  |                  |        +---------------------S0096
+|  |  |               +**|
+|  |  |               |  |           +-------------------------------S0040
+|  |  |               |  |        +**|
+|  |  |               |  |        |  +-----------------S0054
+|  |  |               |  |  +-----|
+|  |  |               |  |  |     |    +---------------S0066
+|  |  |               |  |  |     +----|
+|  |  |               |  |  |          +-----S0067
+|  |  |               |  +**|
+|  |  |               |     +-----------S0052
+|  |  |           +---|
+|  |  |           |   +-------------------------S0007
+|  |  |        +**|
+|  |  |        |  |           +-----------S0008
+|  |  |        |  |        +**|
+|  |  |        |  |        |  +--------------S0019
+|  |  |        |  |     +**|
+|  |  |        |  |     |  +-------------------------S0092
+|  |  |        |  |  +**|
+|  |  |        |  |  |  |     +---S0025
+|  |  |        |  |  |  |  +**|
+|  |  |        |  |  |  |  |  +---------------------------S0035
+|  |  |        |  |  |  +**|
+|  |  |        |  |  |     +-----------S0082
+|  |  |        |  +**|
+|  |  |        |     +**S0095
+|  |  |     +**|
+|  |  |     |  |                    +------------------------------S0036
+|  |  |     |  |              +-----|
+|  |  |     |  |              |     |  +------------------------S0037
+|  |  |     |  |              |     +**|
+|  |  |     |  |              |        +**S0081
+|  |  |     |  |           +**|
+|  |  |     |  |           |  |  +-----------------S0083
+|  |  |     |  |           |  +**|
+|  |  |     |  |           |     +--------S0094
+|  |  |     |  |        +**|
+|  |  |     |  |        |  |  +**S0078
+|  |  |     |  |        |  +**|
+|  |  |     |  |        |     +------S0089
+|  |  |     |  |  +-----|
+|  |  |     |  |  |     +**S0080
+|  |  |     |  +**|
+|  |  |     |     +---------------------------S0049
+|  |  |  +**|
+|  |  |  |  |              +-----------------------S0021
+|  |  |  |  |           +**|
+|  |  |  |  |           |  +-----S0060
+|  |  |  |  |        +**|
+|  |  |  |  |        |  +**S0070
+|  |  |  |  |     +**|
+|  |  |  |  |     |  +-----S0023
+|  |  |  |  |  +**|
+|  |  |  |  |  |  |                          +-----------S0022
+|  |  |  |  |  |  |                       +**|
+|  |  |  |  |  |  |                       |  +--------S0053
+|  |  |  |  |  |  |                    +**|
+|  |  |  |  |  |  |                    |  +**S0062
+|  |  |  |  |  |  |              +-----|
+|  |  |  |  |  |  |              |     +----------S0061
+|  |  |  |  |  |  |           +**|
+|  |  |  |  |  |  |           |  +-----------------S0079
+|  |  |  |  |  |  |        +**|
+|  |  |  |  |  |  |        |  |  +--------S0058
+|  |  |  |  |  |  |        |  +**|
+|  |  |  |  |  |  |        |     +--------S0071
+|  |  |  |  |  |  +--------|
+|  |  |  |  |  |           +-----------S0086
+|  |  |  |  +**|
+|  |  |  |     |        +**S0034
+|  |  |  |     |     +**|
+|  |  |  |     |     |  +**S0064
+|  |  |  |     |  +**|
+|  |  |  |     |  |  +**S0085
+|  |  |  |     +**|
+|  |  |  |        +**S0090
+|  |  +**|
+|  |     |           +------S0005
+|  |     |        +**|
+|  |     |        |  |  +------------------------------S0073
+|  |     |        |  +**|
+|  |     |        |     +------------------------------S0091
+|  |     |     +**|
+|  |     |     |  +**S0012
+|  |     |  +**|
+|  |     |  |  |            +----------------------S0009
+|  |     |  |  |         +**|
+|  |     |  |  |         |  +---------S0050
+|  |     |  |  +---------|
+|  |     |  |            +-----------S0056
+|  |     +**|
+|  |        |           +-------------S0039
+|  |        |        +**|
+|  |        |        |  +--------------S0048
+|  |        |     +**|
+|  |        |     |  +-----------S0051
+|  |        |  +**|
+|  |        |  |  |  +--------S0047
+|  |        |  |  +**|
+|  |        |  |     +-------------------------S0075
+|  |        +**|
+|  |           +-------------------S0074
++**|
+|  +**S0045
+|
+|  +----------------------------------------S0046
++**|
+   +---------------------------S0088
+
+Tree in newick format:
+
+(S0001:0.0000791618,((((((S0002:0.0001465759,S0011:0.0001687833):0.0000215966,((S0076:0.0000116875,S0077:0.0000335175):0.0000447381,S0098:0.0001467163):0.0000009409):0.0000116573,S0038:0.0001692204):0.0000114515,(S0024:0.0000669188,S0099:0.0000670268):0.0001459342):0.0000115008,(((((((((((((S0003:0.0000226732,S0065:0.0000227313):0.0000009409,S0004:0.0000227435):0.0000009409,(S0057:0.0000568086,S0069:0.0000569328):0.0000009409):0.0000009409,((((S0013:0.0000452298,S0100:0.0000450412):0.0000227038,S0029:0.0000115595):0.0000009409,(S0042:0.0000227497,S0084:0.0000332798):0.0000113974):0.0000113934,(S0020:0.0000675531,((S0027:0.0000117272,S0055:0.0000118367):0.0001022668,S0072:0.0000565350):0.0000009409):0.0000009409):0.0000113803):0.0000009409,(S0063:0.0000115775,S0068:0.0000117546):0.0000113917):0.0002380186,S0018:0.0001790599):0.0000009409,(((((((((((((S0006:0.0001245443,S0031:0.0002443532):0.0000135601,S0087:0.0002291101):0.0000009409,S0030:0.0000227203):0.0000009409,S0014:0.0001009057):0.0000009409,S0097:0.0000676975):0.0000009409,S0093:0.0002022456):0.0000009409,S0041:0.0001253180):0.0000009409,(S0032:0.0001241426,S0033:0.0001129963):0.0000230560):0.0000009409,((S0010:0.0000802774,S0017:0.0001235984):0.0000009409,(S0015:0.0001355835,S0016:0.0001246409):0.0000009409):0.0000114649):0.0000009409,S0028:0.0000803551):0.0000009409,(S0026:0.0000567949,S0044:0.0001264384):0.0000982560):0.0000009409,S0043:0.0000116009):0.0000009409,(S0059:0.0001366312,S0096:0.0001579076):0.0000112746):0.0000009409):0.0000009409,(((S0040:0.0002349572,S0054:0.0001353403):0.0000009409,(S0066:0.0001199753,S0067:0.0000453442):0.0000366901):0.0000450055,S0052:0.0000894098):0.0000009409):0.0000009409,S0007:0.0001896315):0.0000339195,((((S0008:0.0000902385,S0019:0.0001128877):0.0000009409,S0092:0.0001922765):0.0000118816,((S0025:0.0000344431,S0035:0.0002050836):0.0000009409,S0082:0.0000901730):0.0000009409):0.0000009409,S0095:0.0000009409):0.0000118551):0.0000009409,(((((S0036:0.0002268036,(S0037:0.0001817668,S0081:0.0000115089):0.0000115497):0.0000450806,(S0083:0.0001359799,S0094:0.0000682703):0.0000018953):0.0000009409,(S0078:0.0000115981,S0089:0.0000567257):0.0000111978):0.0000009409,S0080:0.0000228047):0.0000450439,S0049:0.0002022951):0.0000009409):0.0000009409,(((((S0021:0.0001722944,S0060:0.0000452364):0.0000009409,S0070:0.0000226130):0.0000009409,S0023:0.0000451803):0.0000116616,((((((S0022:0.0000907340,S0053:0.0000682277):0.0000009409,S0062:0.0000119997):0.0000009409,S0061:0.0000794820):0.0000450170,S0079:0.0001355908):0.0000009409,(S0058:0.0000688529,S0071:0.0000679974):0.0000119844):0.0000122230,S0086:0.0000900537):0.0000680826):0.0000009409,(((S0034:0.0000009409,S0064:0.0000227790):0.0000116008,S0085:0.0000009409):0.0000009409,S0090:0.0000009409):0.0000009409):0.0000009409):0.0000118714,((((S0005:0.0000565652,(S0073:0.0002281150,S0091:0.0002269279):0.0000111207):0.0000009409,S0012:0.0000233270):0.0000009409,((S0009:0.0001691782,S0050:0.0000788244):0.0000009409,S0056:0.0000900716):0.0000783406):0.0000119016,((((S0039:0.0001019045,S0048:0.0001123743):0.0000115566,S0051:0.0000909593):0.0000009409,(S0047:0.0000679281,S0075:0.0001907125):0.0000009409):0.0000009409,S0074:0.0001454891):0.0000115340):0.0000009409):0.0000114938):0.0000009409,S0045:0.0000116492):0.0000009409,(S0046:0.0002985112,S0088:0.0002045172):0.0000167036);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/covid_n100/partition/aln.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/covid_n100/partition/aln.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/covid/aln/covid_n100.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rna_datasets/covid/aln/covid_n100.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Oct 18 09:02:11 2026
+Total CPU time used: 95.9439 seconds (0h:1m:35s)
+Total wall-clock time used: 98.5399 seconds (0h:1m:38s)
+

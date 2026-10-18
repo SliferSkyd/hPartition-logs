@@ -1,0 +1,198 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella/rubella.parts
+Input file name: /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella/rubella.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 35 taxa with 5 partitions and 9759 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	35	3428	2	0	3428	3428	part1
+   2	DNA	35	3523	2	0	3523	3523	part3
+   3	DNA	35	1530	927	1103	0	0	part5
+   4	DNA	35	1277	903	758	45	45	part6
+   5	DNA	35	1	1	0	0	0	part7
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F:part1,F81+F:part3,GTR+F+ASC+R2:part5,GTR+F+R2:part6,K3Pu+F+ASC+R2:part7
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  F81+F             -2106.996    4221.992 + 1.73e-316    4222.004 - 5.4e-317    4246.551 - 7.38e-317
+   2  F81+F             -2217.138    4442.276 + 1.73e-316    4442.287 - 5.4e-317    4466.944 - 7.38e-317
+   3  GTR+F+ASC+R2     -14952.004   29926.009 + 1.73e-316   29926.183 - 5.4e-317   29984.672 - 7.38e-317
+   4  GTR+F+R2         -14878.837   29779.675 + 1.73e-316   29779.883 - 5.4e-317   29836.350 - 7.38e-317
+   5  K3Pu+F+ASC+R2        -3.954      23.909 + 1.73e-316     167.909 - 5.4e-317       7.909 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  F81+F          0.0003  F81+F{0,0,0.695741,0.304259}
+   2  F81+F          0.0003  F81+F{0.32302,0.67698,0,0}
+   3  GTR+F+ASC+R2   3.5993  GTR{0.00229212,23.8513,0.410921,0.0927302,8.50283}+F{0.0835481,0.705453,0.0559664,0.155033}+ASC+R2{0.919271,0.864451,0.080729,2.54351}
+   4  GTR+F+R2       3.3243  GTR{5.79939,12.2676,3.26338,3.8259,23.7442}+F{0.150259,0.247217,0.421673,0.180852}+R2{0.837905,0.805995,0.162095,2.00286}
+   5  K3Pu+F+ASC+R2  5.0462  K3Pu{1,1}+F{0,0.0294118,0.970588,0}+ASC+R2{0.501759,0.997577,0.498241,1.00244}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -34123.5589 (s.e. 540.0753)
+Unconstrained log-likelihood (without tree): -22169.3061
+Number of free parameters (#branches + #model parameters): 104
+Akaike information criterion (AIC) score: 68455.1178
+Corrected Akaike information criterion (AICc) score: 68457.3801
+Bayesian information criterion (BIC) score: 69202.4561
+
+Total tree length (sum of branch lengths): 0.7544
+Sum of internal branch lengths: 0.3037 (40.2575% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'OM022830' is drawn at root
+
++----OM022830
+|
+|           +---OM735620
+|        +--|
+|        |  +-----OM735622
+|     +--|
+|     |  |           +-----OM735648
+|     |  |        +--|
+|     |  |        |  |  +--DQ388280
+|     |  |        |  +--|
+|     |  |        |     +--OM735644
+|     |  |     +--|
+|     |  |     |  +-------JN635290
+|     |  |  +--|
+|     |  |  |  |          +--OM735653
+|     |  |  |  |       +--|
+|     |  |  |  |       |  +--OM735652
+|     |  |  |  +-------|
+|     |  |  |          +--OM735651
+|     |  +--|
+|     |     |  +---OM735655
+|     |     +--|
+|     |        +--OM735654
+|  +--|
+|  |  |        +------OM735625
+|  |  |     +--|
+|  |  |     |  +--JN635283
+|  |  +-----|
+|  |        +----------OM735626
++--|
+|  |               +--JN635285
+|  |            +--|
+|  |            |  +-----OM735630
+|  |         +--|
+|  |         |  |     +--OM735658
+|  |         |  |  +--|
+|  |         |  |  |  +---OM735656
+|  |         |  +--|
+|  |         |     +---JN635291
+|  |      +**|
+|  |      |  |     +--OM735635
+|  |      |  |  +--|
+|  |      |  |  |  +------KT962869
+|  |      |  +--|
+|  |      |     +-----OM735637
+|  |  +---|
+|  |  |   +-----OM735631
+|  +--|
+|     |           +-----OM735681
+|     |  +--------|
+|     |  |        |  +--OM735682
+|     |  |        +--|
+|     |  |           +--JQ624624
+|     +**|
+|        |                         +--------------------OM735684
+|        |                  +------|
+|        |                  |      |                             +--MF496142
+|        |                  |      |      +----------------------|
+|        |                  |      |      |                      +--AB928205
+|        |                  |      +------|
+|        |                  |             +---------DQ085338
+|        |  +---------------|
+|        |  |               +---------------DQ388279
+|        +--|
+|           +---AB588191
+|
+|  +-------OM022831
++--|
+   +----------KU958641
+
+Tree in newick format:
+
+(OM022830:0.0120725186,((((OM735620:0.0106665951,OM735622:0.0162808129):0.0035608906,((((OM735648:0.0145446777,(DQ388280:0.0035611973,OM735644:0.0027057936):0.0004804044):0.0034710081,JN635290:0.0201078921):0.0044915146,((OM735653:0.0014354847,OM735652:0.0011302517):0.0041429568,OM735651:0.0027549159):0.0211725926):0.0049174912,(OM735655:0.0106814169,OM735654:0.0065053603):0.0061781997):0.0070872641):0.0032507494,((OM735625:0.0181059980,JN635283:0.0055896428):0.0049487544,OM735626:0.0271191591):0.0157497931):0.0003195365,(((((JN635285:0.0052363531,OM735630:0.0157910979):0.0063187047,((OM735658:0.0042409048,OM735656:0.0098413264):0.0085062830,JN635291:0.0113487675):0.0093718256):0.0011463644,((OM735635:0.0036544146,KT962869:0.0181640336):0.0085408089,OM735637:0.0148691681):0.0089562488):0.0000020178,OM735631:0.0148071918):0.0102379770,((OM735681:0.0147258031,(OM735682:0.0035945110,JQ624624:0.0005543274):0.0092538040):0.0223459516,(((OM735684:0.0518353103,((MF496142:0.0039299463,AB928205:0.0043720067):0.0552612267,DQ085338:0.0238947584):0.0170742194):0.0184608206,DQ388279:0.0395354103):0.0393492338,AB588191:0.0099726051):0.0010875036):0.0000477372):0.0013944935):0.0044387128,(OM022831:0.0202015110,KU958641:0.0268796990):0.0021470366);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella/rubella.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella/rubella.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella/rubella.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/rubella/rubella.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 17 21:11:02 2026
+Total CPU time used: 151.445 seconds (0h:2m:31s)
+Total wall-clock time used: 76.7266 seconds (0h:1m:16s)
+

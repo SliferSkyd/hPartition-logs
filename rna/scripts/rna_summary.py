@@ -9,7 +9,21 @@ from pathlib import Path
 ROOT = Path('/home/diepht/sliferskyd/hPartition/rerun_sim')
 ALN = Path('/home/diepht/sliferskyd/hPartition/rna_datasets/aln')
 DATASETS = ['measles', 'measles_n50', 'measles_n100', 'mumps', 'mumps_n50', 'mumps_n100', 'rabies', 'rabies_n50',
-            'rabies_n100', 'denv1', 'denv1_n50', 'denv1_n100', 'zika']
+            'rabies_n100', 'denv1', 'denv1_n50', 'denv1_n100', 'zika', 'rubella', 'rubella_n50', 'rubella_n100',
+            'hcv1b', 'hcv1b_n50', 'hcv1b_n100', 'hiv1b', 'hiv1b_n50', 'hiv1b_n100']
+BASE_TAXA = {'rabies': 26, 'rubella': 35, 'hiv1b': 33}
+FLU = Path('/home/diepht/sliferskyd/hPartition/rna_datasets/flu/aln')
+PF = Path('/home/diepht/sliferskyd/hPartition/rna_datasets/pf/aln')      # PartitionFinder benchmark sets
+FULL = Path('/home/diepht/sliferskyd/hPartition/rna_datasets/full/aln')  # epidemic-scale full alignments
+DATASETS += sorted(p.stem for p in FLU.glob('flu_*.phy'))  # influenza HA sets (Qiu & Bahl BEAST XMLs)
+DATASETS += ['saxifragales', 'midges', 'hummingbirds', 'barkbeetles', 'ebov_full']
+
+
+def aln_dir(ds):
+    for d in (PF, FLU, FULL, ALN):
+        if (d / f'{ds}.fasta').exists():
+            return d
+    return ALN
 METHODS = ['hPartition', 'hPartition-PF', 'gPartition', 'PsiPartition']
 
 
@@ -30,7 +44,7 @@ def wall(p):
 
 def columns(ds):
     seqs, name = {}, None
-    for line in open(ALN / f'{ds}.fasta'):
+    for line in open(aln_dir(ds) / f'{ds}.fasta'):
         line = line.strip()
         if line.startswith('>'):
             name = line[1:]
@@ -42,16 +56,24 @@ def columns(ds):
 
 rows = []
 for ds in DATASETS:
-    taxa = int(ds.split('_n')[1]) if '_n' in ds else (26 if ds == 'rabies' else 20)
     cols = columns(ds)
+    taxa = len(cols[0])
     for m in METHODS:
         r = dict(dataset=ds, virus=ds.split('_')[0], taxa=taxa, sites=len(cols), method=m)
+        tag = {'hPartition': 'rnahpar', 'hPartition-PF': 'rnahpf',
+               'gPartition': 'rnagpar', 'PsiPartition': 'rnapsi'}[m]
+        if not (ROOT / 'done' / f'{tag}.rna.{ds}.0.ok').exists() \
+                and not (ROOT / 'out_rna' / m / ds / 'NO_VALID_SCHEME').exists():
+            r['status'] = 'not run / cancelled'
+            rows.append(r)
+            continue
         if m == 'PsiPartition':
             o = ROOT / 'out_rna' / m / ds
-            its = [l.split('\t') for l in (o / f'{ds}.iters.tsv').read_text().splitlines()[1:]]
+            itf = o / f'{ds}.iters.tsv'
+            its = [l.split('\t') for l in itf.read_text().splitlines()[1:]] if itf.exists() else []
             r['psi_valid_iters'] = sum(i[7] != 'NA' for i in its)
-            if (o / 'NO_VALID_SCHEME').exists():
-                r['status'] = 'no valid scheme'
+            if (o / 'NO_VALID_SCHEME').exists() or not (o / 'final.nwk').exists():
+                r['status'] = 'no valid scheme' if (o / 'NO_VALID_SCHEME').exists() else f'running ({len(its)}/30)'
                 rows.append(r)
                 continue
             rep, parts = (o / f'{ds}.final.iqtree').read_text(), (o / f'{ds}.final.parts').read_text()

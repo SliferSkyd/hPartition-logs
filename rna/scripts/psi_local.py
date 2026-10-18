@@ -84,6 +84,9 @@ def main():
     p.add_argument('--max_partitions', type=int, default=30)
     p.add_argument('--n_iter', type=int, default=30)
     p.add_argument('--seed', type=int, default=0)
+    p.add_argument('--max_hours', type=float, default=None,
+                   help='stop iterating after this many hours and go straight to the final best-config rerun; '
+                        'the number of completed iterations is recorded in <stem>.ITERATIONS_TRUNCATED')
     args = p.parse_args()
     assert args.alphabet == 'dna'
 
@@ -111,7 +114,14 @@ def main():
     else:
         iters_file.write_text('iter\tk\tA\tC\tG\tT\tUNK\tBIC\tAICc\tlogL\tnum_params\tsort_s\tiqtree_s\n')
 
+    t_start = time.time()
     while len(runs) < args.n_iter:
+        if args.max_hours and (time.time() - t_start) / 3600 > args.max_hours:
+            msg = (f'stopped after {len(runs)} of {args.n_iter} iterations: '
+                   f'{args.max_hours} h budget reached')
+            Path(f'{Path(msa).with_suffix("")}.ITERATIONS_TRUNCATED').write_text(msg + '\n')
+            print(msg, flush=True)
+            break
         it = len(runs)
         suggestion = sweeps.next_run(sweep_config, runs)
         cfg = {a: v['value'] for a, v in suggestion.config.items()}
