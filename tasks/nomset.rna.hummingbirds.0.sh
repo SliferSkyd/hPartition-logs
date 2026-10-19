@@ -1,0 +1,6 @@
+set -e
+mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/hPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/partition
+cd /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/hPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/hPartition/time.txt /home/diepht/sliferskyd/hPartition/iqtree2/build/iqtree2 -seed 0 -s /home/diepht/sliferskyd/hPartition/rerun_sim/../rna_datasets/pf/aln/hummingbirds.phy -pre /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/hPartition/aln -hPartition -redo -T 1 > /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/hPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition/rerun_sim/../rna_datasets/pf/aln/hummingbirds.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/hPartition/aln.partitions /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/partition 1
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/hummingbirds/partition/aln.treefile

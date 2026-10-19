@@ -1,0 +1,6 @@
+set -e
+mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/flu_SensitiveAnalysis_H5Nx_40; cd /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/flu_SensitiveAnalysis_H5Nx_40
+[ -e flu_SensitiveAnalysis_H5Nx_40.fasta ] || tr a-z A-Z < /home/diepht/sliferskyd/hPartition/rna_datasets/flu/aln/flu_SensitiveAnalysis_H5Nx_40.fasta > flu_SensitiveAnalysis_H5Nx_40.fasta   # PsiPartition only recognises uppercase ACGT
+export PYTHONUNBUFFERED=1 WANDB_MODE=disabled
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/flu_SensitiveAnalysis_H5Nx_40/time.txt /home/diepht/miniconda3/envs/PsiPartition/bin/python -W ignore /home/diepht/sliferskyd/hPartition/rerun_sim/bin/psi_local.py --msa /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/flu_SensitiveAnalysis_H5Nx_40/flu_SensitiveAnalysis_H5Nx_40.fasta --format fasta --alphabet dna --max_partitions 30 --n_iter 30 --seed 0 >> /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/flu_SensitiveAnalysis_H5Nx_40/cmd.log 2>&1
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/flu_SensitiveAnalysis_H5Nx_40/final.nwk && test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/PsiPartition/flu_SensitiveAnalysis_H5Nx_40/last.nwk

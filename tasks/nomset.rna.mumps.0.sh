@@ -1,0 +1,6 @@
+set -e
+mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/hPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/partition
+cd /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/hPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/hPartition/time.txt /home/diepht/sliferskyd/hPartition/iqtree2/build/iqtree2 -seed 0 -s /home/diepht/sliferskyd/hPartition/rerun_sim/../rna_datasets/aln/mumps.phy -pre /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/hPartition/aln -hPartition -redo -T 1 > /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/hPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition/rerun_sim/../rna_datasets/aln/mumps.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/hPartition/aln.partitions /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/partition 1
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-noMset/mumps/partition/aln.treefile

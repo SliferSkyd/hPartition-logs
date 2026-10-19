@@ -25,7 +25,12 @@ VIRUSES = {  # name: (reference genome length, n taxa, genotype column)
     'rabies': (11932, 26, 'host_group'),     # no genotype column; stratify by host group
     'denv1': (10735, 20, 'genotype_nextclade'),
     'zika': (10807, 20, 'region'),           # no genotype column; stratify by region
+    # added later (same rules); taxon counts as Patino-Galindo et al. 2018 (rubella 35, HCV-1b 20, HIV-1B 33)
+    'rubella': (9762, 35, 'genbank_genotype'),
+    'hcv1b': (9300, 20, 'country'),          # BV-BRC complete genomes, taxon 31647; no finer genotype in 1b
+    'hiv1b': (9200, 33, 'country'),          # LANL 2022 filtered complete-genome set, subtype B, ungapped
 }
+ONLY = [v for v in __import__('os').environ.get('VIRUSES', '').split(',') if v]
 csv.field_size_limit(sys.maxsize)
 
 
@@ -49,6 +54,8 @@ out.mkdir(exist_ok=True)
 SIZES = [int(x) for x in sys.argv[1:]]
 jobs = [(v, n, '') for v, (_, n, _) in VIRUSES.items()] if not SIZES else \
        [(v, n, f'_n{n}') for v in ['measles', 'mumps', 'rabies', 'denv1'] for n in SIZES]
+if ONLY:  # VIRUSES=a,b: only those viruses, base size plus any requested sizes
+    jobs = [(v, VIRUSES[v][1], '') for v in ONLY] + [(v, n, f'_n{n}') for v in ONLY for n in SIZES]
 for virus, n, suffix in jobs:
     ref_len, _, gcol = VIRUSES[virus]
     seqs = read_fasta(ROOT / 'raw' / f'{virus}.sequences.fasta')

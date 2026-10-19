@@ -1,0 +1,6 @@
+set -e
+rm -rf /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/partition; mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/partition
+cd /home/diepht/sliferskyd/hPartition/gPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/gPartition/time.txt /home/diepht/anaconda3/bin/python gPartition.py -f /home/diepht/sliferskyd/hPartition/rna_datasets/flu/aln/flu_H1N1postpdm.phy -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/gPartition/ > /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/gPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition/rna_datasets/flu/aln/flu_H1N1postpdm.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/gPartition/flu_H1N1postpdm.phy.FINAL.nex /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/partition
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/flu_H1N1postpdm/partition/aln.treefile

@@ -1,0 +1,6 @@
+set -e
+rm -rf /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/partition; mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/partition
+cd /home/diepht/sliferskyd/hPartition/gPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/gPartition/time.txt /home/diepht/anaconda3/bin/python gPartition.py -f /home/diepht/sliferskyd/hPartition/rna_datasets/aln/hcv1b.phy -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/gPartition/ > /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/gPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition/rna_datasets/aln/hcv1b.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/gPartition/hcv1b.phy.FINAL.nex /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/partition
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/hcv1b/partition/aln.treefile

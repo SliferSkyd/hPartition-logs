@@ -1,0 +1,6 @@
+set -e
+mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/hPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/partition
+cd /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/hPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/hPartition/time.txt /home/diepht/sliferskyd/hPartition/iqtree2/build/iqtree2 -seed 0 -s /home/diepht/sliferskyd/hPartition/rna_datasets/full/aln/ebov_full.phy -pre /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/hPartition/aln -hPartition-pf -redo -mset JC69,F81,HKY,GTR -T 16 > /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/hPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition/rna_datasets/full/aln/ebov_full.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/hPartition/aln.partitions /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/partition 16
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/ebov_full/partition/aln.treefile

@@ -1,0 +1,6 @@
+set -e
+rm -rf /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/partition; mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/partition
+cd /home/diepht/sliferskyd/hPartition/gPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/gPartition/time.txt /home/diepht/anaconda3/bin/python gPartition.py -f /home/diepht/sliferskyd/hPartition/rna_datasets/mito/aln/mito.phy -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/gPartition/ > /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/gPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition/rna_datasets/mito/aln/mito.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/gPartition/mito.phy.FINAL.nex /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/partition 1
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/gPartition/mito/partition/aln.treefile

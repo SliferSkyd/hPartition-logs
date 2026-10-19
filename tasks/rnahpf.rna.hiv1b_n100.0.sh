@@ -1,0 +1,6 @@
+set -e
+mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/hPartition /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/partition
+cd /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/hPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/hPartition/time.txt /home/diepht/sliferskyd/hPartition/iqtree2/build/iqtree2 -seed 0 -s /home/diepht/sliferskyd/hPartition/rna_datasets/aln/hiv1b_n100.phy -pre /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/hPartition/aln -hPartition-pf -redo -mset JC69,F81,HKY,GTR -T 1 > /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/hPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition/rna_datasets/aln/hiv1b_n100.phy /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/hPartition/aln.partitions /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/partition
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/out_rna/hPartition-PF/hiv1b_n100/partition/aln.treefile
