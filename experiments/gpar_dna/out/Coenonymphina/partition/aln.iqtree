@@ -1,0 +1,278 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/gpar_dna/out/Coenonymphina/gPartition/Coenonymphina.phy.FINAL.nex
+Input file name: /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Coenonymphina.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 69 taxa with 10 partitions and 4435 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	69	361	257	160	199	199	Subset1
+   2	DNA	69	471	235	88	383	383	Subset2
+   3	DNA	69	499	296	171	328	328	Subset3
+   4	DNA	69	389	163	23	366	366	Subset4
+   5	DNA	69	397	170	34	363	363	Subset5
+   6	DNA	69	278	152	37	241	241	Subset6
+   7	DNA	69	278	137	26	252	252	Subset7
+   8	DNA	69	831	760	320	142	142	Subset8
+   9	DNA	69	464	352	256	208	208	Subset9
+  10	DNA	69	467	467	460	0	0	Subset10
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIMe+I:Subset1,GTR+F+I:Subset2,GTR+F+I+G4:Subset3,SYM+I:Subset4,TIM3e+I:Subset5,TVMe+I:Subset6,TIM3+F+I:Subset7,SYM+R2:Subset8,GTR+F+I:Subset9,TPM2+ASC:Subset10
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TIMe+I            -6961.631   13933.262 + 2.11e-316   13933.431 - 5.4e-317   13952.706 - 7.38e-317
+   2  GTR+F+I           -6037.032   12094.065 + 2.11e-316   12094.543 - 5.4e-317   12135.613 - 7.38e-317
+   3  GTR+F+I+G4        -7899.246   15820.492 + 2.11e-316   15821.034 - 5.4e-317   15866.830 - 7.38e-317
+   4  SYM+I             -1503.030    3020.061 + 2.11e-316    3020.355 - 5.4e-317    3047.806 - 7.38e-317
+   5  TIM3e+I           -2590.155    5190.311 + 2.11e-316    5190.464 - 5.4e-317    5210.231 - 7.38e-317
+   6  TVMe+I            -1773.015    3558.030 + 2.11e-316    3558.340 - 5.4e-317    3579.796 - 7.38e-317
+   7  TIM3+F+I           -967.199    1950.398 + 2.11e-316    1950.933 - 5.4e-317    1979.419 - 7.38e-317
+   8  SYM+R2           -10903.195   21822.391 + 2.11e-316   21822.566 - 5.4e-317   21860.172 - 7.38e-317
+   9  GTR+F+I           -9182.716   18385.432 + 2.11e-316   18385.918 - 5.4e-317   18426.831 - 7.38e-317
+  10  TPM2+ASC         -11372.147   22750.294 + 2.11e-316   22750.345 - 5.4e-317   22762.733 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TIMe+I         1.2767  TIMe{1.36638,2.34933,2.83825}+FQ+I{0.550499}
+   2  GTR+F+I        1.2511  GTR{23.5528,16.1883,63.3412,8.64865,98.1773}+F{0.327115,0.192472,0.186676,0.293737}+I{0.81248}
+   3  GTR+F+I+G4     1.2761  GTR{0.0001,27.0053,70.6679,11.2913,99.9863}+F{0.367732,0.124332,0.157355,0.35058}+I{0.655225}+G4{5.37738}
+   4  SYM+I          0.2189  SYM{0.0001,30.3754,23.7007,0.686947,68.6409}+FQ+I{0.940392}
+   5  TIM3e+I        0.7787  TIM3e{0.0285919,3.10534,6.35487}+FQ+I{0.910095}
+   6  TVMe+I         0.4609  TVMe{0.310634,100,38.5479,2.91022}+FQ+I{0.865522}
+   7  TIM3+F+I       0.1283  TIM3{0.347004,0.438158,1.93662}+F{0.357678,0.18277,0.212957,0.246596}+I{0.904865}
+   8  SYM+R2         0.8120  SYM{2.51631,4.63778,1.19916,0.71193,10.8372}+FQ+R2{0.904687,0.396471,0.0953126,6.72857}
+   9  GTR+F+I        1.7563  GTR{13.1969,100,3.69579,0.478997,62.9881}+F{0.146447,0.292934,0.172225,0.388394}+I{0.443947}
+  10  TPM2+ASC       1.4996  TPM2{2.46677,13.8109}+FQ+ASC
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -59186.8403 (s.e. 1157.2624)
+Unconstrained log-likelihood (without tree): -24156.1049
+Number of free parameters (#branches + #model parameters): 207
+Akaike information criterion (AIC) score: 118787.6806
+Corrected Akaike information criterion (AICc) score: 118808.0525
+Bayesian information criterion (BIC) score: 120111.9182
+
+Total tree length (sum of branch lengths): 4.2933
+Sum of internal branch lengths: 0.9302 (21.6675% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'CP01_84_Haetera_piera' is drawn at root
+
++--------------------CP01_84_Haetera_piera
+|
+|                +-------------------CP03_63_Manerebia_cyclopina
+|             +--|
+|             |  +----------------NW126_12_Pampasatyrus_gyrtone
+|          +--|
+|          |  |         +-----------CP03_70_Pronophila_thelebe
+|          |  |     +---|
+|          |  |     |   +-------------CP09_66_Pedaliodes_spn117
+|          |  |  +--|
+|          |  |  |  |     +------------CP10_07_Hyponephele_cadusia
+|          |  |  |  |  +--|
+|          |  |  |  |  |  +------------EW4_5_Maniola_jurtina
+|          |  |  |  +--|
+|          |  |  |     +--------------EW24_7_Erebia_oeme
+|          |  +--|
+|          |     |        +------CP_B01_Brintesia_circe
+|          |     +--------|
+|          |              +----------EW20_12_Satyrus_actaea
+|       +--|
+|       |  |  +------------------------NW108_3_Taygetis_virgilia
+|       |  +--|
+|       |     +--------------------------NW98_5_Ypthima_baldus
+|  +----|
+|  |    |              +------------------------CP07_71_Oressinoma_typhla
+|  |    |           +--|
+|  |    |           |  |               +----------CP16_21_Coenonympha_phryne
+|  |    |           |  |            +--|
+|  |    |           |  |            |  +--------UK1_24_Coenonympha_oedippus
+|  |    |           |  |         +--|
+|  |    |           |  |         |  |        +------EW5_16_Coenonympha_tullia
+|  |    |           |  |         |  |     +--|
+|  |    |           |  |         |  |     |  |  +----EW7_3_Coenonympha_pamphilus
+|  |    |           |  |         |  |     |  +--|
+|  |    |           |  |         |  |     |     +-----UK4_2_Coenonympha_thyrsis
+|  |    |           |  |         |  |  +--|
+|  |    |           |  |         |  |  |  |  +-------EW5_18_Coenonympha_glycerion
+|  |    |           |  |         |  |  |  +--|
+|  |    |           |  |         |  |  |     |  +------EW7_6_Coenonympha_arcania
+|  |    |           |  |         |  |  |     +--|
+|  |    |           |  |         |  |  |        +-------UK2_20_Coenonympha_vaucheri
+|  |    |           |  |         |  +--|
+|  |    |           |  |         |     +-------NW150_14_Coenonympha_saadi
+|  |    |           |  |      +--|
+|  |    |           |  |      |  |  +--------CP16_22_Coenonympha_myops
+|  |    |           |  |      |  +--|
+|  |    |           |  |      |     +---------UK2_6_Coenonympha_nolckeni
+|  |    |           |  +------|
+|  |    |           |         +----------------NW161_17_Sinonympha_amoena
+|  |    |        +--|
+|  |    |        |  |                                +--EW10_4_Heteronympha_merope
+|  |    |        |  |                        +-------|
+|  |    |        |  |                        |       +--UK1_8_Heteronympha_merope
+|  |    |        |  |                 +------|
+|  |    |        |  |                 |      +--------UK1_11_Heteronympha_banksii
+|  |    |        |  |              +--|
+|  |    |        |  |              |  |  +----------NW124_24_Argynnina_cyrila
+|  |    |        |  |              |  +--|
+|  |    |        |  |              |     |           +-----RA64_Geitoneura_klugii
+|  |    |        |  |              |     +-----------|
+|  |    |        |  |              |                 +-------UK1_2_Geitoneura_minyas
+|  |    |        |  |           +--|
+|  |    |        |  |           |  |             +---------------------------KB339_Hypocysta_adiante
+|  |    |        |  |           |  |        +----|
+|  |    |        |  |           |  |        |    |  +--------NW136_13_Altiapa_decolor
+|  |    |        |  |           |  |        |    +--|
+|  |    |        |  |           |  |        |       +---------NW161_1_Altiapa_klossi
+|  |    |        |  |           |  |   +----|
+|  |    |        |  |           |  |   |    +-------------------PNG_1_10_Lamprolenis_nitida
+|  |    |        |  |           |  +---|
+|  |    |        |  |           |      |                 +-----------NW136_10_Platypthima_homochroa
+|  |    |        |  |           |      |              +--|
+|  |    |        |  |           |      |              |  +-----------NW136_11_Harsiesis_hygea
+|  |    |        |  |           |      +--------------|
+|  |    |        |  |           |                     +--------NW161_4_Platypthima_ornata
+|  |    |        |  |        +--|
+|  |    |        |  |        |  |   +------------NW123_15_Dodonidia_helmsii
+|  |    |        |  |        |  +---|
+|  |    |        |  |        |      |   +-----NW123_16_Erebiola_butleri
+|  |    |        |  |        |      +---|
+|  |    |        |  |        |          |  +---------NW123_17_Percnodaimon_merula
+|  |    |        |  |        |          +--|
+|  |    |        |  |        |             +-------NW123_18_Argyrophenga_antipodium
+|  |    |        |  |     +--|
+|  |    |        |  |     |  +------------------RA61_Nesoxenica_leprea
+|  |    |        |  |  +--|
+|  |    |        |  |  |  |                        +---NW161_2_Erycinidia_gracilis
+|  |    |        |  |  |  |      +-----------------|
+|  |    |        |  |  |  |      |                 +---NW161_3_Erycinidia_virgo
+|  |    |        |  |  |  +------|
+|  |    |        |  |  |         |          +-----UK1_20_Oreixenica_latialis
+|  |    |        |  |  |         +----------|
+|  |    |        |  |  |                    +--------UK1_6_Oreixenica_lathoniella
+|  |    |        |  +--|
+|  |    |        |     |  +-------------------NW162_1_Paratisiphone_lyrnessa
+|  |    |        |     +--|
+|  |    |        |        |   +-----------RA456a_Tisiphone_helena
+|  |    |        |        +---|
+|  |    |        |            +---------------UK1_15_Tisiphone_abeona
+|  |    |     +--|
+|  |    |     |  |                      +--NW136_1_Argyronympha_gracilipes
+|  |    |     |  |                   +--|
+|  |    |     |  |                   |  +--NW136_6_Argyronympha_pulchra
+|  |    |     |  |                +--|
+|  |    |     |  |                |  |  +--NW136_5_Argyronympha_ulava
+|  |    |     |  |                |  +--|
+|  |    |     |  |                |     +--NW136_7_Argyronympha_danker
+|  |    |     |  +----------------|
+|  |    |     |                   |  +--NW136_2_Argyronympha_ugiensis
+|  |    |     |                   +--|
+|  |    |     |                      +--NW136_3_Argyronympha_rubianensis
+|  |    |  +--|
+|  |    |  |  |        +------------------CP16_13_Erites_argentina
+|  |    |  |  |     +--|
+|  |    |  |  |     |  +-----------------------EW25_17_Orsotriaena_medus
+|  |    |  |  |  +--|
+|  |    |  |  |  |  +------------------D30_Zipaetis_saitis
+|  |    |  |  +--|
+|  |    |  |     +---------------------------CP16_14_Coelites_euptychioides
+|  |    +--|
+|  |       |     +---------------------EW18_8_Mydosama_terminus
+|  |       |  +--|
+|  |       |  |  +-------------------EW25_23_Neope_bremeri
+|  |       +--|
+|  |          +------------------EW1_1_Pararge_aegeria
++--|
+|  |              +------NW106_10_Zethera_incerta
+|  +--------------|
+|                 +-----NW121_7_Ethope_noirei
+|
+|           +---------CP13_01_Aeropetes_tulbaghia
+|     +-----|
+|     |     +--------CP15_04_Dira_clytus
+|  +--|
+|  |  +----------------------NW66_6_Melanitis_leda
++--|
+   +--------------------------EW11_1_Manataria_hercyna
+
+Tree in newick format:
+
+(CP01_84_Haetera_piera:0.0821822992,(((((CP03_63_Manerebia_cyclopina:0.0781076375,NW126_12_Pampasatyrus_gyrtone:0.0679661046):0.0026341719,(((CP03_70_Pronophila_thelebe:0.0468855596,CP09_66_Pedaliodes_spn117:0.0548478384):0.0155655609,((CP10_07_Hyponephele_cadusia:0.0538726138,EW4_5_Maniola_jurtina:0.0536365027):0.0018115840,EW24_7_Erebia_oeme:0.0617320940):0.0046608357):0.0023521024,(CP_B01_Brintesia_circe:0.0282300708,EW20_12_Satyrus_actaea:0.0449028016):0.0350217327):0.0017609029):0.0042933209,(NW108_3_Taygetis_virgilia:0.0980258885,NW98_5_Ypthima_baldus:0.1060735623):0.0078835987):0.0079569936,(((((CP07_71_Oressinoma_typhla:0.0995426042,((((CP16_21_Coenonympha_phryne:0.0463771189,UK1_24_Coenonympha_oedippus:0.0360981213):0.0058888548,(((EW5_16_Coenonympha_tullia:0.0306666749,(EW7_3_Coenonympha_pamphilus:0.0223781212,UK4_2_Coenonympha_thyrsis:0.0249096329):0.0087563737):0.0048540723,(EW5_18_Coenonympha_glycerion:0.0333230993,(EW7_6_Coenonympha_arcania:0.0275804300,UK2_20_Coenonympha_vaucheri:0.0324996829):0.0038110650):0.0028042066):0.0061608455,NW150_14_Coenonympha_saadi:0.0314920194):0.0099637859):0.0093186375,(CP16_22_Coenonympha_myops:0.0387230831,UK2_6_Coenonympha_nolckeni:0.0418121799):0.0060931863):0.0038723456,NW161_17_Sinonympha_amoena:0.0690438641):0.0301027302):0.0089435768,((((((((EW10_4_Heteronympha_merope:0.0021739693,UK1_8_Heteronympha_merope:0.0100899976):0.0321875644,UK1_11_Heteronympha_banksii:0.0384884315):0.0286171636,(NW124_24_Argynnina_cyrila:0.0463730142,(RA64_Geitoneura_klugii:0.0236276013,UK1_2_Geitoneura_minyas:0.0324382172):0.0499561938):0.0033065179):0.0028002074,(((KB339_Hypocysta_adiante:0.1107435302,(NW136_13_Altiapa_decolor:0.0354117436,NW161_1_Altiapa_klossi:0.0400255599):0.0154018980):0.0220956557,PNG_1_10_Lamprolenis_nitida:0.0811032548):0.0206479388,((NW136_10_Platypthima_homochroa:0.0495430297,NW136_11_Harsiesis_hygea:0.0498321460):0.0035766681,NW161_4_Platypthima_ornata:0.0378650979):0.0584030426):0.0169256466):0.0034601990,(NW123_15_Dodonidia_helmsii:0.0515773680,(NW123_16_Erebiola_butleri:0.0241619392,(NW123_17_Percnodaimon_merula:0.0425883932,NW123_18_Argyrophenga_antipodium:0.0330618275):0.0025433858):0.0181937964):0.0161861017):0.0007418273,RA61_Nesoxenica_leprea:0.0773840880):0.0017020058,((NW161_2_Erycinidia_gracilis:0.0185777129,NW161_3_Erycinidia_virgo:0.0193657894):0.0729511921,(UK1_20_Oreixenica_latialis:0.0266418839,UK1_6_Oreixenica_lathoniella:0.0358933458):0.0455405782):0.0290990568):0.0013481185,(NW162_1_Paratisiphone_lyrnessa:0.0779990000,(RA456a_Tisiphone_helena:0.0500201705,UK1_15_Tisiphone_abeona:0.0648942683):0.0167945510):0.0054380938):0.0037536105):0.0060207292,(((NW136_1_Argyronympha_gracilipes:0.0086497192,NW136_6_Argyronympha_pulchra:0.0079246081):0.0049753177,(NW136_5_Argyronympha_ulava:0.0061308181,NW136_7_Argyronympha_danker:0.0057170327):0.0058975180):0.0022797620,(NW136_2_Argyronympha_ugiensis:0.0072056812,NW136_3_Argyronympha_rubianensis:0.0085732447):0.0019211232):0.0680629505):0.0109174280,(((CP16_13_Erites_argentina:0.0771030261,EW25_17_Orsotriaena_medus:0.0957070178):0.0114293133,D30_Zipaetis_saitis:0.0760069282):0.0039011275,CP16_14_Coelites_euptychioides:0.1087283185):0.0125819141):0.0023209182,((EW18_8_Mydosama_terminus:0.0879148599,EW25_23_Neope_bremeri:0.0777814762):0.0069816975,EW1_1_Pararge_aegeria:0.0745998850):0.0040894125):0.0029936788):0.0227333375,(NW106_10_Zethera_incerta:0.0279131691,NW121_7_Ethope_noirei:0.0267885984):0.0592860266):0.0063368922,(((CP13_01_Aeropetes_tulbaghia:0.0391106511,CP15_04_Dira_clytus:0.0383750709):0.0267505309,NW66_6_Melanitis_leda:0.0930524907):0.0066473730,EW11_1_Manataria_hercyna:0.1049353933):0.0079326623);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/gpar_dna/out/Coenonymphina/partition/aln.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/gpar_dna/out/Coenonymphina/partition/aln.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Coenonymphina.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Coenonymphina.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Oct 20 17:16:05 2026
+Total CPU time used: 169.18 seconds (0h:2m:49s)
+Total wall-clock time used: 176.172 seconds (0h:2m:56s)
+

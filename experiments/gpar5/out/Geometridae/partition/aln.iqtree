@@ -1,0 +1,549 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/gpar5/out/Geometridae/hPartition/aln.partitions
+Input file name: /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Geometridae.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 164 taxa with 37 partitions and 5998 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	164	295	205	46	249	249	P0
+   2	DNA	164	290	279	237	53	53	P1
+   3	DNA	164	282	238	142	140	140	P2
+   4	DNA	164	267	168	3	264	264	P3
+   5	DNA	164	254	238	158	96	96	P4
+   6	DNA	164	233	226	93	45	45	P5
+   7	DNA	164	232	164	4	228	228	P6
+   8	DNA	164	230	169	30	200	200	P7
+   9	DNA	164	218	201	106	83	83	P8
+  10	DNA	164	216	139	6	210	210	P9
+  11	DNA	164	210	183	103	69	69	P10
+  12	DNA	164	202	168	49	153	153	P11
+  13	DNA	164	192	153	32	160	160	P12
+  14	DNA	164	185	133	14	171	171	P13
+  15	DNA	164	181	141	27	154	154	P14
+  16	DNA	164	172	163	40	58	58	P15
+  17	DNA	164	170	152	39	95	95	P16
+  18	DNA	164	162	138	47	115	115	P17
+  19	DNA	164	153	152	144	9	9	P18
+  20	DNA	164	145	120	31	114	114	P19
+  21	DNA	164	135	118	31	104	104	P20
+  22	DNA	164	128	119	26	69	69	P21
+  23	DNA	164	128	128	127	1	1	P22
+  24	DNA	164	119	101	7	112	112	P23
+  25	DNA	164	107	95	27	80	80	P24
+  26	DNA	164	102	101	89	4	4	P25
+  27	DNA	164	100	99	72	13	13	P26
+  28	DNA	164	115	115	114	1	1	P27
+  29	DNA	164	89	81	31	58	58	P28
+  30	DNA	164	87	87	87	0	0	P29
+  31	DNA	164	81	71	12	69	69	P30
+  32	DNA	164	74	74	74	0	0	P31
+  33	DNA	164	151	150	151	0	0	P32
+  34	DNA	164	66	66	63	3	3	P33
+  35	DNA	164	64	64	43	21	21	P34
+  36	DNA	164	59	59	59	0	0	P35
+  37	DNA	164	104	104	102	2	2	P36
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: SYM+I+R4:P0,TIM3+F+I+R2:P1,GTR+F+I+R4:P2,TPM3u+F+I:P3,TPM3+I+G4:P4,SYM:P5,JC+I:P6,SYM+R4:P7,GTR+F+G4:P8,TIM3+F+I:P9,GTR+F+I+R5:P10,GTR+F+R3:P11,TIM3+F+I:P12,GTR+F+I+G4:P13,SYM+I:P14,TVM+F:P15,TIM3e+I+R2:P16,TIM3+F+I+R2:P17,TVM+F+I+R2:P18,TN+F+I:P19,GTR+F+R3:P20,TPM2+R2:P21,GTR+F+R3:P22,SYM+I:P23,TVM+F+R3:P24,GTR+F+R3:P25,TN+F+R3:P26,GTR+F+R3:P27,TPM3u+F+I:P28,GTR+F+ASC+R3:P29,TIMe+R3:P30,GTR+F+ASC+R2:P31,GTR+F+ASC+R2:P32,TVM+F+I:P33,TIM+F+I+R2:P34,TVMe+ASC+R2:P35,GTR+F+I+G4:P36
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  SYM+I+R4          -4174.327    8374.654 + 3.44e-316    8375.949 - 5.4e-317    8422.584 - 7.38e-317
+   2  TIM3+F+I+R2      -12672.021   25364.043 + 3.44e-316   25364.831 - 5.4e-317   25400.741 - 7.38e-317
+   3  GTR+F+I+R4       -18519.674   37071.348 + 3.44e-316   37073.401 - 5.4e-317   37129.619 - 7.38e-317
+   4  TPM3u+F+I          -848.273    1710.547 + 3.44e-316    1710.979 - 5.4e-317    1735.657 - 7.38e-317
+   5  TPM3+I+G4        -14841.867   29693.733 + 3.44e-316   29693.975 - 5.4e-317   29711.420 - 7.38e-317
+   6  SYM               -2424.547    4861.095 + 3.44e-316    4861.467 - 5.4e-317    4881.801 - 7.38e-317
+   7  JC+I               -912.860    1829.721 + 3.44e-316    1829.773 - 5.4e-317    1836.614 - 7.38e-317
+   8  SYM+R4            -3145.076    6314.152 + 3.44e-316    6315.590 - 5.4e-317    6355.409 - 7.38e-317
+   9  GTR+F+G4          -7766.147   15552.294 + 3.44e-316   15553.357 - 5.4e-317   15586.139 - 7.38e-317
+  10  TIM3+F+I          -1115.099    2246.199 + 3.44e-316    2246.895 - 5.4e-317    2273.201 - 7.38e-317
+  11  GTR+F+I+R5        -5972.075   11980.151 + 3.44e-316   11983.732 - 5.4e-317   12040.399 - 7.38e-317
+  12  GTR+F+R3          -6043.881   12113.762 + 3.44e-316   12115.699 - 5.4e-317   12156.770 - 7.38e-317
+  13  TIM3+F+I          -3062.616    6141.232 + 3.44e-316    6142.019 - 5.4e-317    6167.292 - 7.38e-317
+  14  GTR+F+I+G4        -1498.742    3019.485 + 3.44e-316    3021.011 - 5.4e-317    3054.909 - 7.38e-317
+  15  SYM+I             -3313.174    6640.349 + 3.44e-316    6640.996 - 5.4e-317    6662.738 - 7.38e-317
+  16  TVM+F             -1173.946    2363.892 + 3.44e-316    2364.775 - 5.4e-317    2389.072 - 7.38e-317
+  17  TIM3e+I+R2        -1375.173    2764.346 + 3.44e-316    2765.038 - 5.4e-317    2786.297 - 7.38e-317
+  18  TIM3+F+I+R2       -3703.939    7427.877 + 3.44e-316    7429.334 - 5.4e-317    7458.753 - 7.38e-317
+  19  TVM+F+I+R2        -6264.070   12550.139 + 3.44e-316   12552.011 - 5.4e-317   12583.474 - 7.38e-317
+  20  TN+F+I            -3903.786    7821.572 + 3.44e-316    7822.390 - 5.4e-317    7842.409 - 7.38e-317
+  21  GTR+F+R3          -2878.828    5783.655 + 3.44e-316    5786.664 - 5.4e-317    5821.424 - 7.38e-317
+  22  TPM2+R2           -2988.237    5986.474 + 3.44e-316    5986.966 - 5.4e-317    6000.734 - 7.38e-317
+  23  GTR+F+R3          -7576.610   15179.219 + 3.44e-316   15182.412 - 5.4e-317   15216.296 - 7.38e-317
+  24  SYM+I              -912.227    1838.453 + 3.44e-316    1839.462 - 5.4e-317    1857.907 - 7.38e-317
+  25  TVM+F+R3          -2530.868    5085.735 + 3.44e-316    5089.054 - 5.4e-317    5117.809 - 7.38e-317
+  26  GTR+F+R3          -5211.866   10449.733 + 3.44e-316   10453.869 - 5.4e-317   10483.857 - 7.38e-317
+  27  TN+F+R3           -2103.662    4227.324 + 3.44e-316    4229.796 - 5.4e-317    4253.376 - 7.38e-317
+  28  GTR+F+R3          -8102.301   16230.601 + 3.44e-316   16234.205 - 5.4e-317   16266.285 - 7.38e-317
+  29  TPM3u+F+I         -2960.082    5934.163 + 3.44e-316    5935.546 - 5.4e-317    5951.584 - 7.38e-317
+  30  GTR+F+ASC+R3      -7221.959   14469.917 + 3.44e-316   14474.903 - 5.4e-317   14501.974 - 7.38e-317
+  31  TIMe+R3           -1254.547    2525.094 + 3.44e-316    2527.094 - 5.4e-317    2544.250 - 7.38e-317
+  32  GTR+F+ASC+R2      -3187.643    6397.287 + 3.44e-316    6401.545 - 5.4e-317    6422.631 - 7.38e-317
+  33  GTR+F+ASC+R2      -8047.322   16116.644 + 3.44e-316   16118.543 - 5.4e-317   16149.834 - 7.38e-317
+  34  TVM+F+I           -4242.283    8502.567 + 3.44e-316    8505.781 - 5.4e-317    8522.274 - 7.38e-317
+  35  TIM+F+I+R2        -3099.959    6219.919 + 3.44e-316    6224.070 - 5.4e-317    6241.508 - 7.38e-317
+  36  TVMe+ASC+R2       -3653.229    7320.458 + 3.44e-316    7322.654 - 5.4e-317    7335.001 - 7.38e-317
+  37  GTR+F+I+G4        -6429.586   12881.172 + 3.44e-316   12884.041 - 5.4e-317   12910.260 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  SYM+I+R4       1.7142  SYM{0.0490332,0.786572,0.0710162,0.119447,100}+FQ+I{0.559147}+R4{0.223341,1.24391e-14,0.196679,0.623402,0.00726789,3.6228,0.0135662,62.7339}
+   2  TIM3+F+I+R2    1.5095  TIM3{0.0001,54.9043,100}+F{0.155753,0.0810986,0.110985,0.652163}+I{0.182167}+R2{0.501392,0.960606,0.316442,1.63809}
+   3  GTR+F+I+R4     2.0683  GTR{7.80138,20.3512,63.2099,7.67102,73.399}+F{0.325688,0.14423,0.12814,0.401942}+I{0.4964}+R4{0.0320308,0.680814,0.354739,1.83079,0.0791389,2.52802,0.0376912,3.41392}
+   4  TPM3u+F+I      0.0684  TPM3u{0.0443671,0.748541}+F{0.24437,0.171119,0.190601,0.393911}+I{0.988703}
+   5  TPM3+I+G4      1.1948  TPM3{1.31638,1.0801}+FQ+I{0.377952}+G4{6.34586}
+   6  SYM            0.1081  SYM{3.38707,3.86539,10.2797,0.693509,1.30362}+FQ
+   7  JC+I           0.1167  JC+I{0.982569}
+   8  SYM+R4         0.6161  SYM{0.0001,1.83157,7.76491,0.0001,63.0833}+FQ+R4{0.866238,1.83996e-13,0.0630454,2.31626,0.0574369,7.38816,0.01328,32.3507}
+   9  GTR+F+G4       2.9942  GTR{0.0001,9.0833,0.0273352,1.3988,2.43381}+F{0.320145,0.223728,0.223055,0.233071}+G4{0.202735}
+  10  TIM3+F+I       0.0854  TIM3{3.15981,5.88287,15.296}+F{0.361324,0.190656,0.238063,0.209957}+I{0.972127}
+  11  GTR+F+I+R5     2.0023  GTR{0.0001,0.32455,0.549948,0.17002,78.5721}+F{0.509886,0.163357,0.087149,0.239608}+I{0.106387}+R5{0.0709779,0.0914783,0.472265,0.395191,0.259864,0.587865,0.0714251,3.85253,0.0190814,19.8592}
+  12  GTR+F+R3       0.9195  GTR{0.893783,2.4152,1.14794,2.00597,4.53819}+F{0.315661,0.178222,0.231168,0.274949}+R3{0.757426,1.56543e-15,0.107525,2.37805,0.13505,5.51131}
+  13  TIM3+F+I       0.5323  TIM3{2.4314,45.9169,100}+F{0.325583,0.178111,0.261859,0.234448}+I{0.832892}
+  14  GTR+F+I+G4     0.2747  GTR{2.49979,0.703924,0.167994,0.144712,10.8895}+F{0.245202,0.188597,0.362211,0.20399}+I{0.923444}+G4{1.06754}
+  15  SYM+I          0.5856  SYM{3.78024,5.97214,7.50524,0.0001,13.4899}+FQ+I{0.849743}
+  16  TVM+F          0.0568  TVM{7.51936,99.8057,64.4226,0.0001}+F{0.0952314,0.387816,0.033881,0.483071}
+  17  TIM3e+I+R2     0.1987  TIM3e{14.6892,0.321372,100}+FQ+I{0.202361}+R2{0.785874,0.689627,0.0117647,38.9334}
+  18  TIM3+F+I+R2    0.7750  TIM3{0.188623,2.94068,6.05546}+F{0.197322,0.149265,0.168279,0.485134}+I{0.70609}+R2{0.0716862,0.318274,0.222224,4.3973}
+  19  TVM+F+I+R2     1.2630  TVM{1.59592,100,7.68416,0.501019}+F{0.326173,0.260609,0.209301,0.203917}+I{0.0504695}+R2{0.746916,0.353003,0.202614,3.63417}
+  20  TN+F+I         0.8325  TN{3.56383,2.51572}+F{0.282826,0.237155,0.132349,0.34767}+I{0.785315}
+  21  GTR+F+R3       0.7524  GTR{0.812265,2.97707,15.9934,0.0001,99.5119}+F{0.244847,0.197047,0.322283,0.235823}+R3{0.759654,1.20743e-15,0.114595,1.49107,0.125751,6.59344}
+  22  TPM2+R2        0.7378  TPM2{1.50242,5.12108}+FQ+R2{0.828125,0.0287756,0.171875,5.67954}
+  23  GTR+F+R3       1.8866  GTR{9.17136,100,28.3655,2.22179,18.5095}+F{0.0227981,0.44738,0.0530201,0.476802}+R3{0.0158391,0.112518,0.232331,0.618249,0.75183,1.13667}
+  24  SYM+I          0.2564  SYM{11.3422,31.0444,41.6433,18.3329,100}+FQ+I{0.940716}
+  25  TVM+F+R3       0.7273  TVM{11.6762,100,43.6473,0.0001}+F{0.339474,0.126002,0.284729,0.249795}+R3{0.747664,6.09848e-15,0.194116,3.24748,0.0582204,6.34849}
+  26  GTR+F+R3       1.0975  GTR{0.372721,1.09214,0.142377,0.264118,1.46267}+F{0.689204,0.129697,0.038866,0.142233}+R3{0.27517,0.168359,0.479212,0.391869,0.245618,3.11819}
+  27  TN+F+R3        0.6561  TN{4.96975,46.4133}+F{0.609051,0.00493158,0.317582,0.0684359}+R3{0.885304,0.230813,0.0346957,0.230813,0.08,9.84565}
+  28  GTR+F+R3       1.5885  GTR{6.58411,34.7495,16.145,4.8467,7.18686}+F{0.287292,0.332837,0.0457427,0.334129}+R3{0.380799,0.283608,0.16741,0.832685,0.451791,1.66582}
+  29  TPM3u+F+I      1.0712  TPM3u{0.227235,2.13503}+F{0.193493,0.438186,0.134801,0.23352}+I{0.650259}
+  30  GTR+F+ASC+R3   2.0647  GTR{0.0600782,0.939183,7.84387,5.23361,6.22627}+F{0.483433,0.197922,0.122401,0.196245}+ASC+R3{0.000603378,0.000999982,0.396019,0.511085,0.603378,1.32189}
+  31  TIMe+R3        0.3976  TIMe{7.50401,2.53357,17.5299}+FQ+R3{0.851569,3.49106e-05,0.0126289,0.765214,0.135802,7.29226}
+  32  GTR+F+ASC+R2   1.6234  GTR{0.0001,100,16.6395,0.0001,9.52093}+F{0.0233392,0.757221,0.0617306,0.157709}+ASC+R2{0.112871,0.412549,0.887129,1.07474}
+  33  GTR+F+ASC+R2   1.3430  GTR{0.403291,1.89016,2.80535,0.495107,5.28554}+F{0.167249,0.567879,0.123854,0.141017}+ASC+R2{0.118377,0.345889,0.881623,1.08783}
+  34  TVM+F+I        1.7460  TVM{0.131694,8.00311,2.68474,0.0001}+F{0.395089,0.233144,0.285611,0.086156}+I{0.0450642}
+  35  TIM+F+I+R2     1.2030  TIM{17.4162,26.2448,100}+F{0.589355,0.0780319,0.0740705,0.258542}+I{0.327912}+R2{0.447599,0.897784,0.224488,2.66452}
+  36  TVMe+ASC+R2    1.5834  TVMe{13.1668,100,14.1647,0.0001}+FQ+ASC+R2{0.554337,0.620029,0.445663,1.47263}
+  37  GTR+F+I+G4     1.0991  GTR{0.802437,7.31912,4.2721,1.16865,5.89455}+F{0.270908,0.175367,0.221025,0.3327}+I{0.019178}+G4{19.8158}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -175034.2696 (s.e. 3184.5771)
+Unconstrained log-likelihood (without tree): -29645.1621
+Number of free parameters (#branches + #model parameters): 686
+Akaike information criterion (AIC) score: 351440.5392
+Corrected Akaike information criterion (AICc) score: 351618.0131
+Bayesian information criterion (BIC) score: 356036.1776
+
+Total tree length (sum of branch lengths): 22.0677
+Sum of internal branch lengths: 3.6647 (16.6067% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'NW149_1_Bombyx_mori' is drawn at root
+
++----------------------------------------------NW149_1_Bombyx_mori
+|
+|   +-------------------------------MM00119_Drepana_curvatula
++---|
+|   +-------------------------MM07058_Axia_margarita
+|
+|                               +--MM09158_Epicopeia_mencia
+|     +-------------------------|
+|     |                         +--AYK_04_5215_Epicopeia_hainesii
+|  +--|
+|  |  |                        +---------MM07630_Phazaca_mutans
+|  |  |               +--------|
+|  |  |               |        +----MM07632_Lobogethes_interrupta
+|  |  |  +------------|
+|  |  |  |            +---------------MM00210_Epiplema_inconspicua
+|  |  +--|
+|  |     |     +--------------------------MM09897_Acropteris_sp.
+|  |     +-----|
+|  |           |    +---------------MM09171_Urapteroides_astheniata
+|  |           +----|
+|  |                |    +------------NW96_7_Urania_leilus
+|  |                +----|
+|  |                     +----------MM09173_Chrysiridia_ripheus
++--|
+   |                  +-------------05_srnp_19273_Coronidia_orithea
+   |  +---------------|
+   |  |               +------RWH_96_0877_Sematura_lunus
+   +--|
+      |       +----------------------NW107_1_Archiearis_parthenias
+      |   +---|
+      |   |   |           +------------------MM13433_Eumelea_ludovicata
+      |   |   |        +--|
+      |   |   |        |  |                        +------------------MM06725_Abraxas_grossulariata
+      |   |   |        |  |                     +--|
+      |   |   |        |  |                     |  +--------------MM14752_Luxiaria_phyllosaria
+      |   |   |        |  |                  +--|
+      |   |   |        |  |                  |  +----------------gb_CR_S_1187_Ballantiophora_gibbiferata
+      |   |   |        |  |               +--|
+      |   |   |        |  |               |  +---------------MM00584_Chiasmia_clathrata
+      |   |   |        |  |            +--|
+      |   |   |        |  |            |  |  +-------------MM01247_Lomaspilis_marginata
+      |   |   |        |  |            |  +--|
+      |   |   |        |  |            |     +--------------------------AH3604_Zamarada_torrida
+      |   |   |        |  |        +---|
+      |   |   |        |  |        |   |           +-------------MM05118_Biston_betularia
+      |   |   |        |  |        |   |        +--|
+      |   |   |        |  |        |   |        |  +----------MM14738_Erannis_defoliaria
+      |   |   |        |  |        |   |     +--|
+      |   |   |        |  |        |   |     |  |  +-----------MM01469_Hypomecis_roboraria
+      |   |   |        |  |        |   |     |  +--|
+      |   |   |        |  |        |   |     |     +------------------MM13441_Phaselia_deliciosaria
+      |   |   |        |  |        |   |  +--|
+      |   |   |        |  |        |   |  |  |  +-------------MM08584_Bupalus_piniaria
+      |   |   |        |  |        |   |  |  +--|
+      |   |   |        |  |        |   |  |     +-----------AH3852_Melanolophia_species
+      |   |   |        |  |        |   +--|
+      |   |   |        |  |        |      +----------------MM01298_Cleora_cinctaria
+      |   |   |        |  |     +--|
+      |   |   |        |  |     |  |      +------------AH3862_Sphacelodes_vulneraria
+      |   |   |        |  |     |  |   +--|
+      |   |   |        |  |     |  |   |  +--------------MM01307_Cabera_exanthemata
+      |   |   |        |  |     |  +---|
+      |   |   |        |  |     |      +-------------------------MM13447_Naxa_textilis
+      |   |   |        |  |  +--|
+      |   |   |        |  |  |  |                    +---------MM00148_Alsophila_aescularia
+      |   |   |        |  |  |  |                 +--|
+      |   |   |        |  |  |  |                 |  |  +---------MM02692_Colotois_pennaria
+      |   |   |        |  |  |  |                 |  +--|
+      |   |   |        |  |  |  |                 |     +----------MM14762_Wilemania_nitobei
+      |   |   |        |  |  |  |              +--|
+      |   |   |        |  |  |  |              |  +---------------MM06693_Campaea_margaritaria
+      |   |   |        |  |  |  |           +--|
+      |   |   |        |  |  |  |           |  |  +---------MM00227_Onychora_agaritharia
+      |   |   |        |  |  |  |           |  +--|
+      |   |   |        |  |  |  |           |     |   +--------MM00235_Declana_floccosa
+      |   |   |        |  |  |  |           |     +---|
+      |   |   |        |  |  |  |           |         |  +--MM00233_Declana_leptomera
+      |   |   |        |  |  |  |           |         +--|
+      |   |   |        |  |  |  |           |            +---MM00234_Declana_egregia
+      |   |   |        |  |  |  |        +--|
+      |   |   |        |  |  |  |        |  |           +----------------MM06601_Angerona_prunaria
+      |   |   |        |  |  |  |        |  |        +--|
+      |   |   |        |  |  |  |        |  |        |  +-------------------MM09159_Psilocladia_diaereta
+      |   |   |        |  |  |  |        |  |     +--|
+      |   |   |        |  |  |  |        |  |     |  +----------------MM12840_Charissa_obscurata
+      |   |   |        |  |  |  |        |  |  +--|
+      |   |   |        |  |  |  |        |  |  |  |              +----------AH3861_Pero_near_infantilis
+      |   |   |        |  |  |  |        |  |  |  |         +----|
+      |   |   |        |  |  |  |        |  |  |  |         |    +------gb_ID_16800_Pero_gamuza
+      |   |   |        |  |  |  |        |  |  |  |     +---|
+      |   |   |        |  |  |  |        |  |  |  |     |   +----------MM01485_Odontopera_bidentata
+      |   |   |        |  |  |  |        |  |  |  |  +--|
+      |   |   |        |  |  |  |        |  |  |  |  |  +--------gb_ID_17426_Aragua_bistonaria
+      |   |   |        |  |  |  |        |  |  |  +--|
+      |   |   |        |  |  |  |        |  |  |     |   +------------gb_ID_15754_Acrotomodes_kunoi
+      |   |   |        |  |  |  |        |  |  |     +---|
+      |   |   |        |  |  |  |        |  |  |         +------------------gb_ID_17449_Pyrinia_abditaria
+      |   |   |        |  |  |  |        |  +--|
+      |   |   |        |  |  |  |        |     |             +--------gb_ID_17486_Cratoptera_vestianaria
+      |   |   |        |  |  |  |        |     |          +--|
+      |   |   |        |  |  |  |        |     |          |  +---------gb_ID_17448_Phyllodonta_succedens
+      |   |   |        |  |  |  |        |     |       +--|
+      |   |   |        |  |  |  |        |     |       |  |        +------gb_ID_15007_Pantherodes_conglomerata
+      |   |   |        |  |  |  |        |     |       |  |     +--|
+      |   |   |        |  |  |  |        |     |       |  |     |  +-------gb_ID_17153_Microxydia_sp.
+      |   |   |        |  |  |  |        |     |       |  |  +--|
+      |   |   |        |  |  |  |        |     |       |  |  |  +--------gb_ID_15008_Sabulodes_thermidora
+      |   |   |        |  |  |  |        |     |       |  +--|
+      |   |   |        |  |  |  |        |     |       |     |     +-----------gb_ID_17246_Sericoptera_mahometaria
+      |   |   |        |  |  |  |        |     |       |     |  +--|
+      |   |   |        |  |  |  |        |     |       |     |  |  +-------gb_ID_17733_Cimicodes_ferruginea
+      |   |   |        |  |  |  |        |     |       |     +--|
+      |   |   |        |  |  |  |        |     |       |        +--------gb_ID_17668_Herbita_zarina
+      |   |   |        |  |  |  |        |     |  +----|
+      |   |   |        |  |  |  |        |     |  |    |     +--------------MM07823_Ennomos_alniaria
+      |   |   |        |  |  |  |        |     |  |    |  +--|
+      |   |   |        |  |  |  |        |     |  |    |  |  +------------MM06863_Ourapteryx_sambucaria
+      |   |   |        |  |  |  |        |     |  |    +--|
+      |   |   |        |  |  |  |        |     |  |       |       +------AH7126_Nephodia_near_panacea
+      |   |   |        |  |  |  |        |     |  |       +-------|
+      |   |   |        |  |  |  |        |     |  |               +----gb_ID_17185_Fulgurodes_mayor
+      |   |   |        |  |  |  |        |     +--|
+      |   |   |        |  |  |  |        |        |  +--------------MM00376_Epirranthis_diversata
+      |   |   |        |  |  |  |        |        +--|
+      |   |   |        |  |  |  |        |           +-------------MM01349_Opisthograptis_luteolata
+      |   |   |        |  |  |  |     +--|
+      |   |   |        |  |  |  |     |  |        +------------------------MM06720_Apeira_syringaria
+      |   |   |        |  |  |  |     |  |     +--|
+      |   |   |        |  |  |  |     |  |     |  |  +---------------------------MM01497_Epione_repandaria
+      |   |   |        |  |  |  |     |  |     |  +--|
+      |   |   |        |  |  |  |     |  |     |     +--------------MM06431_Plagodis_pulveraria
+      |   |   |        |  |  |  |     |  |  +--|
+      |   |   |        |  |  |  |     |  |  |  +---------------MM05496_Ithysia_pravata
+      |   |   |        |  |  |  |     |  +--|
+      |   |   |        |  |  |  |     |     +-----------------MM00226_Drepanogynis_tripartita
+      |   |   |        |  |  |  |  +--|
+      |   |   |        |  |  |  |  |  |                 +---------------------MM14756_Curbia_martiata
+      |   |   |        |  |  |  |  |  |              +--|
+      |   |   |        |  |  |  |  |  |              |  |   +------MM00241_Ischalis_fortinata
+      |   |   |        |  |  |  |  |  |              |  +---|
+      |   |   |        |  |  |  |  |  |              |      +-----MM00242_Ischalis_variabilis
+      |   |   |        |  |  |  |  |  |           +--|
+      |   |   |        |  |  |  |  |  |           |  |  +-------------MM05983_Petrophora_chlorosata
+      |   |   |        |  |  |  |  |  |           |  +--|
+      |   |   |        |  |  |  |  |  |           |     +---------------AH7548_Pachycnemia_hippocastanaria
+      |   |   |        |  |  |  |  |  |        +--|
+      |   |   |        |  |  |  |  |  |        |  +-----------MM00215_Larentioides_cacothemon
+      |   |   |        |  |  |  |  |  |     +--|
+      |   |   |        |  |  |  |  |  |     |  +----------------------MM00213_Psilocladia_obliquata
+      |   |   |        |  |  |  |  |  |  +--|
+      |   |   |        |  |  |  |  |  |  |  |            +-----MM07605_Thalaina_angulosa
+      |   |   |        |  |  |  |  |  |  |  |        +---|
+      |   |   |        |  |  |  |  |  |  |  |        |   +-------MM11248_Niceteria_macrocosma
+      |   |   |        |  |  |  |  |  |  |  |     +--|
+      |   |   |        |  |  |  |  |  |  |  |     |  |  +------MM00245_Amelora_sparsularia
+      |   |   |        |  |  |  |  |  |  |  |     |  +--|
+      |   |   |        |  |  |  |  |  |  |  |     |     +-----------MM11251_Archephanes_zalosema
+      |   |   |        |  |  |  |  |  |  |  |  +--|
+      |   |   |        |  |  |  |  |  |  |  |  |  +-------MM00231_Mictodoca_toxeuta
+      |   |   |        |  |  |  |  |  |  |  +--|
+      |   |   |        |  |  |  |  |  |  |     +-------MM11250_Capusa_senilis
+      |   |   |        |  |  |  |  |  +--|
+      |   |   |        |  |  |  |  |     +------------MM00214_Argyrophora_trofonia
+      |   |   |        |  |  |  +--|
+      |   |   |        |  |  |     |             +---------MM07846_Lomographa_bimaculata
+      |   |   |        |  |  |     |     +-------|
+      |   |   |        |  |  |     |     |       +-----------NS10_Theria_rupicapraria
+      |   |   |        |  |  |     |  +--|
+      |   |   |        |  |  |     |  |  |  +-----------------gb_ID_17152_Phrygionis_flavilimes
+      |   |   |        |  |  |     |  |  +--|
+      |   |   |        |  |  |     |  |     +------------------MM13445_Plutodes_costatus
+      |   |   |        |  |  |     +--|
+      |   |   |        |  |  |        +---------------------MM14763_Thinopteryx_crocoptera
+      |   |   |        |  +--|
+      |   |   |        |     +-------------------MM07576_Oenochroma_orthodesma
+      |   |   |     +--|
+      |   |   |     |  |                      +---------MM13434_Aracima_serrata
+      |   |   |     |  |                   +--|
+      |   |   |     |  |                   |  +------MM13435_Timandromorpha_discolor
+      |   |   |     |  |                +--|
+      |   |   |     |  |                |  +-----------MM01146_Geometra_papilionaria
+      |   |   |     |  |             +--|
+      |   |   |     |  |             |  |         +---------MM14710_Comibaena_bajularia
+      |   |   |     |  |             |  |      +--|
+      |   |   |     |  |             |  |      |  +----------MM14751_Comibaena_attenuata
+      |   |   |     |  |             |  |  +---|
+      |   |   |     |  |             |  |  |   +---------------MM00223_Argyrorapha_moderata
+      |   |   |     |  |             |  +--|
+      |   |   |     |  |             |     |           +------AH7057_Nemoria_near_erina
+      |   |   |     |  |             |     |       +---|
+      |   |   |     |  |             |     |       |   +-----------gb_ID_17689_Nemoria_nigrisquama
+      |   |   |     |  |             |     |  +----|
+      |   |   |     |  |             |     |  |    +----------------AH3854_Synchlora_gerularia
+      |   |   |     |  |             |     +--|
+      |   |   |     |  |             |        +-------------------gb_ID_17183_Pyrochlora_rhanis
+      |   |   |     |  |          +--|
+      |   |   |     |  |          |  +---------------------MM00211_Conchyliodes_distelitis
+      |   |   |     |  |       +--|
+      |   |   |     |  |       |  |     +------------MM14748_Dysphania_malayanus
+      |   |   |     |  |       |  |  +--|
+      |   |   |     |  |       |  |  |  +-------------AH7532_Pseudoterpna_coronillaria
+      |   |   |     |  |       |  +--|
+      |   |   |     |  |       |     +----------MM07510_Crypsiphona_ocultaria
+      |   |   |     |  |    +--|
+      |   |   |     |  |    |  |               +----------AH7829_Comostola_leucomerata
+      |   |   |     |  |    |  |           +---|
+      |   |   |     |  |    |  |           |   +---------AH3830_Hemistola_chrysoprasaria
+      |   |   |     |  |    |  |        +--|
+      |   |   |     |  |    |  |        |  |        +-------MM10876_Hemithea_aestivaria
+      |   |   |     |  |    |  |        |  |     +--|
+      |   |   |     |  |    |  |        |  |     |  +-------MM11574_Thalera_fimbrialis
+      |   |   |     |  |    |  |        |  |  +--|
+      |   |   |     |  |    |  |        |  |  |  +---------gb_ID_17715_Chloropteryx_opalaria
+      |   |   |     |  |    |  |        |  +--|
+      |   |   |     |  |    |  |        |     +------------AH3607_Microloxia_ruficornis
+      |   |   |     |  |    |  |     +--|
+      |   |   |     |  |    |  |     |  +----------MM06428_Jodis_putata
+      |   |   |     |  |    |  |  +--|
+      |   |   |     |  |    |  |  |  |     +-------------------gb_ID_17778_Oospila_holochroa
+      |   |   |     |  |    |  |  |  |  +--|
+      |   |   |     |  |    |  |  |  |  |  |  +--------------MM13439_Hierochthonia_semitaria
+      |   |   |     |  |    |  |  |  |  |  +--|
+      |   |   |     |  |    |  |  |  |  |     +--------------MM13438_Thalassodes_quadraria
+      |   |   |     |  |    |  |  |  +--|
+      |   |   |     |  |    |  |  |     +-------------AH2_Antharmostes_papilio
+      |   |   |     |  |    |  +--|
+      |   |   |     |  |    |     +-----------------AH3_Petovia_marginata
+      |   |   |     |  +----|
+      |   |   |     |       +-----------------MM14745_Agathia_sp.
+      |   |   |  +--|
+      |   |   |  |  |        +------------MM07509_Epidesmia_chilonaria
+      |   |   |  |  +--------|
+      |   |   |  |           +---------------MM00246_Adeixis_griseata
+      |   |   +--|
+      |   |      |       +------------------AH7160_Dolichoneura_oxypteraria
+      |   |      |    +--|
+      |   |      |    |  +------------MM00224_Conolophia_near_conscitaria
+      |   |      +----|
+      |   |           +---------------MJM_96_0267_Nearcha_sp.
+      +---|
+          |                           +----------MM06106_Asthena_albulata
+          |                        +--|
+          |                        |  |                   +--gb_ID_17158_Eois_basaliata
+          |                        |  +-------------------|
+          |                        |                      +--MM14743_Eois_ciocolatina
+          |                   +----|
+          |                   |    +------------------MM00239_Poecilasthena_pulchraria
+          |                +--|
+          |                |  |           +----------------MM06843_Cidaria_fulvata
+          |                |  |        +--|
+          |                |  |        |  |    +---------MM01465_Euphyia_unangulata
+          |                |  |        |  +----|
+          |                |  |        |       |  +-----MM01285_Xanthorhoe_montanata
+          |                |  |        |       +--|
+          |                |  |        |          +-----------MM00238_Helastia_cinerearia
+          |                |  |     +--|
+          |                |  |     |  |           +---------gb_CR_S_1239_Trocherateina_cachara
+          |                |  |     |  |        +--|
+          |                |  |     |  |        |  +--------gb_ID_0081_Callipia_constantinaria
+          |                |  |     |  |     +--|
+          |                |  |     |  |     |  |  +----------AH7143_Heterusia_species
+          |                |  |     |  |     |  +--|
+          |                |  |     |  |     |     +----------gb_ID_17164_Hagnagora_mortipax
+          |                |  |     |  |  +--|
+          |                |  |     |  |  |  +-------MM00642_Hydriomena_impluviata
+          |                |  |     |  +--|
+          |                |  |     |     +---------MM02399_Larentia_clavaria
+          |                |  |  +--|
+          |                |  |  |  +-----------------MM06700_Anticollix_sparsatus
+          |                |  +--|
+          |                |     |               +---------------MM01802_Eupithecia_denotata
+          |                |     |            +--|
+          |                |     |            |  |    +-----MM01827_Pasiphila_rectangulata
+          |                |     |            |  +----|
+          |                |     |            |       |  +--MM00244_Pasiphila_sandycias
+          |                |     |            |       +--|
+          |                |     |            |          +-----MM00243_Pasiphila_near_melochlora
+          |                |     |     +------|
+          |                |     |     |      +----------MM14746_Pomasia_sp.
+          |                |     |  +--|
+          |                |     |  |  |  +------------AH7410_Melanthia_procellata
+          |                |     |  |  +--|
+          |                |     |  |     +---------------MM01453_Perizoma_alchemillata
+          |                |     +--|
+          |                |        |     +-----------------------gb_CR_S_1708_Psaliodes_planiplaga
+          |                |        |  +--|
+          |                |        |  |  |    +----------MM06788_Philereme_vetulata
+          |                |        |  |  +----|
+          |                |        |  |       +------MM08780_Rheumaptera_cervinalis
+          |                |        +--|
+          |                |           |  +-------------MM10470_Baptria_tibiale
+          |                |           +--|
+          |                |              +-----------MM03177_Operophtera_brumata
+          |          +-----|
+          |          |     |  +-------------------MM01467_Aplocera_praeformata
+          |          |     +--|
+          |          |        |        +-------------MM04633_Trichopteryx_carpinata
+          |          |        +--------|
+          |          |                 +------------MM00240_Tatosoma_lestevata
+          |     +----|
+          |     |    |     +-------------------------------------gb_ID_15491_Dyspteris_sp.
+          |     |    +-----|
+          |     |          +----------------------MM00237_Paradetis_porphyrias
+          |  +--|
+          |  |  +----------------------gb_ID_17186_Ergavia_roseivena
+          +--|
+             |                     +-----------------MM00216_Afrophyla_vethi
+             |                  +--|
+             |                  |  +-----------MM00184_Rhodometra_sacraria
+             |           +------|
+             |           |      +-------------------MM08784_Lythria_cruentaria
+             |        +--|
+             |        |  +------------------MM08391_Timandra_griseata
+             |  +-----|
+             |  |     +-----------------MM00032_Cyclophora_punctaria
+             +--|
+                |        +-----------------------------AH7746_Atyria_chibcha
+                |     +--|
+                |     |  +------------------MM06697_Rhodostrophia_vibicaria
+                |  +--|
+                |  |  |   +------------------------gb_ID_16954_Smicropus_ochra
+                |  |  +---|
+                |  |      +-------------------MM00220_Lissoblemma_hamularia
+                +--|
+                   |    +-------------------MM00586_Scopula_immorata
+                   +----|
+                        +-------------------NS02_Idaea_straminata
+
+Tree in newick format:
+
+(NW149_1_Bombyx_mori:0.3654198990,(MM00119_Drepana_curvatula:0.2517444652,MM07058_Axia_margarita:0.2030481555):0.0358382213,(((MM09158_Epicopeia_mencia:0.0137891089,AYK_04_5215_Epicopeia_hainesii:0.0142345451):0.2011359757,(((MM07630_Phazaca_mutans:0.0799291146,MM07632_Lobogethes_interrupta:0.0399121206):0.0724448716,MM00210_Epiplema_inconspicua:0.1274414808):0.1025476771,(MM09897_Acropteris_sp.:0.2128019274,(MM09171_Urapteroides_astheniata:0.1239510477,(NW96_7_Urania_leilus:0.1062540695,MM09173_Chrysiridia_ripheus:0.0849700852):0.0417128643):0.0421436418):0.0483167677):0.0155734760):0.0049595336,((05_srnp_19273_Coronidia_orithea:0.1087014270,RWH_96_0877_Sematura_lunus:0.0587583890):0.1237012594,((NW107_1_Archiearis_parthenias:0.1811649485,((((MM13433_Eumelea_ludovicata:0.1534115846,((((((((MM06725_Abraxas_grossulariata:0.1532907935,MM14752_Luxiaria_phyllosaria:0.1206124023):0.0028532746,gb_CR_S_1187_Ballantiophora_gibbiferata:0.1358699535):0.0097357690,MM00584_Chiasmia_clathrata:0.1303584196):0.0056056032,(MM01247_Lomaspilis_marginata:0.1103819347,AH3604_Zamarada_torrida:0.2141315485):0.0160931066):0.0140285016,((((MM05118_Biston_betularia:0.1096153944,MM14738_Erannis_defoliaria:0.0872132888):0.0301190188,(MM01469_Hypomecis_roboraria:0.0988590217,MM13441_Phaselia_deliciosaria:0.1524394430):0.0067038157):0.0035842812,(MM08584_Bupalus_piniaria:0.1106767663,AH3852_Melanolophia_species:0.0996127715):0.0059811513):0.0132985760,MM01298_Cleora_cinctaria:0.1382856774):0.0137343232):0.0328510518,((AH3862_Sphacelodes_vulneraria:0.1048592792,MM01307_Cabera_exanthemata:0.1217868274):0.0150112872,MM13447_Naxa_textilis:0.2003450069):0.0346670429):0.0127521628,(((((((MM00148_Alsophila_aescularia:0.0779906265,(MM02692_Colotois_pennaria:0.0800521070,MM14762_Wilemania_nitobei:0.0903533954):0.0117320672):0.0105970914,MM06693_Campaea_margaritaria:0.1306857508):0.0260118450,(MM00227_Onychora_agaritharia:0.0819193295,(MM00235_Declana_floccosa:0.0706434835,(MM00233_Declana_leptomera:0.0253250000,MM00234_Declana_egregia:0.0355468756):0.0191634898):0.0354584518):0.0122574916):0.0025280494,((((MM06601_Angerona_prunaria:0.1373699253,MM09159_Psilocladia_diaereta:0.1563697406):0.0053774838,MM12840_Charissa_obscurata:0.1353007719):0.0116001016,((((AH3861_Pero_near_infantilis:0.0872632050,gb_ID_16800_Pero_gamuza:0.0548797695):0.0401950477,MM01485_Odontopera_bidentata:0.0892262460):0.0314902656,gb_ID_17426_Aragua_bistonaria:0.0701517282):0.0068845316,(gb_ID_15754_Acrotomodes_kunoi:0.1028726360,gb_ID_17449_Pyrinia_abditaria:0.1470163385):0.0357632684):0.0103905215):0.0025526331,((((gb_ID_17486_Cratoptera_vestianaria:0.0760797880,gb_ID_17448_Phyllodonta_succedens:0.0779005801):0.0083375644,(((gb_ID_15007_Pantherodes_conglomerata:0.0553167493,gb_ID_17153_Microxydia_sp.:0.0670459456):0.0230519465,gb_ID_15008_Sabulodes_thermidora:0.0705529818):0.0049974313,((gb_ID_17246_Sericoptera_mahometaria:0.0923188295,gb_ID_17733_Cimicodes_ferruginea:0.0655179299):0.0155611397,gb_ID_17668_Herbita_zarina:0.0736893904):0.0213867050):0.0040355364):0.0083566569,((MM07823_Ennomos_alniaria:0.1155658889,MM06863_Ourapteryx_sambucaria:0.1017728090):0.0013899397,(AH7126_Nephodia_near_panacea:0.0614540061,gb_ID_17185_Fulgurodes_mayor:0.0426272723):0.0673348308):0.0049300102):0.0454650216,(MM00376_Epirranthis_diversata:0.1165368251,MM01349_Opisthograptis_luteolata:0.1087733347):0.0163176089):0.0043264724):0.0116398496):0.0032169214,(((MM06720_Apeira_syringaria:0.1981281455,(MM01497_Epione_repandaria:0.2189121166,MM06431_Plagodis_pulveraria:0.1208303873):0.0044546909):0.0148210209,MM05496_Ithysia_pravata:0.1269619934):0.0227398517,MM00226_Drepanogynis_tripartita:0.1419941232):0.0257113914):0.0002372347,((((((MM14756_Curbia_martiata:0.1751846638,(MM00241_Ischalis_fortinata:0.0596729650,MM00242_Ischalis_variabilis:0.0485876843):0.0326070839):0.0118487706,(MM05983_Petrophora_chlorosata:0.1098557620,AH7548_Pachycnemia_hippocastanaria:0.1246261079):0.0204603652):0.0030778529,MM00215_Larentioides_cacothemon:0.0931444471):0.0041032651,MM00213_Psilocladia_obliquata:0.1808871633):0.0030992373,((((MM07605_Thalaina_angulosa:0.0528694036,MM11248_Niceteria_macrocosma:0.0650459331):0.0363808623,(MM00245_Amelora_sparsularia:0.0595759866,MM11251_Archephanes_zalosema:0.0989520055):0.0098780640):0.0071412183,MM00231_Mictodoca_toxeuta:0.0669867211):0.0052183944,MM11250_Capusa_senilis:0.0635291213):0.0069569047):0.0103664411,MM00214_Argyrophora_trofonia:0.1011267844):0.0110127104):0.0060064454,(((MM07846_Lomographa_bimaculata:0.0773816320,NS10_Theria_rupicapraria:0.0981811590):0.0685996174,(gb_ID_17152_Phrygionis_flavilimes:0.1397117361,MM13445_Plutodes_costatus:0.1493389350):0.0303191046):0.0019349823,MM14763_Thinopteryx_crocoptera:0.1745948306):0.0093346574):0.0074988027):0.0150325096,MM07576_Oenochroma_orthodesma:0.1574119036):0.0048089682):0.0037429311,(((((((MM13434_Aracima_serrata:0.0792753374,MM13435_Timandromorpha_discolor:0.0608494085):0.0222470922,MM01146_Geometra_papilionaria:0.0935050046):0.0137955863,(((MM14710_Comibaena_bajularia:0.0845044317,MM14751_Comibaena_attenuata:0.0919210464):0.0303225200,MM00223_Argyrorapha_moderata:0.1232869466):0.0339245180,(((AH7057_Nemoria_near_erina:0.0568472942,gb_ID_17689_Nemoria_nigrisquama:0.0935886512):0.0348788515,AH3854_Synchlora_gerularia:0.1342680769):0.0405089874,gb_ID_17183_Pyrochlora_rhanis:0.1582102600):0.0116458942):0.0168838481):0.0157720690,MM00211_Conchyliodes_distelitis:0.1705246179):0.0035536732,((MM14748_Dysphania_malayanus:0.1075987655,AH7532_Pseudoterpna_coronillaria:0.1147378960):0.0062435945,MM07510_Crypsiphona_ocultaria:0.0883159262):0.0074781306):0.0190434473,(((((AH7829_Comostola_leucomerata:0.0877107624,AH3830_Hemistola_chrysoprasaria:0.0830863414):0.0310213889,(((MM10876_Hemithea_aestivaria:0.0629410411,MM11574_Thalera_fimbrialis:0.0635640193):0.0081960673,gb_ID_17715_Chloropteryx_opalaria:0.0817035308):0.0072714289,AH3607_Microloxia_ruficornis:0.1060206350):0.0302972998):0.0062389419,MM06428_Jodis_putata:0.0919909402):0.0036180046,((gb_ID_17778_Oospila_holochroa:0.1564655033,(MM13439_Hierochthonia_semitaria:0.1155105351,MM13438_Thalassodes_quadraria:0.1156676631):0.0024371866):0.0130297927,AH2_Antharmostes_papilio:0.1100682181):0.0052349120):0.0111357148,AH3_Petovia_marginata:0.1449849604):0.0169323213):0.0065465027,MM14745_Agathia_sp.:0.1453514905):0.0443432119):0.0072939007,(MM07509_Epidesmia_chilonaria:0.1060881953,MM00246_Adeixis_griseata:0.1242238152):0.0746864973):0.0121437002,((AH7160_Dolichoneura_oxypteraria:0.1486663964,MM00224_Conolophia_near_conscitaria:0.1064171199):0.0228534555,MJM_96_0267_Nearcha_sp.:0.1271454327):0.0450708377):0.0096697949):0.0345266602,(((((((MM06106_Asthena_albulata:0.0870411128,(gb_ID_17158_Eois_basaliata:0.0254384959,MM14743_Eois_ciocolatina:0.0302060252):0.1612559239):0.0260919487,MM00239_Poecilasthena_pulchraria:0.1521143911):0.0396673216,((((MM06843_Cidaria_fulvata:0.1365866965,(MM01465_Euphyia_unangulata:0.0826319215,(MM01285_Xanthorhoe_montanata:0.0526878344,MM00238_Helastia_cinerearia:0.0926729427):0.0271932212):0.0406213977):0.0067409046,((((gb_CR_S_1239_Trocherateina_cachara:0.0817483188,gb_ID_0081_Callipia_constantinaria:0.0703123868):0.0138319035,(AH7143_Heterusia_species:0.0858457529,gb_ID_17164_Hagnagora_mortipax:0.0915675398):0.0049960950):0.0064592543,MM00642_Hydriomena_impluviata:0.0683655902):0.0186479587,MM02399_Larentia_clavaria:0.0781844194):0.0180037946):0.0091050947,MM06700_Anticollix_sparsatus:0.1423715488):0.0112436535,((((MM01802_Eupithecia_denotata:0.1236599346,(MM01827_Pasiphila_rectangulata:0.0524849522,(MM00244_Pasiphila_sandycias:0.0278713388,MM00243_Pasiphila_near_melochlora:0.0465143394):0.0184558995):0.0420152722):0.0192082433,MM14746_Pomasia_sp.:0.0911182889):0.0547655319,(AH7410_Melanthia_procellata:0.1067711833,MM01453_Perizoma_alchemillata:0.1281752685):0.0096479834):0.0173279570,((gb_CR_S_1708_Psaliodes_planiplaga:0.1899568851,(MM06788_Philereme_vetulata:0.0882577050,MM08780_Rheumaptera_cervinalis:0.0579135995):0.0422421463):0.0090961910,(MM10470_Baptria_tibiale:0.1091202186,MM03177_Operophtera_brumata:0.0950654496):0.0097548729):0.0056213351):0.0035204409):0.0160432745):0.0192672787,(MM01467_Aplocera_praeformata:0.1550220133,(MM04633_Trichopteryx_carpinata:0.1093304837,MM00240_Tatosoma_lestevata:0.1065281927):0.0754677349):0.0077681964):0.0537619398,(gb_ID_15491_Dyspteris_sp.:0.2938308671,MM00237_Paradetis_porphyrias:0.1827850372):0.0465151948):0.0408621001,gb_ID_17186_Ergavia_roseivena:0.1824370620):0.0059822407,(((((MM00216_Afrophyla_vethi:0.1414047213,MM00184_Rhodometra_sacraria:0.0932898470):0.0057503817,MM08784_Lythria_cruentaria:0.1593941737):0.0561272849,MM08391_Timandra_griseata:0.1475280041):0.0107369371,MM00032_Cyclophora_punctaria:0.1397755510):0.0531456536,(((AH7746_Atyria_chibcha:0.2333462841,MM06697_Rhodostrophia_vibicaria:0.1467329053):0.0219677091,(gb_ID_16954_Smicropus_ochra:0.1957012156,MM00220_Lissoblemma_hamularia:0.1574519869):0.0315296033):0.0142300324,(MM00586_Scopula_immorata:0.1592496129,NS02_Idaea_straminata:0.1539587030):0.0398089539):0.0213202963):0.0205788657):0.0059868611):0.0380612824):0.0100645541):0.0202330177);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/gpar5/out/Geometridae/partition/aln.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/gpar5/out/Geometridae/partition/aln.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Geometridae.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Geometridae.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Oct 21 19:26:09 2026
+Total CPU time used: 4377.91 seconds (1h:12m:57s)
+Total wall-clock time used: 4610.47 seconds (1h:16m:50s)
+

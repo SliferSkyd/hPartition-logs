@@ -1,6 +1,6 @@
 # Experiments added during the PeerJ revision
 
-Three runs that are not part of the original benchmark. Each keeps only the files needed to
+Runs that are not part of the original benchmark. Each keeps only the files needed to
 reproduce the numbers reported: the scheme, the ModelFinder report, the evaluated `.iqtree`
 and timings.
 
@@ -50,3 +50,35 @@ agreement, consistent with the dispersal being produced by the sampling step its
 
 Not used in the manuscript: the invariant-site section there makes an output claim, not a
 mechanism claim. Kept as backing in case a referee asks why the clumping does not occur.
+
+
+---
+
+# Empirical-DNA reruns on the replacement cluster
+
+The cluster that produced the submitted benchmark was decommissioned before the revision, so
+every method compared against a revision experiment was rerun here. These directories hold
+those runs. Excluded everywhere: `*.sitelh` (11 GB of Stage-4 per-site likelihood matrices,
+regenerable from the alignment and seed), `*.ckp.gz`, `*.model.gz`, `*.log`, `*.mldist`, and
+the alignments themselves, which live in `hPartition-datasets`.
+
+| directory | what it is | appears in the paper as |
+|---|---|---|
+| `hparbase/` | hPartition on the large DNA alignments | Tables 5 and 8 |
+| `gpar_dna/` | gPartition on the same alignments | Tables 5 and 8 |
+| `fullmset/` | hPartition with `-mset` omitted, and gPartition beside it, on 15 of the 17 DNA alignments | **Supplementary Table S5** |
+| `memcap/` | peak-RSS measurements | memory discussion |
+| `gpar_rep/`, `gpar2/`, `gpar5/` | gPartition replicates and variants | — |
+| `scaling/` | runtime against alignment length | — |
+| `stability/` | clumped-scheme control | — |
+| `datatype/` | binary, codon and morphological runs | data-type claim in the Discussion |
+
+Not in the paper, kept as backing:
+
+| directory | question it answers |
+|---|---|
+| `pinvar/` | does the proportion of invariant sites change hPartition's standing against PsiPartition? 180 runs over `-i` in {0, .15, .30, .45, .60, .75} |
+| `divsweep/` | is the seed-bin divisor of 100 the best choice? 100 and 50 each win 4 of 8 |
+| `lhreassign/` | dissolving the zero-variance subsets and reassigning their sites by hPartition's own Stage-5 rule; hPartition keeps the lower BIC in all 25 runs |
+| `zerovar/`, `scatter/` | earlier forms of the same question |
+| `psimorpho/`, `test_psi/` | PsiPartition behaviour checks |

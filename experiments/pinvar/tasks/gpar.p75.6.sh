@@ -1,0 +1,8 @@
+#!/bin/bash
+unset LD_LIBRARY_PATH
+set -e
+rm -rf /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6; mkdir -p /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6/gPartition /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6/partition
+cd /home/diepht/sliferskyd/hPartition/gPartition
+/usr/bin/time -v -o /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6/gPartition/time.txt /home/diepht/anaconda3/bin/python gPartition.py -f /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/data/p75/6.phy -o /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6/gPartition/ > /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6/gPartition/cmd.log 2>&1
+/home/diepht/sliferskyd/hPartition/rerun_sim/bin/eval_iqtree.sh /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/data/p75/6.phy /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6/gPartition/6.phy.FINAL.nex /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6/partition 1
+test -s /home/diepht/sliferskyd/hPartition/rerun_sim/pinvar/out/gpar.p75.6/partition/aln.treefile

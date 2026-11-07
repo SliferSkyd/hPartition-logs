@@ -1,0 +1,372 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Partition file name: /home/diepht/sliferskyd/hPartition/rerun_sim/gpar2/out/Pieridae/hPartition/aln.partitions
+Input file name: /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Pieridae.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 110 taxa with 14 partitions and 6247 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	110	712	598	212	243	243	P0
+   2	DNA	110	551	512	402	145	145	P1
+   3	DNA	110	533	446	310	213	213	P2
+   4	DNA	110	528	449	322	206	206	P3
+   5	DNA	110	510	362	110	313	313	P4
+   6	DNA	110	484	324	146	338	338	P5
+   7	DNA	110	483	416	295	187	187	P6
+   8	DNA	110	391	219	63	328	328	P7
+   9	DNA	110	381	243	72	309	309	P8
+  10	DNA	110	355	290	173	182	182	P9
+  11	DNA	110	353	265	129	224	224	P10
+  12	DNA	110	351	279	115	215	215	P11
+  13	DNA	110	314	261	141	172	172	P12
+  14	DNA	110	301	216	87	211	211	P13
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2e+R2:P0,GTR+F+I+R2:P1,F81+F+I+R3:P2,GTR+F+R3:P3,TN+F+I+R4:P4,GTR+F+I+R3:P5,TIM3+F+I+R3:P6,GTR+F+I+R3:P7,GTR+F+I:P8,GTR+F+I+G4:P9,TN+F+I+R3:P10,SYM+I+R4:P11,TVM+F+I+G4:P12,TVM+F+I+R2:P13
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TIM2e+R2          -8751.428   17514.855 + 1.22e-316   17514.975 - 5.4e-317   17542.264 - 7.38e-317
+   2  GTR+F+I+R2       -12812.961   25649.923 + 1.22e-316   25650.503 - 5.4e-317   25701.664 - 7.38e-317
+   3  F81+F+I+R3       -18182.652   36383.304 + 1.22e-316   36383.648 - 5.4e-317   36421.810 - 7.38e-317
+   4  GTR+F+R3         -20035.895   40097.790 + 1.22e-316   40098.498 - 5.4e-317   40153.288 - 7.38e-317
+   5  TN+F+I+R4         -6314.748   12655.495 + 1.22e-316   12656.229 - 5.4e-317   12710.542 - 7.38e-317
+   6  GTR+F+I+R3        -7695.235   15418.470 + 1.22e-316   15419.366 - 5.4e-317   15477.020 - 7.38e-317
+   7  TIM3+F+I+R3      -12169.725   24363.450 + 1.22e-316   24364.113 - 5.4e-317   24413.610 - 7.38e-317
+   8  GTR+F+I+R3        -5124.647   10277.294 + 1.22e-316   10278.411 - 5.4e-317   10332.856 - 7.38e-317
+   9  GTR+F+I           -6103.545   12227.089 + 1.22e-316   12227.684 - 5.4e-317   12266.517 - 7.38e-317
+  10  GTR+F+I+G4        -8028.971   16079.943 + 1.22e-316   16080.712 - 5.4e-317   16122.536 - 7.38e-317
+  11  TN+F+I+R3         -6728.444   13478.888 + 1.22e-316   13479.662 - 5.4e-317   13521.419 - 7.38e-317
+  12  SYM+I+R4          -5383.280   10792.560 + 1.22e-316   10793.640 - 5.4e-317   10842.750 - 7.38e-317
+  13  TVM+F+I+G4        -6593.365   13206.731 + 1.22e-316   13207.457 - 5.4e-317   13244.225 - 7.38e-317
+  14  TVM+F+I+R2        -4137.151    8296.302 + 1.22e-316    8297.215 - 5.4e-317    8337.080 - 7.38e-317
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TIM2e+R2       0.3926  TIM2e{3.34434,6.74329,5.16781}+FQ+R2{0.926966,0.292616,0.0730343,9.97826}
+   2  GTR+F+I+R2     0.9205  GTR{0.0001,81.5778,10.5486,0.262205,100}+F{0.260496,0.255544,0.144864,0.339096}+I{0.260653}+R2{0.667592,1.21151,0.0717547,2.66469}
+   3  F81+F+I+R3     1.4688  F81+F{0.306868,0.275776,0.137799,0.279557}+I{0.38831}+R3{0.175122,0.255635,0.101655,0.825573,0.334913,2.6016}
+   4  GTR+F+R3       1.8498  GTR{1.63408,1.3843,2.73556,0.399276,2.36777}+F{0.311204,0.141032,0.111562,0.436202}+R3{0.39013,7.1845e-16,0.372816,1.19486,0.237054,2.33929}
+   5  TN+F+I+R4      0.8631  TN{15.0596,25.8405}+F{0.475606,0.126553,0.172517,0.225325}+I{0.000100041}+R4{0.800879,0.0364974,0.14414,2.62269,0.0492106,5.29224,0.00567054,58.6012}
+   6  GTR+F+I+R3     0.8990  GTR{5.42231,68.5913,10.059,20.8167,100}+F{0.400055,0.129501,0.355737,0.114707}+I{0.698135}+R3{0.000100009,0.00863836,0.258925,2.16565,0.0428407,10.2533}
+   7  TIM3+F+I+R3    1.5547  TIM3{4.06973,23.7607,47.7699}+F{0.166754,0.214627,0.105596,0.513023}+I{0.375254}+R3{0.156436,0.472008,0.439907,1.49525,0.0284028,9.44946}
+   8  GTR+F+I+R3     0.7656  GTR{13.2762,4.87379,31.8454,3.08626,100}+F{0.353212,0.165034,0.233112,0.248642}+I{0.83673}+R3{0.0104419,1.35117,0.0600361,3.47769,0.0927917,8.37472}
+   9  GTR+F+I        1.1273  GTR{24.4591,25.9104,79.6351,36.258,100}+F{0.267222,0.130915,0.292399,0.309464}+I{0.810295}
+  10  GTR+F+I+G4     0.8537  GTR{0.0001,4.09138,13.6678,6.57893,21.0443}+F{0.375539,0.135299,0.17661,0.312551}+I{0.510074}+G4{4.1621}
+  11  TN+F+I+R3      0.9605  TN{19.0156,42.2306}+F{0.204888,0.212022,0.205204,0.377885}+I{0.629834}+R3{0.00939976,0.164851,0.192821,1.56388,0.167945,4.14958}
+  12  SYM+I+R4       0.7689  SYM{5.26032,3.1959,5.78862,7.43177,100}+FQ+I{0.555805}+R4{0.000251176,0.00649428,0.18515,0.61094,0.232918,2.40215,0.0258751,12.6522}
+  13  TVM+F+I+G4     0.8218  TVM{29.9341,99.7987,47.8413,0.0001}+F{0.23879,0.24194,0.2063,0.312969}+I{0.547521}+G4{8.9765}
+  14  TVM+F+I+R2     0.5833  TVM{1.78761,11.0148,3.83066,0.309464}+F{0.190312,0.249703,0.212682,0.347304}+I{0.690302}+R2{0.196741,0.75801,0.112957,7.53268}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -128056.4122 (s.e. 2068.9753)
+Unconstrained log-likelihood (without tree): -35792.6831
+Number of free parameters (#branches + #model parameters): 375
+Akaike information criterion (AIC) score: 256862.8244
+Corrected Akaike information criterion (AICc) score: 256910.8572
+Bayesian information criterion (BIC) score: 259390.2707
+
+Total tree length (sum of branch lengths): 9.3514
+Sum of internal branch lengths: 2.2572 (24.1380% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EW28_1_Celastrina_neglecta' is drawn at root
+
++------------EW28_1_Celastrina_neglecta
+|
++-------------MM04799_Favonius_quercus
+|
+|    +----------------PM03_14_Curetis_barsine
++----|
+     |                +-----------------05_srnp_48598_Mesosemia_lamach
+     |           +----|
+     |           |    +--------------NW85_9_Amarynthis_meneria
+     |     +-----|
+     |     |     |   +------------------06_srnp_33176_Euselasia_chrysi
+     |     |     +---|
+     |     |         +-----------NW84_13_Hamearis_lucina
+     +-----|
+           |           +------------------NW108_21_Danaus_plexippus
+           |        +--|
+           |        |  +------------NW71_1_Libythea_celtis
+           |     +--|
+           |     |  |  +---------------CP_B01_Brintesia_circe
+           |     |  +--|
+           |     |     +----------------NW78_3_Charaxes_castor
+           |  +--|
+           |  |  |     +-------------NW62_2_Nymphalis_polychloros
+           |  |  |  +--|
+           |  |  |  |  +----------NW106_3_Biblis_hyperia
+           |  |  +--|
+           |  |     +-----------------NW70_6_Heliconius_hecale
+           +--|
+              |                            +---MFB_00_P188_Anteos_clorinde
+              |                         +--|
+              |                         |  +-----MFB_00_P059_Catopsilia_pomona
+              |                      +--|
+              |                      |  |     +--AC8_10_Colias_erate
+              |                      |  |  +--|
+              |                      |  |  |  |     +--FS.b_543_Colias_eurytheme
+              |                      |  |  |  |  +--|
+              |                      |  |  |  |  |  +--NP_98_U268_Colias_philodice
+              |                      |  |  |  +--|
+              |                      |  |  |     +--MM03233_Colias_palaeno
+              |                      |  +--|
+              |                      |     +-----MFB_00_P204_Zerene_cesonia
+              |                   +--|
+              |                   |  |   +--MFB_00_P199_Aphrissa_statira
+              |                   |  +---|
+              |                   |      +--MFB_00_P197_Phoebis_sennae
+              |                +--|
+              |                |  |  +---------MFB_00_P475_Dercas_gobrias
+              |                |  +--|
+              |                |     +------RE_07_G166_Gonepteryx_cleopatr
+              |             +--|
+              |             |  +-----------MFB_00_R059_Gandaca_harina
+              |          +--|
+              |          |  |           +---MFB_00_P036_Eurema_hecabe
+              |          |  |        +--|
+              |          |  |        |  +--DW_92_Z084_Eurema_mexicana
+              |          |  |     +--|
+              |          |  |     |  |  +---------PDV_94_B004_Leucidia_brephos
+              |          |  |     |  +--|
+              |          |  |     |     +-----MFB_00_P419_Teriocolias_zelia
+              |          |  |  +--|
+              |          |  |  |  +-------MFB_00_P211_Pyrisitia_proterpi
+              |          |  +--|
+              |          |     |  +---------MFB_00_P215_Kricogonia_lyside
+              |          |     +--|
+              |          |        +--------------DC_98_U711_Nathalis_iole
+              |       +--|
+              |       |  |                        +--NW151_1_Anthocharis_belia
+              |       |  |                     +--|
+              |       |  |                     |  +--NW151_2_Anthocharis_cardamine
+              |       |  |                  +--|
+              |       |  |                  |  +------NW107_2_Elphinstonia_charlonia
+              |       |  |              +---|
+              |       |  |              |   |  +---AF_94_A022_Euchloe_ausonides
+              |       |  |              |   +--|
+              |       |  |              |      +--RV_08_H240_Zegris_eupheme
+              |       |  |           +--|
+              |       |  |           |  |      +--MFB_00_P398_Cunizza_hirlanda
+              |       |  |           |  |  +---|
+              |       |  |           |  |  |   |  +---MFB_00_P268_Hesperocharis_croc
+              |       |  |           |  |  |   +--|
+              |       |  |           |  |  |      +---MFB_00_P428_Mathania_leucothea
+              |       |  |           |  +--|
+              |       |  |           |     +---MFB_00_P437_Eroessa_chiliensis
+              |       |  |        +--|
+              |       |  |        |  +-------------NP_95_Y258_Hebomoia_glaucippe
+              |       |  |     +--|
+              |       |  |     |  |    +-----------SC_01_T403_Nepheronia_thalassi
+              |       |  |     |  +----|
+              |       |  |     |       +-------------MFB_00_P442_Pareronia_valeria
+              |       |  |  +--|
+              |       |  |  |  |           +------------MFB_00_P469_Aoa_affinis
+              |       |  |  |  |        +--|
+              |       |  |  |  |        |  |  +--------MFB_00_P491_Appias_aegis
+              |       |  |  |  |        |  +--|
+              |       |  |  |  |        |     +-----MFB_00_P195_Appias_drusilla
+              |       |  |  |  |     +--|
+              |       |  |  |  |     |  |  +----MFB_00_P159_Appias_paulina
+              |       |  |  |  |     |  +--|
+              |       |  |  |  |     |     +---NP_95_Y239_Saletara_liberia
+              |       |  |  |  |  +--|
+              |       |  |  |  |  |  |                    +---MFB_00_P481_Aporia_agathon
+              |       |  |  |  |  |  |                 +--|
+              |       |  |  |  |  |  |                 |  +--NW149_4_Aporia_crataegi
+              |       |  |  |  |  |  |              +--|
+              |       |  |  |  |  |  |              |  |                 +------MFB_00_P263_Archonias_brassoli
+              |       |  |  |  |  |  |              |  |              +--|
+              |       |  |  |  |  |  |              |  |              |  +--------MFB_00_P395_Charonias_eurytele
+              |       |  |  |  |  |  |              |  |           +--|
+              |       |  |  |  |  |  |              |  |           |  +-----MFB_00_P247_Catasticta_teutila
+              |       |  |  |  |  |  |              |  |        +--|
+              |       |  |  |  |  |  |              |  |        |  +----MFB_00_P266_Catasticta_cerberu
+              |       |  |  |  |  |  |              |  |     +--|
+              |       |  |  |  |  |  |              |  |     |  |  +----MFB_00_P284_Eucheira_socialis
+              |       |  |  |  |  |  |              |  |     |  +--|
+              |       |  |  |  |  |  |              |  |     |     +-----NGK_02_C419_Neophasia_menapia
+              |       |  |  |  |  |  |              |  |  +--|
+              |       |  |  |  |  |  |              |  |  |  |    +--MFB_00_P265_Leodonta_tellane
+              |       |  |  |  |  |  |              |  |  |  +----|
+              |       |  |  |  |  |  |              |  |  |       +----MFB_00_P283_Pereute_charops
+              |       |  |  |  |  |  |              |  +--|
+              |       |  |  |  |  |  |              |     +---------MFB_00_P316_Melete_lycimnia
+              |       |  |  |  |  |  |           +--|
+              |       |  |  |  |  |  |           |  |     +---MFB_97_U344_Delias_aganippe
+              |       |  |  |  |  |  |           |  |  +--|
+              |       |  |  |  |  |  |           |  |  |  +----DL_01_N104_Delias_belladonna
+              |       |  |  |  |  |  |           |  +--|
+              |       |  |  |  |  |  |           |     |    +--MFB_00_P468_Leuciacria_acuta
+              |       |  |  |  |  |  |           |     +----|
+              |       |  |  |  |  |  |           |          +--MFB_00_R067_Leuciacria_olivei
+              |       |  |  |  |  |  |        +--|
+              |       |  |  |  |  |  |        |  |          +--NP_99_T486_Mylothris_agathina
+              |       |  |  |  |  |  |        |  +----------|
+              |       |  |  |  |  |  |        |             +--SC_01_M002_Mylothris_bernice
+              |       |  |  |  |  |  |     +--|
+              |       |  |  |  |  |  |     |  |  +---------MFB_00_P131_Cepora_perimale
+              |       |  |  |  |  |  |     |  +--|
+              |       |  |  |  |  |  |     |     +-------DL_00_Q610_Prioneris_philonome
+              |       |  |  |  |  |  |  +--|
+              |       |  |  |  |  |  |  |  |  +---------DL_00_Q546_Belenois_java
+              |       |  |  |  |  |  |  |  +--|
+              |       |  |  |  |  |  |  |     +----------SC_01_T400_Dixeia_charina
+              |       |  |  |  |  |  +--|
+              |       |  |  |  |  |     |                +-------MFB_00_P170_Ascia_monuste
+              |       |  |  |  |  |     |             +--|
+              |       |  |  |  |  |     |             |  |      +--MFB_00_P432_Hypsochila_wagenkn
+              |       |  |  |  |  |     |             |  |   +--|
+              |       |  |  |  |  |     |             |  |   |  |     +--MFB_00_P416_Infraphulia_ilyode
+              |       |  |  |  |  |     |             |  |   |  |  +--|
+              |       |  |  |  |  |     |             |  |   |  |  |  +--MFB_00_P375_Phulia_nymphula
+              |       |  |  |  |  |     |             |  |   |  +--|
+              |       |  |  |  |  |     |             |  |   |     +--MFB_00_P410_Pierphulia_rosea
+              |       |  |  |  |  |     |             |  +---|
+              |       |  |  |  |  |     |             |      |  +--MFB_00_P306_Tatochila_autodice
+              |       |  |  |  |  |     |             |      +--|
+              |       |  |  |  |  |     |             |         +--MFB_00_P449_Theochila_maenacte
+              |       |  |  |  |  |     |          +--|
+              |       |  |  |  |  |     |          |  +-------MFB_00_P201_Ganyra_josephina
+              |       |  |  |  |  |     |       +--|
+              |       |  |  |  |  |     |       |  |  +--MFB_00_P492_Baltia_butleri
+              |       |  |  |  |  |     |       |  +--|
+              |       |  |  |  |  |     |       |     |  +----AF_94_A003_Pontia_callidice
+              |       |  |  |  |  |     |       |     +--|
+              |       |  |  |  |  |     |       |        +---NP_99_T476_Pontia_helice
+              |       |  |  |  |  |     |    +--|
+              |       |  |  |  |  |     |    |  |        +--MFB_00_P277_Itaballia_demophil
+              |       |  |  |  |  |     |    |  |     +--|
+              |       |  |  |  |  |     |    |  |     |  +-----MFB_00_P202_Perrhybris_pamela
+              |       |  |  |  |  |     |    |  |  +--|
+              |       |  |  |  |  |     |    |  |  |  +---MFB_00_P221_Pieriballia_viardi
+              |       |  |  |  |  |     |    |  +--|
+              |       |  |  |  |  |     |    |     +--------MFB_00_P189_Leptophobia_aripa
+              |       |  |  |  |  |     +----|
+              |       |  |  |  |  |          |     +--FS.b_943_Pieris_napi
+              |       |  |  |  |  |          |  +--|
+              |       |  |  |  |  |          |  |  +---MM06585_Pieris_rapae
+              |       |  |  |  |  |          +--|
+              |       |  |  |  |  |             +------MFB_00_P467_Talbotia_naganum
+              |       |  |  |  +--|
+              |       |  |  |     |  +--------------MFB_00_P133_Elodina_angulipenn
+              |       |  |  |     +--|
+              |       |  |  |        +----------------NP_95_Y248_Leptosia_nina
+              |       |  +--|
+              |       |     |              +---------NFMP5_Colotis_danae
+              |       |     |           +--|
+              |       |     |           |  |  +----SC_01_T434_Colotis_hetaera
+              |       |     |           |  +--|
+              |       |     |           |     +------NFMP1_Colotis_protomedia
+              |       |     |     +-----|
+              |       |     |     |     +-----BC_TB3538_Colotis_evenina
+              |       |     |  +--|
+              |       |     |  |  |   +-----------SC_01_T424_Eronia_cleodora
+              |       |     |  |  +---|
+              |       |     |  |      +---------DL_00_Q581_Ixias_pyrene
+              |       |     +--|
+              |       |        |     +-----------GA_93_Z024_Gideona_lucasi
+              |       |        |  +--|
+              |       |        |  |  +------------GA_93_Z028_Pinacopteryx_eriphi
+              |       |        +--|
+              |       |           +--------CLT_OB_003_Teracolus_eris
+              |    +--|
+              |    |  +---------------------------------SC_01_T380_Pseudopontia_parado
+              +----|
+                   |                         +--NW153_23_Dismorphia_spio
+                   |                      +--|
+                   |                      |  +--MFB_00_P231_Dismorphia_zathoe
+                   |                   +--|
+                   |                   |  +--MFB_00_P234_Lieinix_nemesis
+                   |                +--|
+                   |                |  |  +---MFB_00_P405_Enantia_lina
+                   |                |  +--|
+                   |                |     +--MFB_00_P353_Patia_orize
+                   |             +--|
+                   |             |  +-----MFB_00_P403_Moschoneura_pintho
+                   |         +---|
+                   |         |   +--------MFB_00_P312_Pseudopieris_nehem
+                   +---------|
+                             |             +--RV_07_Z083_Leptidea_morsei
+                             +-------------|
+                                           +--NW149_5_Leptidea_sinapis
+
+Tree in newick format:
+
+(EW28_1_Celastrina_neglecta:0.1135396240,MM04799_Favonius_quercus:0.1216941014,(PM03_14_Curetis_barsine:0.1478325046,(((05_srnp_48598_Mesosemia_lamach:0.1497611633,NW85_9_Amarynthis_meneria:0.1240498089):0.0446537005,(06_srnp_33176_Euselasia_chrysi:0.1641151609,NW84_13_Hamearis_lucina:0.0988609181):0.0406263880):0.0547751502,((((NW108_21_Danaus_plexippus:0.1641110243,NW71_1_Libythea_celtis:0.1147295723):0.0222546130,(CP_B01_Brintesia_circe:0.1319051641,NW78_3_Charaxes_castor:0.1430039536):0.0327626197):0.0109174490,((NW62_2_Nymphalis_polychloros:0.1199476926,NW106_3_Biblis_hyperia:0.0986748010):0.0306086021,NW70_6_Heliconius_hecale:0.1496466043):0.0107690568):0.0277952946,(((((((((MFB_00_P188_Anteos_clorinde:0.0371407751,MFB_00_P059_Catopsilia_pomona:0.0506589478):0.0047221841,((AC8_10_Colias_erate:0.0126679738,((FS.b_543_Colias_eurytheme:0.0019885880,NP_98_U268_Colias_philodice:0.0035639328):0.0025297559,MM03233_Colias_palaeno:0.0035295199):0.0071352815):0.0295343568,MFB_00_P204_Zerene_cesonia:0.0500073599):0.0208472496):0.0180674692,(MFB_00_P199_Aphrissa_statira:0.0318593395,MFB_00_P197_Phoebis_sennae:0.0318466945):0.0402179584):0.0066107826,(MFB_00_P475_Dercas_gobrias:0.0875746320,RE_07_G166_Gonepteryx_cleopatr:0.0629439882):0.0035873466):0.0083645485,MFB_00_R059_Gandaca_harina:0.1055731026):0.0157453561,((((MFB_00_P036_Eurema_hecabe:0.0386491869,DW_92_Z084_Eurema_mexicana:0.0293083215):0.0245995384,(PDV_94_B004_Leucidia_brephos:0.0823723279,MFB_00_P419_Teriocolias_zelia:0.0550586135):0.0092835416):0.0261296428,MFB_00_P211_Pyrisitia_proterpi:0.0660093866):0.0311222151,(MFB_00_P215_Kricogonia_lyside:0.0860148473,DC_98_U711_Nathalis_iole:0.1315624453):0.0133087491):0.0151048543):0.0251103628,((((((((NW151_1_Anthocharis_belia:0.0162574914,NW151_2_Anthocharis_cardamine:0.0164402335):0.0183634334,NW107_2_Elphinstonia_charlonia:0.0631226433):0.0023354586,(AF_94_A022_Euchloe_ausonides:0.0386860495,RV_08_H240_Zegris_eupheme:0.0274912072):0.0054177354):0.0349168105,((MFB_00_P398_Cunizza_hirlanda:0.0315364029,(MFB_00_P268_Hesperocharis_croc:0.0333162013,MFB_00_P428_Mathania_leucothea:0.0369857128):0.0029696757):0.0347563502,MFB_00_P437_Eroessa_chiliensis:0.0396232274):0.0206842617):0.0143065148,NP_95_Y258_Hebomoia_glaucippe:0.1197349709):0.0098487198,(SC_01_T403_Nepheronia_thalassi:0.1048493559,MFB_00_P442_Pareronia_valeria:0.1182842726):0.0488597635):0.0074926631,((((MFB_00_P469_Aoa_affinis:0.1102301474,(MFB_00_P491_Appias_aegis:0.0815384714,MFB_00_P195_Appias_drusilla:0.0532938855):0.0203834053):0.0070035852,(MFB_00_P159_Appias_paulina:0.0468288830,NP_95_Y239_Saletara_liberia:0.0406553600):0.0265846304):0.0238261124,(((((((MFB_00_P481_Aporia_agathon:0.0374493627,NW149_4_Aporia_crataegi:0.0303294274):0.0102256448,((((((MFB_00_P263_Archonias_brassoli:0.0643688550,MFB_00_P395_Charonias_eurytele:0.0809255285):0.0062957222,MFB_00_P247_Catasticta_teutila:0.0515063200):0.0064501929,MFB_00_P266_Catasticta_cerberu:0.0438660218):0.0039669052,(MFB_00_P284_Eucheira_socialis:0.0442420458,NGK_02_C419_Neophasia_menapia:0.0520812847):0.0054048493):0.0144364678,(MFB_00_P265_Leodonta_tellane:0.0285541466,MFB_00_P283_Pereute_charops:0.0462397602):0.0427572758):0.0059480786,MFB_00_P316_Melete_lycimnia:0.0889440386):0.0266717146):0.0042613004,((MFB_97_U344_Delias_aganippe:0.0395828163,DL_01_N104_Delias_belladonna:0.0471108693):0.0147625159,(MFB_00_P468_Leuciacria_acuta:0.0049107047,MFB_00_R067_Leuciacria_olivei:0.0065962557):0.0475708020):0.0296957556):0.0079096174,(NP_99_T486_Mylothris_agathina:0.0106907957,SC_01_M002_Mylothris_bernice:0.0090315835):0.0985244150):0.0225369194,(MFB_00_P131_Cepora_perimale:0.0822644243,DL_00_Q610_Prioneris_philonome:0.0683947614):0.0041375516):0.0126996864,(DL_00_Q546_Belenois_java:0.0902808315,SC_01_T400_Dixeia_charina:0.0942437473):0.0141501079):0.0133982515,(((((MFB_00_P170_Ascia_monuste:0.0667712051,((MFB_00_P432_Hypsochila_wagenkn:0.0146088772,((MFB_00_P416_Infraphulia_ilyode:0.0114943938,MFB_00_P375_Phulia_nymphula:0.0095994312):0.0051650077,MFB_00_P410_Pierphulia_rosea:0.0117013025):0.0039978563):0.0014035274,(MFB_00_P306_Tatochila_autodice:0.0176198258,MFB_00_P449_Theochila_maenacte:0.0240389005):0.0018070068):0.0375357714):0.0074207409,MFB_00_P201_Ganyra_josephina:0.0673341432):0.0200390788,(MFB_00_P492_Baltia_butleri:0.0295360014,(AF_94_A003_Pontia_callidice:0.0447581306,NP_99_T476_Pontia_helice:0.0371284043):0.0168519249):0.0077649903):0.0007905766,(((MFB_00_P277_Itaballia_demophil:0.0312487245,MFB_00_P202_Perrhybris_pamela:0.0509320189):0.0097325050,MFB_00_P221_Pieriballia_viardi:0.0402617728):0.0179361990,MFB_00_P189_Leptophobia_aripa:0.0760729696):0.0097639903):0.0025246423,((FS.b_943_Pieris_napi:0.0294316619,MM06585_Pieris_rapae:0.0363545164):0.0146113277,MFB_00_P467_Talbotia_naganum:0.0628328325):0.0095649660):0.0480278891):0.0057460438):0.0298771003,(MFB_00_P133_Elodina_angulipenn:0.1280920491,NP_95_Y248_Leptosia_nina:0.1415656623):0.0113244161):0.0177904785):0.0052333962,((((NFMP5_Colotis_danae:0.0898052385,(SC_01_T434_Colotis_hetaera:0.0450901299,NFMP1_Colotis_protomedia:0.0646896942):0.0298039219):0.0118164152,BC_TB3538_Colotis_evenina:0.0566481522):0.0521542748,(SC_01_T424_Eronia_cleodora:0.1067765459,DL_00_Q581_Ixias_pyrene:0.0839527764):0.0390054750):0.0100664011,((GA_93_Z024_Gideona_lucasi:0.1062856760,GA_93_Z028_Pinacopteryx_eriphi:0.1083615118):0.0153047972,CLT_OB_003_Teracolus_eris:0.0819981982):0.0187701419):0.0200911185):0.0317977580):0.0073266592,SC_01_T380_Pseudopontia_parado:0.2859742893):0.0124621832,((((((NW153_23_Dismorphia_spio:0.0299817146,MFB_00_P231_Dismorphia_zathoe:0.0281378589):0.0100021463,MFB_00_P234_Lieinix_nemesis:0.0298723469):0.0039369175,(MFB_00_P405_Enantia_lina:0.0398271964,MFB_00_P353_Patia_orize:0.0326499527):0.0077248067):0.0087794404,MFB_00_P403_Moschoneura_pintho:0.0550805764):0.0206887844,MFB_00_P312_Pseudopieris_nehem:0.0781111518):0.0362641828,(RV_07_Z083_Leptidea_morsei:0.0099260381,NW149_5_Leptidea_sinapis:0.0189398510):0.1229414313):0.0889356435):0.0478286053):0.0282468190):0.0558812586):0.0457665067);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/diepht/sliferskyd/hPartition/rerun_sim/gpar2/out/Pieridae/partition/aln.treefile -p /home/diepht/sliferskyd/hPartition/rerun_sim/gpar2/out/Pieridae/partition/aln.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Pieridae.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/diepht/sliferskyd/hPartition-datasets/DNA/empirical/Pieridae.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Oct 21 09:11:51 2026
+Total CPU time used: 709.928 seconds (0h:11m:49s)
+Total wall-clock time used: 735.522 seconds (0h:12m:15s)
+
